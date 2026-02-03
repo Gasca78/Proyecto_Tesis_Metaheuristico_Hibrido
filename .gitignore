@@ -1,0 +1,24 @@
+# --- Archivos de Python y Spyder ---
+__pycache__/
+*.py[cod]
+.spyproject/
+.spyderproject
+.settings/
+
+# --- Resultados y Datos (NO SUBIR) ---
+# Ignorar todas las carpetas que empiecen con Benchmark o Resultados
+Benchmark_*/
+Resultados_*/
+results/
+data/
+
+# --- Archivos específicos pesados ---
+*.csv
+*.xlsx
+*.pdf
+*.png
+*.jpg
+
+# --- Entornos virtuales (por si acaso creaste una carpeta venv) ---
+env/
+venv/
