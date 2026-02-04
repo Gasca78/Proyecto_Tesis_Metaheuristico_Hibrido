@@ -118,9 +118,6 @@ class hibrid_JADE(Optimizer):
         # Acumuladores para ver qué tanto funcionó cada uno
         self.strategies_rewards = {'DE':0.0, 'PSO':0.0, 'GA':0.0}
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
-        # Implementación de Cadenas de Markov
-        self.transition_matriz = [[0.90,0.05,0.05],[0.05,0.90,0.05],[0.05,0.05,0.90]]
-        # self.best_model = ''
 
     def initialize_variables(self):
         self.dyn_miu_cr = self.miu_cr
@@ -173,7 +170,7 @@ class hibrid_JADE(Optimizer):
     
     ### Función para calcular y actualizar los porcentajes para los modelos
     def update_strategies_probabilities(self):
-        qualities = np.array([]) # Arreglo para calcular la mejora de calidad por modelo
+        qualities = [] # Arreglo para calcular la mejora de calidad por modelo
         total_quality = 0.0 # Para calcular la mejora total
         epsilon = 1e-10 # Para evitar diviones por 0
         for model in ['DE','PSO','GA']:
@@ -181,26 +178,17 @@ class hibrid_JADE(Optimizer):
                 quality = self.strategies_rewards[model]/self.strategies_usage[model]
             else:
                 quality = epsilon
-            qualities = np.append(qualities, quality)
+            qualities.append(quality)
             total_quality += quality
         
         if total_quality == 0:
-            self.strategies_probs = [1/3, 1/3, 1/3]
+            self.estrategies_probs = [1/3, 1/3, 1/3]
         else:
             prob_DE = qualities[0]/total_quality
             prob_PSO = qualities[1]/total_quality
             prob_GA = 1 - (prob_DE+prob_PSO)
             if prob_GA < 0: prob_GA = 0.0
             self.strategies_probs = [prob_DE, prob_PSO, prob_GA]
-            
-        # Configuración de las probs en Markov chain
-        self.best_model = np.argmax(qualities)
-        if self.best_model == 0:
-            self.transition_matriz = [[0.90,0.05,0.05],[0.90,0.05,0.05],[0.90,0.05,0.05]]
-        elif self.best_model == 1:
-            self.transition_matriz = [[0.05,0.90,0.05],[0.05,0.90,0.05],[0.05,0.90,0.05]]
-        else:
-            self.transition_matriz = [[0.05,0.05,0.90],[0.05,0.05,0.90],[0.05,0.05,0.90]]
             
         self.strategies_rewards = {'DE':0.0, 'PSO':0.0, 'GA':0.0}
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
@@ -222,16 +210,7 @@ class hibrid_JADE(Optimizer):
         pop = []
         for idx in range(0, self.pop_size):
             # Se elige el método para este agente
-            if epoch == 1:
-                strategy_idx = self.generator.choice([0,1,2], p=self.strategies_probs)
-            else:
-                previus_model = self.pop[idx].model
-                if previus_model == 'PSO':
-                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[1])
-                elif previus_model == 'GA':
-                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[2])
-                else:
-                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[0])
+            strategy_idx = self.generator.choice([0,1,2], p=self.strategies_probs)
             # Uso para cada método
             if strategy_idx == 1:
                 # Usamos el método de PSO
@@ -269,13 +248,12 @@ class hibrid_JADE(Optimizer):
                 r2_idx = self.generator.choice(list(set(range(0, len(new_pop))) - {idx, r1_idx}))
                 x_r1 = self.pop[r1_idx].solution
                 x_r2 = new_pop[r2_idx].solution
-                x_new = self.pop[idx].solution + f * (x_best.solution - self.pop[idx].solution) + f * (x_r1 - x_r2)      
+                x_new = self.pop[idx].solution + f * (x_best.solution - self.pop[idx].solution) + f * (x_r1 - x_r2)
             pos_new = np.where(self.generator.random(self.problem.n_dims) < cr, x_new, self.pop[idx].solution)
             j_rand = self.generator.integers(0, self.problem.n_dims)
             pos_new[j_rand] = x_new[j_rand]
             pos_new = self.correct_solution(pos_new)
             agent = self.generate_empty_agent(pos_new)
-            agent.model = self.pop[idx].model
             pop.append(agent)
             if self.mode not in self.AVAILABLE_MODES:
                 pop[-1].target = self.get_target(pos_new)

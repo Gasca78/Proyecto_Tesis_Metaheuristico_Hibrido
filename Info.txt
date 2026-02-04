@@ -1,0 +1,4048 @@
+FECHA: 11/12/2025
+
+HIBRIDO
+Run 1/10 -> Fitness: 2.9690472302945636e-11 | Tiempo: 18.6534 s
+Run 2/10 -> Fitness: 3.044009488917254e-11 | Tiempo: 21.4955 s
+Run 3/10 -> Fitness: 3.120037561643585e-11 | Tiempo: 28.1032 s
+Run 4/10 -> Fitness: 3.065681042357937e-11 | Tiempo: 35.4751 s
+Run 5/10 -> Fitness: 3.129629888576346e-11 | Tiempo: 34.8171 s
+Run 6/10 -> Fitness: 3.7613023806670753e-11 | Tiempo: 34.1030 s
+Run 7/10 -> Fitness: 2.5583535290252257e-11 | Tiempo: 28.7076 s
+Run 8/10 -> Fitness: 1.8997440511952175 | Tiempo: 25.0181 s
+Run 9/10 -> Fitness: 3.200684162152356e-11 | Tiempo: 29.6543 s
+Run 10/10 -> Fitness: 3.349187593926217e-11 | Tiempo: 26.7949 s
+
+========================================
+       RESUMEN DE RESULTADOS
+========================================
+Modelo: hibrid_JADE(epoch=1000, pop_size=100, miu_f=0.5, miu_cr=0.5, pt=0.1, ap=0.1, c1=2.05, c2=2.05, w=0.4, pc=0.95, pm=0.025)
+Función: Ackley01 (30 dims)
+----------------------------------------
+Mejor Fitness Encontrado : 2.5583535290252257e-11
+Peor Fitness Encontrado  : 1.8997440511952175
+Fitness Promedio (Mean)  : 0.18997440514771968
+Desviación Estándar (Std): 0.5699232153491659
+----------------------------------------
+Tiempo Total Acumulado   : 282.8223 s
+Tiempo Promedio por Run  : 28.2822 s
+========================================
+
+DE
+Run 1/10 -> Fitness: 6.971792870901755 | Tiempo: 10.4750 s
+Run 2/10 -> Fitness: 8.999024473922686 | Tiempo: 11.1243 s
+Run 3/10 -> Fitness: 10.812646540430425 | Tiempo: 13.0663 s
+Run 4/10 -> Fitness: 11.38526646051795 | Tiempo: 12.8600 s
+Run 5/10 -> Fitness: 9.19498707207287 | Tiempo: 20.0160 s
+Run 6/10 -> Fitness: 9.967699192923694 | Tiempo: 18.5074 s
+Run 7/10 -> Fitness: 11.36018347480561 | Tiempo: 19.0787 s
+Run 8/10 -> Fitness: 11.359726043802983 | Tiempo: 19.6036 s
+Run 9/10 -> Fitness: 8.590139096947887 | Tiempo: 18.7073 s
+Run 10/10 -> Fitness: 11.338158782416848 | Tiempo: 17.9062 s
+
+========================================
+       RESUMEN DE RESULTADOS
+========================================
+Modelo: OriginalDE(epoch=1000, pop_size=100, wf=0.1, cr=0.9, strategy=0)
+Función: Ackley01 (30 dims)
+----------------------------------------
+Mejor Fitness Encontrado : 6.971792870901755
+Peor Fitness Encontrado  : 11.38526646051795
+Fitness Promedio (Mean)  : 9.997962400874272
+Desviación Estándar (Std): 1.444912672698489
+----------------------------------------
+Tiempo Total Acumulado   : 161.3450 s
+Tiempo Promedio por Run  : 16.1345 s
+========================================
+
+PSO
+Run 1/10 -> Fitness: 3.2223920641114536 | Tiempo: 9.5160 s
+Run 2/10 -> Fitness: 7.650253628475248 | Tiempo: 10.3801 s
+Run 3/10 -> Fitness: 3.8359159992005414 | Tiempo: 10.9906 s
+Run 4/10 -> Fitness: 13.372482159782198 | Tiempo: 11.5617 s
+Run 5/10 -> Fitness: 11.245870398964001 | Tiempo: 17.6352 s
+Run 6/10 -> Fitness: 6.8616312166724125 | Tiempo: 14.8544 s
+Run 7/10 -> Fitness: 5.678003879262427 | Tiempo: 15.8668 s
+Run 8/10 -> Fitness: 5.677984217834716 | Tiempo: 15.7333 s
+Run 9/10 -> Fitness: 3.404066845742449 | Tiempo: 16.7036 s
+Run 10/10 -> Fitness: 5.091778943643941 | Tiempo: 16.0949 s
+
+========================================
+       RESUMEN DE RESULTADOS
+========================================
+Modelo: OriginalPSO(epoch=1000, pop_size=100, c1=2.05, c2=2.05, w=0.4)
+Función: Ackley01 (30 dims)
+----------------------------------------
+Mejor Fitness Encontrado : 3.2223920641114536
+Peor Fitness Encontrado  : 13.372482159782198
+Fitness Promedio (Mean)  : 6.604037935368939
+Desviación Estándar (Std): 3.191539629388436
+----------------------------------------
+Tiempo Total Acumulado   : 139.3367 s
+Tiempo Promedio por Run  : 13.9337 s
+========================================
+
+GA
+Run 1/10 -> Fitness: 0.41506228834957826 | Tiempo: 20.5438 s
+Run 2/10 -> Fitness: 0.23758006299684853 | Tiempo: 29.6465 s
+Run 3/10 -> Fitness: 0.30935818191764897 | Tiempo: 32.4163 s
+Run 4/10 -> Fitness: 0.20943878170490082 | Tiempo: 32.0890 s
+Run 5/10 -> Fitness: 0.1906553558082611 | Tiempo: 29.6894 s
+Run 6/10 -> Fitness: 0.30894420479104356 | Tiempo: 25.1215 s
+Run 7/10 -> Fitness: 0.27947097172082325 | Tiempo: 24.6681 s
+Run 8/10 -> Fitness: 0.3209290865817178 | Tiempo: 26.0430 s
+Run 9/10 -> Fitness: 0.16306403079791965 | Tiempo: 26.8345 s
+Run 10/10 -> Fitness: 0.3166273848332648 | Tiempo: 24.9826 s
+
+========================================
+       RESUMEN DE RESULTADOS
+========================================
+Modelo: BaseGA(epoch=1000, pop_size=100, pc=0.95, pm=0.025)
+Función: Ackley01 (30 dims)
+----------------------------------------
+Mejor Fitness Encontrado : 0.16306403079791965
+Peor Fitness Encontrado  : 0.41506228834957826
+Fitness Promedio (Mean)  : 0.2751130349502007
+Desviación Estándar (Std): 0.07152239197441382
+----------------------------------------
+Tiempo Total Acumulado   : 272.0347 s
+Tiempo Promedio por Run  : 27.2035 s
+========================================
+
+JADE
+Run 1/10 -> Fitness: 7.549516567451064e-15 | Tiempo: 36.4445 s
+Run 2/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 45.0062 s
+Run 3/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 46.1778 s
+Run 4/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 37.4769 s
+Run 5/10 -> Fitness: 7.549516567451064e-15 | Tiempo: 36.4156 s
+Run 6/10 -> Fitness: 7.549516567451064e-15 | Tiempo: 37.6992 s
+Run 7/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 32.8099 s
+Run 8/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 23.9794 s
+Run 9/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 24.1382 s
+Run 10/10 -> Fitness: 3.9968028886505635e-15 | Tiempo: 24.8084 s
+
+========================================
+       RESUMEN DE RESULTADOS
+========================================
+Modelo: JADE(epoch=1000, pop_size=100, miu_f=0.5, miu_cr=0.5, pt=0.1, ap=0.1)
+Función: Ackley01 (30 dims)
+----------------------------------------
+Mejor Fitness Encontrado : 3.9968028886505635e-15
+Peor Fitness Encontrado  : 7.549516567451064e-15
+Fitness Promedio (Mean)  : 5.062616992290714e-15
+Desviación Estándar (Std): 1.6280579355608322e-15
+----------------------------------------
+Tiempo Total Acumulado   : 344.9562 s
+Tiempo Promedio por Run  : 34.4956 s
+========================================
+
+
+16/12/2025
+BENCHMARK con CEC2020 de Opfunu
+
+# Configuración Global
+dims = 30
+runs = 3
+epochs = 1000
+pop_size = 50
+
+# Lista de Funciones CEC 2022
+functions = [
+    opfunu.cec_based.cec2020.F12020(ndim=dims),
+    opfunu.cec_based.cec2020.F22020(ndim=dims),
+    opfunu.cec_based.cec2020.F32020(ndim=dims),
+    opfunu.cec_based.cec2020.F42020(ndim=dims),
+    opfunu.cec_based.cec2020.F52020(ndim=dims),
+    opfunu.cec_based.cec2020.F62020(ndim=dims),
+    opfunu.cec_based.cec2020.F72020(ndim=dims),
+    opfunu.cec_based.cec2020.F82020(ndim=dims),
+    opfunu.cec_based.cec2020.F92020(ndim=dims),
+    opfunu.cec_based.cec2020.F102020(ndim=dims)
+    # opfunu.cec_based.cec2020.F112020(ndim=dims),
+    # opfunu.cec_based.cec2020.F122020(ndim=dims)
+]
+
+# Diccionario para guardar el resumen final por función
+# Estructura: {'F1': {'mean': 0.5, 'std': 0.1}, 'F2': ...}
+final_results = {} 
+
+Iniciando Benchmark para: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017)
+
+  Run 1/3 -> Fitness: 1.000000E+02 | Tiempo: 14.79 s
+
+  Run 2/3 -> Fitness: 1.000000E+02 | Tiempo: 16.79 s
+
+  Run 3/3 -> Fitness: 1.000000E+02 | Tiempo: 14.96 s
+
+--------------------------------------------------
+
+RESUMEN: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017)
+
+  Mejor : 1.000000E+02
+
+  Peor  : 1.000000E+02
+
+  Media : 1.000000E+02
+
+  Std   : 2.966041E-09
+
+  Tiempo Promedio: 15.51 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014)
+
+  Run 1/3 -> Fitness: 7.029120E+02 | Tiempo: 13.92 s
+
+  Run 2/3 -> Fitness: -7.795444E+02 | Tiempo: 14.30 s
+
+  Run 3/3 -> Fitness: -1.692138E-01 | Tiempo: 13.62 s
+
+--------------------------------------------------
+
+RESUMEN: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014)
+
+  Mejor : -7.795444E+02
+
+  Peor  : 7.029120E+02
+
+  Media : -2.560054E+01
+
+  Std   : 6.054774E+02
+
+  Tiempo Promedio: 13.95 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017)
+
+  Run 1/3 -> Fitness: 8.172022E+02 | Tiempo: 14.93 s
+
+  Run 2/3 -> Fitness: 8.620568E+02 | Tiempo: 16.85 s
+
+  Run 3/3 -> Fitness: 8.540595E+02 | Tiempo: 14.49 s
+
+--------------------------------------------------
+
+RESUMEN: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017)
+
+  Mejor : 8.172022E+02
+
+  Peor  : 8.620568E+02
+
+  Media : 8.444395E+02
+
+  Std   : 1.953444E+01
+
+  Tiempo Promedio: 15.43 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014)
+
+  Run 1/3 -> Fitness: 1.917025E+03 | Tiempo: 11.59 s
+
+  Run 2/3 -> Fitness: 1.911787E+03 | Tiempo: 11.68 s
+
+  Run 3/3 -> Fitness: 1.914114E+03 | Tiempo: 13.42 s
+
+--------------------------------------------------
+
+RESUMEN: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014)
+
+  Mejor : 1.911787E+03
+
+  Peor  : 1.917025E+03
+
+  Media : 1.914309E+03
+
+  Std   : 2.142989E+00
+
+  Tiempo Promedio: 12.23 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F17: Hybrid Function 1 (F17 CEC-2014)
+
+  Run 1/3 -> Fitness: 2.458157E+04 | Tiempo: 20.82 s
+
+  Run 2/3 -> Fitness: 5.059376E+04 | Tiempo: 21.05 s
+
+  Run 3/3 -> Fitness: 1.401161E+04 | Tiempo: 21.43 s
+
+--------------------------------------------------
+
+RESUMEN: F17: Hybrid Function 1 (F17 CEC-2014)
+
+  Mejor : 1.401161E+04
+
+  Peor  : 5.059376E+04
+
+  Media : 2.972898E+04
+
+  Std   : 1.537173E+04
+
+  Tiempo Promedio: 21.10 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F16: Hybrid Function 2 (F15 CEC-2017)
+
+  Run 1/3 -> Fitness: 1.325251E+03 | Tiempo: 25.10 s
+
+  Run 2/3 -> Fitness: 1.107417E+03 | Tiempo: 32.99 s
+
+  Run 3/3 -> Fitness: 1.382448E+03 | Tiempo: 33.31 s
+
+--------------------------------------------------
+
+RESUMEN: F16: Hybrid Function 2 (F15 CEC-2017)
+
+  Mejor : 1.107417E+03
+
+  Peor  : 1.382448E+03
+
+  Media : 1.271705E+03
+
+  Std   : 1.184929E+02
+
+  Tiempo Promedio: 30.47 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F7: Hybrid Function 3 (F21 CEC-2014)
+
+  Run 1/3 -> Fitness: 3.143892E+03 | Tiempo: 36.58 s
+
+  Run 2/3 -> Fitness: 9.078711E+03 | Tiempo: 39.50 s
+
+  Run 3/3 -> Fitness: 5.010403E+03 | Tiempo: 50.04 s
+
+--------------------------------------------------
+
+RESUMEN: F7: Hybrid Function 3 (F21 CEC-2014)
+
+  Mejor : 3.143892E+03
+
+  Peor  : 9.078711E+03
+
+  Media : 5.744335E+03
+
+  Std   : 2.477837E+03
+
+  Tiempo Promedio: 42.04 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F8: Composition Function 1 (F21 CEC-2017)
+
+  Run 1/3 -> Fitness: 2.334333E+03 | Tiempo: 38.45 s
+
+  Run 2/3 -> Fitness: 2.313756E+03 | Tiempo: 43.15 s
+
+  Run 3/3 -> Fitness: 2.281871E+03 | Tiempo: 32.19 s
+
+--------------------------------------------------
+
+RESUMEN: F8: Composition Function 1 (F21 CEC-2017)
+
+  Mejor : 2.281871E+03
+
+  Peor  : 2.334333E+03
+
+  Media : 2.309987E+03
+
+  Std   : 2.158259E+01
+
+  Tiempo Promedio: 37.93 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F9: Composition Function 2 (F23 CEC-2017)
+
+  Run 1/3 -> Fitness: 2.600000E+03 | Tiempo: 27.24 s
+
+  Run 2/3 -> Fitness: 2.600000E+03 | Tiempo: 24.97 s
+
+  Run 3/3 -> Fitness: 2.600000E+03 | Tiempo: 24.98 s
+
+--------------------------------------------------
+
+RESUMEN: F9: Composition Function 2 (F23 CEC-2017)
+
+  Mejor : 2.600000E+03
+
+  Peor  : 2.600000E+03
+
+  Media : 2.600000E+03
+
+  Std   : 1.515066E-11
+
+  Tiempo Promedio: 25.73 s
+
+--------------------------------------------------
+
+
+
+Iniciando Benchmark para: F10: Composition Function 3 (F24 CEC-2017)
+
+  Run 1/3 -> Fitness: 2.921296E+03 | Tiempo: 23.57 s
+
+  Run 2/3 -> Fitness: 2.933136E+03 | Tiempo: 24.76 s
+
+  Run 3/3 -> Fitness: 2.921079E+03 | Tiempo: 25.28 s
+
+--------------------------------------------------
+
+RESUMEN: F10: Composition Function 3 (F24 CEC-2017)
+
+  Mejor : 2.921079E+03
+
+  Peor  : 2.933136E+03
+
+  Media : 2.925170E+03
+
+  Std   : 5.633271E+00
+
+  Tiempo Promedio: 24.54 s
+
+--------------------------------------------------
+
+
+
+============================================================
+
+             TABLA FINAL DE RESULTADOS (CEC 2022)
+
+============================================================
+
+Función         | Media Fitness        | Mejor Fitness       
+
+------------------------------------------------------------
+
+17/12/2025 
+BENCHMARK con CEC2020 de Opfunu
+dims = 30
+runs = 30 
+epochs = 1000 
+pop_size = 100
+
+
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+
+Guardando en: Resultados_hibrid_JADE_CEC2020.csv
+
+============================================================
+
+
+
+Procesando: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017) ...
+
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 24.98 s
+
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 21.02 s
+
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 22.14 s
+
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 22.64 s
+
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 24.72 s
+
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 34.77 s
+
+RESUMEN: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017)
+
+  Mejor : 1.000000E+02
+
+  Peor  : 1.000000E+02
+
+  Media : 1.000000E+02
+
+  Std   : 8.664349E-12
+
+  Tiempo Promedio: 25.97 s
+
+
+Procesando: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014) ...
+
+  Run 5/30 -> Fit: 3.882411E+03 | Tiempo: 33.90 s
+
+  Run 10/30 -> Fit: 5.665138E+03 | Tiempo: 35.66 s
+
+  Run 15/30 -> Fit: 4.800361E+03 | Tiempo: 27.11 s
+
+  Run 20/30 -> Fit: 3.808764E+03 | Tiempo: 23.49 s
+
+  Run 25/30 -> Fit: 3.390782E+03 | Tiempo: 24.17 s
+
+  Run 30/30 -> Fit: 3.999074E+03 | Tiempo: 20.49 s
+
+RESUMEN: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014)
+
+  Mejor : 3.320952E+03
+
+  Peor  : 5.743719E+03
+
+  Media : 4.248475E+03
+
+  Std   : 7.072917E+02
+
+  Tiempo Promedio: 709.62 s
+
+
+Procesando: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017) ...
+
+  Run 5/30 -> Fit: 7.842135E+02 | Tiempo: 23.19 s
+
+  Run 10/30 -> Fit: 7.914360E+02 | Tiempo: 36.47 s
+
+  Run 15/30 -> Fit: 7.853820E+02 | Tiempo: 37.03 s
+
+  Run 20/30 -> Fit: 7.849873E+02 | Tiempo: 34.20 s
+
+  Run 25/30 -> Fit: 7.791066E+02 | Tiempo: 29.80 s
+
+  Run 30/30 -> Fit: 7.824260E+02 | Tiempo: 23.19 s
+
+RESUMEN: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017)
+
+  Mejor : 7.403366E+02
+
+  Peor  : 8.170534E+02
+
+  Media : 7.844495E+02
+
+  Std   : 1.213400E+01
+
+  Tiempo Promedio: 108.52 s
+
+
+Procesando: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014) ...
+
+  Run 5/30 -> Fit: 1.906679E+03 | Tiempo: 16.65 s
+
+  Run 10/30 -> Fit: 1.906880E+03 | Tiempo: 16.68 s
+
+  Run 15/30 -> Fit: 1.904602E+03 | Tiempo: 17.09 s
+
+  Run 20/30 -> Fit: 1.907373E+03 | Tiempo: 16.61 s
+
+  Run 25/30 -> Fit: 1.905490E+03 | Tiempo: 17.27 s
+
+  Run 30/30 -> Fit: 1.904247E+03 | Tiempo: 22.74 s
+
+RESUMEN: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014)
+
+  Mejor : 1.903323E+03
+
+  Peor  : 1.911978E+03
+
+  Media : 1.906222E+03
+
+  Std   : 1.857297E+00
+
+  Tiempo Promedio: 18.43 s
+
+
+Procesando: F17: Hybrid Function 1 (F17 CEC-2014) ...
+
+  Run 5/30 -> Fit: 5.158409E+03 | Tiempo: 42.43 s
+
+  Run 10/30 -> Fit: 1.201769E+04 | Tiempo: 42.51 s
+
+  Run 15/30 -> Fit: 4.978773E+03 | Tiempo: 40.43 s
+
+  Run 20/30 -> Fit: 6.869835E+03 | Tiempo: 32.75 s
+
+  Run 25/30 -> Fit: 1.334051E+04 | Tiempo: 31.26 s
+
+  Run 30/30 -> Fit: 7.926548E+03 | Tiempo: 35.80 s
+
+RESUMEN: F17: Hybrid Function 1 (F17 CEC-2014)
+
+  Mejor : 2.735793E+03
+
+  Peor  : 1.355322E+04
+
+  Media : 6.517787E+03
+
+  Std   : 2.903607E+03
+
+  Tiempo Promedio: 45.92 s
+
+
+Procesando: F16: Hybrid Function 2 (F15 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.074911E+03 | Tiempo: 33.53 s
+
+  Run 10/30 -> Fit: 1.826418E+03 | Tiempo: 33.74 s
+
+  Run 15/30 -> Fit: 1.880107E+03 | Tiempo: 44.91 s
+
+  Run 20/30 -> Fit: 1.824408E+03 | Tiempo: 33.49 s
+
+  Run 25/30 -> Fit: 1.929298E+03 | Tiempo: 34.00 s
+
+  Run 30/30 -> Fit: 2.104376E+03 | Tiempo: 37.25 s
+
+RESUMEN: F16: Hybrid Function 2 (F15 CEC-2017)
+
+  Mejor : 1.603221E+03
+
+  Peor  : 2.512351E+03
+
+  Media : 1.906119E+03
+
+  Std   : 2.569113E+02
+
+  Tiempo Promedio: 89.24 s
+
+
+Procesando: F7: Hybrid Function 3 (F21 CEC-2014) ...
+
+  Run 5/30 -> Fit: 2.939645E+03 | Tiempo: 38.92 s
+
+  Run 10/30 -> Fit: 3.124219E+03 | Tiempo: 45.32 s
+
+  Run 15/30 -> Fit: 2.481266E+03 | Tiempo: 58.04 s
+
+  Run 20/30 -> Fit: 2.467188E+03 | Tiempo: 67.14 s
+
+  Run 25/30 -> Fit: 3.078637E+03 | Tiempo: 65.25 s
+
+  Run 30/30 -> Fit: 2.437673E+03 | Tiempo: 57.09 s
+
+RESUMEN: F7: Hybrid Function 3 (F21 CEC-2014)
+
+  Mejor : 2.108037E+03
+
+  Peor  : 4.159694E+03
+
+  Media : 2.898131E+03
+
+  Std   : 5.026221E+02
+
+  Tiempo Promedio: 52.71 s
+
+
+Procesando: F8: Composition Function 1 (F21 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.398324E+03 | Tiempo: 47.94 s
+
+  Run 10/30 -> Fit: 2.371600E+03 | Tiempo: 51.66 s
+
+  Run 15/30 -> Fit: 2.391931E+03 | Tiempo: 52.64 s
+
+  Run 20/30 -> Fit: 2.399147E+03 | Tiempo: 50.70 s
+
+  Run 25/30 -> Fit: 2.421158E+03 | Tiempo: 43.59 s
+
+  Run 30/30 -> Fit: 2.409490E+03 | Tiempo: 42.07 s
+
+RESUMEN: F8: Composition Function 1 (F21 CEC-2017)
+
+  Mejor : 2.371600E+03
+
+  Peor  : 2.421158E+03
+
+  Media : 2.394421E+03
+
+  Std   : 1.219487E+01
+
+  Tiempo Promedio: 48.50 s
+
+
+Procesando: F9: Composition Function 2 (F23 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.600000E+03 | Tiempo: 44.75 s
+
+  Run 10/30 -> Fit: 2.600000E+03 | Tiempo: 47.59 s
+
+  Run 15/30 -> Fit: 2.600000E+03 | Tiempo: 49.76 s
+
+  Run 20/30 -> Fit: 2.600000E+03 | Tiempo: 30.71 s
+
+  Run 25/30 -> Fit: 2.600000E+03 | Tiempo: 35.74 s
+
+  Run 30/30 -> Fit: 2.600000E+03 | Tiempo: 30.38 s
+
+RESUMEN: F9: Composition Function 2 (F23 CEC-2017)
+
+  Mejor : 2.600000E+03
+
+  Peor  : 2.600000E+03
+
+  Media : 2.600000E+03
+
+  Std   : 3.408078E-12
+
+  Tiempo Promedio: 41.23 s
+
+
+Procesando: F10: Composition Function 3 (F24 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.921134E+03 | Tiempo: 31.51 s
+
+  Run 10/30 -> Fit: 2.921437E+03 | Tiempo: 30.99 s
+
+  Run 15/30 -> Fit: 2.921234E+03 | Tiempo: 49.80 s
+
+  Run 20/30 -> Fit: 2.920844E+03 | Tiempo: 30.76 s
+
+  Run 25/30 -> Fit: 2.921007E+03 | Tiempo: 31.84 s
+
+  Run 30/30 -> Fit: 2.921154E+03 | Tiempo: 30.71 s
+
+RESUMEN: F10: Composition Function 3 (F24 CEC-2017)
+
+  Mejor : 2.920689E+03
+
+  Peor  : 2.931144E+03
+
+  Media : 2.921353E+03
+
+  Std   : 1.831300E+00
+
+  Tiempo Promedio: 32.14 s
+
+
+============================================================
+
+EXPERIMENTO FINALIZADO
+
+Archivo final verificado: Resultados_hibrid_JADE_CEC2020.csv
+============================================================
+============================================================
+INICIANDO EXPERIMENTO CON: JADE
+
+Guardando en: Resultados_JADE_CEC2020.csv
+
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017) ...
+
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 41.03 s
+
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 25.12 s
+
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 24.37 s
+
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 23.82 s
+
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 39.91 s
+
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 38.41 s
+
+RESUMEN: F1: Shifted and Rotated Bent Cigar Function (F1 CEC-2017)
+
+  Mejor : 1.000000E+02
+
+  Peor  : 1.000000E+02
+
+  Media : 1.000000E+02
+
+  Std   : 1.444576E-14
+
+  Tiempo Promedio: 30.31 s
+
+
+Procesando: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014) ...
+
+  Run 5/30 -> Fit: 5.662289E+03 | Tiempo: 44.36 s
+
+  Run 10/30 -> Fit: 5.163749E+03 | Tiempo: 35.56 s
+
+  Run 15/30 -> Fit: 5.863839E+03 | Tiempo: 30.74 s
+
+  Run 20/30 -> Fit: 5.619176E+03 | Tiempo: 27.43 s
+
+  Run 25/30 -> Fit: 5.825877E+03 | Tiempo: 25.70 s
+
+  Run 30/30 -> Fit: 5.847852E+03 | Tiempo: 38.86 s
+
+RESUMEN: F2: Shifted and Rotated Schwefel’s Function (F11 CEC-2014)
+
+  Mejor : 5.163749E+03
+
+  Peor  : 7.710205E+03
+
+  Media : 5.914695E+03
+
+  Std   : 5.256656E+02
+
+  Tiempo Promedio: 713.02 s
+
+
+Procesando: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017) ...
+
+  Run 5/30 -> Fit: 7.848839E+02 | Tiempo: 38.55 s
+
+  Run 10/30 -> Fit: 7.854657E+02 | Tiempo: 35.52 s
+
+  Run 15/30 -> Fit: 7.831203E+02 | Tiempo: 32.24 s
+
+  Run 20/30 -> Fit: 7.956014E+02 | Tiempo: 24.51 s
+
+  Run 25/30 -> Fit: 7.931481E+02 | Tiempo: 24.93 s
+
+  Run 30/30 -> Fit: 7.882426E+02 | Tiempo: 25.91 s
+
+RESUMEN: F3: Shifted and Rotated Lunacek bi-Rastrigin Function (F7 CEC-2017)
+
+  Mejor : 7.733027E+02
+
+  Peor  : 8.155459E+02
+
+  Media : 7.920316E+02
+
+  Std   : 1.071304E+01
+
+  Tiempo Promedio: 108.72 s
+
+
+Procesando: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014) ...
+
+  Run 5/30 -> Fit: 1.906559E+03 | Tiempo: 23.33 s
+
+  Run 10/30 -> Fit: 1.910352E+03 | Tiempo: 22.19 s
+
+  Run 15/30 -> Fit: 1.910326E+03 | Tiempo: 22.22 s
+
+  Run 20/30 -> Fit: 1.909648E+03 | Tiempo: 31.16 s
+
+  Run 25/30 -> Fit: 1.911933E+03 | Tiempo: 30.52 s
+
+  Run 30/30 -> Fit: 1.906732E+03 | Tiempo: 31.26 s
+
+RESUMEN: F4: Expanded Rosenbrock’s plus Griewank’s Function (F15 CEC-2014)
+
+  Mejor : 1.906272E+03
+
+  Peor  : 1.911933E+03
+
+  Media : 1.909118E+03
+
+  Std   : 1.744887E+00
+
+  Tiempo Promedio: 26.36 s
+
+
+Procesando: F17: Hybrid Function 1 (F17 CEC-2014) ...
+
+  Run 5/30 -> Fit: 6.430614E+03 | Tiempo: 41.89 s
+
+  Run 10/30 -> Fit: 5.236703E+03 | Tiempo: 29.74 s
+
+  Run 15/30 -> Fit: 5.400555E+03 | Tiempo: 39.84 s
+
+  Run 20/30 -> Fit: 4.879130E+03 | Tiempo: 31.39 s
+
+  Run 25/30 -> Fit: 4.078222E+03 | Tiempo: 32.26 s
+
+  Run 30/30 -> Fit: 7.982001E+03 | Tiempo: 31.52 s
+
+RESUMEN: F17: Hybrid Function 1 (F17 CEC-2014)
+
+  Mejor : 3.000818E+03
+
+  Peor  : 9.925733E+03
+
+  Media : 4.904939E+03
+
+  Std   : 1.519657E+03
+
+  Tiempo Promedio: 95.60 s
+
+
+Procesando: F16: Hybrid Function 2 (F15 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.048312E+03 | Tiempo: 45.91 s
+
+  Run 10/30 -> Fit: 1.819887E+03 | Tiempo: 33.81 s
+
+  Run 15/30 -> Fit: 1.602669E+03 | Tiempo: 34.25 s
+
+  Run 20/30 -> Fit: 1.838793E+03 | Tiempo: 37.03 s
+
+  Run 25/30 -> Fit: 1.822009E+03 | Tiempo: 33.84 s
+
+  Run 30/30 -> Fit: 1.820687E+03 | Tiempo: 37.91 s
+
+RESUMEN: F16: Hybrid Function 2 (F15 CEC-2017)
+
+  Mejor : 1.602669E+03
+
+  Peor  : 9.765656E+03
+
+  Media : 2.034753E+03
+
+  Std   : 1.441844E+03
+
+  Tiempo Promedio: 36.30 s
+
+
+Procesando: F7: Hybrid Function 3 (F21 CEC-2014) ...
+
+  Run 5/30 -> Fit: 2.938394E+03 | Tiempo: 57.84 s
+
+  Run 10/30 -> Fit: 2.544181E+03 | Tiempo: 65.48 s
+
+  Run 15/30 -> Fit: 2.781302E+03 | Tiempo: 65.71 s
+
+  Run 20/30 -> Fit: 2.424690E+03 | Tiempo: 56.60 s
+
+  Run 25/30 -> Fit: 2.119559E+03 | Tiempo: 64.95 s
+
+  Run 30/30 -> Fit: 2.528783E+03 | Tiempo: 68.81 s
+
+RESUMEN: F7: Hybrid Function 3 (F21 CEC-2014)
+
+  Mejor : 2.104302E+03
+
+  Peor  : 3.674795E+03
+
+  Media : 2.580507E+03
+
+  Std   : 4.537346E+02
+
+  Tiempo Promedio: 61.11 s
+
+
+Procesando: F8: Composition Function 1 (F21 CEC-2017) ...
+
+  Run 5/30 -> Fit: 2.366134E+03 | Tiempo: 64.55 s
+
+  Run 10/30 -> Fit: 2.365641E+03 | Tiempo: 54.69 s
+
+  Run 15/30 -> Fit: 2.363487E+03 | Tiempo: 55.86 s
+
+  Run 20/30 -> Fit: 2.361431E+03 | Tiempo: 55.51 s
+
+  Run 25/30 -> Fit: 2.368495E+03 | Tiempo: 56.18 s
+
+  Run 30/30 -> Fit: 2.365994E+03 | Tiempo: 36.61 s
+
+RESUMEN: F8: Composition Function 1 (F21 CEC-2017)
+
+  Mejor : 2.357718E+03
+
+  Peor  : 2.372260E+03
+
+  Media : 2.365635E+03
+
+  Std   : 2.718076E+00
+
+  Tiempo Promedio: 56.83 s
+
+===============================================================================================================
+20/12/2025
+Experimentación 2 
+# ==========================================
+# CONFIGURACIÓN DEL EXPERIMENTO
+# ==========================================
+dims = 30
+runs = 30 
+epochs = 1000 
+pop_size = 100
+# ==========================================
+# CARGA DE FUNCIONES (CEC 2020)
+# ==========================================
+# Nota: CEC2017 tiene funciones F1 a F29
+functions = [
+    opfunu.cec_based.cec2017.F12017(ndim=dims),
+    opfunu.cec_based.cec2017.F22017(ndim=dims),
+    opfunu.cec_based.cec2017.F32017(ndim=dims),
+    opfunu.cec_based.cec2017.F42017(ndim=dims),
+    opfunu.cec_based.cec2017.F52017(ndim=dims),
+    opfunu.cec_based.cec2017.F62017(ndim=dims),
+    opfunu.cec_based.cec2017.F72017(ndim=dims),
+    opfunu.cec_based.cec2017.F82017(ndim=dims),
+    opfunu.cec_based.cec2017.F92017(ndim=dims),
+    opfunu.cec_based.cec2017.F102017(ndim=dims),
+    opfunu.cec_based.cec2017.F112017(ndim=dims),
+    opfunu.cec_based.cec2017.F122017(ndim=dims),
+    opfunu.cec_based.cec2017.F132017(ndim=dims),
+    opfunu.cec_based.cec2017.F142017(ndim=dims),
+    opfunu.cec_based.cec2017.F152017(ndim=dims),
+    opfunu.cec_based.cec2017.F162017(ndim=dims),
+    opfunu.cec_based.cec2017.F172017(ndim=dims),
+    opfunu.cec_based.cec2017.F182017(ndim=dims),
+    opfunu.cec_based.cec2017.F192017(ndim=dims),
+    opfunu.cec_based.cec2017.F202017(ndim=dims),
+    opfunu.cec_based.cec2017.F212017(ndim=dims),
+    opfunu.cec_based.cec2017.F222017(ndim=dims),
+    opfunu.cec_based.cec2017.F232017(ndim=dims),
+    opfunu.cec_based.cec2017.F242017(ndim=dims),
+    opfunu.cec_based.cec2017.F252017(ndim=dims),
+    opfunu.cec_based.cec2017.F262017(ndim=dims),
+    opfunu.cec_based.cec2017.F272017(ndim=dims),
+    opfunu.cec_based.cec2017.F282017(ndim=dims),
+    opfunu.cec_based.cec2017.F292017(ndim=dims)
+]
+Todos los resultados fueron guardados en archivo CSV
+
+
+INICIO DE EXPERIMENTACIÓN 30, 50, 100 DIMS:
+EMPEZÓ EL 15-01-2025 A LAS 7:10 PM 
+
+#######################################
+HÍBRIDO 30 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+Reloaded modules: HIBRIDO
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-11
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-11\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 39.38 s
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 51.39 s
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 57.90 s
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 52.35 s
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 53.01 s
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 57.89 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000000E+02
+  Peor  : 1.000000E+02
+  Media : 1.000000E+02
+  Std   : 8.151088E-12
+  Tiempo Promedio: 50.36 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 46.35 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 46.32 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 45.06 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 45.24 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 45.99 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 45.11 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.000000E+02
+  Media : 2.000000E+02
+  Std   : 1.723896E-12
+  Tiempo Promedio: 45.74 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 3.318107E+02 | Tiempo: 50.23 s
+  Run 10/30 -> Fit: 3.117610E+02 | Tiempo: 54.84 s
+  Run 15/30 -> Fit: 3.129447E+02 | Tiempo: 55.02 s
+  Run 20/30 -> Fit: 3.000000E+02 | Tiempo: 62.17 s
+  Run 25/30 -> Fit: 3.318107E+02 | Tiempo: 43.93 s
+  Run 30/30 -> Fit: 3.318107E+02 | Tiempo: 46.62 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 3.000000E+02
+  Peor  : 3.318107E+02
+  Media : 3.104199E+02
+  Std   : 1.355394E+01
+  Tiempo Promedio: 55.80 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 5.457569E+02 | Tiempo: 38.23 s
+  Run 10/30 -> Fit: 5.213843E+02 | Tiempo: 46.25 s
+  Run 15/30 -> Fit: 4.915358E+02 | Tiempo: 44.26 s
+  Run 20/30 -> Fit: 4.626822E+02 | Tiempo: 47.03 s
+  Run 25/30 -> Fit: 4.795964E+02 | Tiempo: 43.31 s
+  Run 30/30 -> Fit: 5.154147E+02 | Tiempo: 43.38 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 4.437781E+02
+  Peor  : 5.641667E+02
+  Media : 4.924378E+02
+  Std   : 2.709220E+01
+  Tiempo Promedio: 44.32 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000000E+02 | Tiempo: 73.10 s
+  Run 10/30 -> Fit: 5.000000E+02 | Tiempo: 65.85 s
+  Run 15/30 -> Fit: 5.000000E+02 | Tiempo: 70.17 s
+  Run 20/30 -> Fit: 5.000000E+02 | Tiempo: 74.74 s
+  Run 25/30 -> Fit: 5.000000E+02 | Tiempo: 71.97 s
+  Run 30/30 -> Fit: 5.000000E+02 | Tiempo: 59.92 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000000E+02
+  Peor  : 5.000003E+02
+  Media : 5.000000E+02
+  Std   : 6.565213E-05
+  Tiempo Promedio: 65.19 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 6.969309E+02 | Tiempo: 61.45 s
+  Run 10/30 -> Fit: 6.863330E+02 | Tiempo: 60.99 s
+  Run 15/30 -> Fit: 6.885068E+02 | Tiempo: 58.85 s
+  Run 20/30 -> Fit: 7.383688E+02 | Tiempo: 46.86 s
+  Run 25/30 -> Fit: 6.852152E+02 | Tiempo: 60.13 s
+  Run 30/30 -> Fit: 6.935631E+02 | Tiempo: 59.93 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 6.586079E+02
+  Peor  : 7.383688E+02
+  Media : 6.873131E+02
+  Std   : 1.379734E+01
+  Tiempo Promedio: 59.45 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.160000E+02 | Tiempo: 62.92 s
+  Run 10/30 -> Fit: 7.920231E+02 | Tiempo: 58.10 s
+  Run 15/30 -> Fit: 8.480000E+02 | Tiempo: 66.21 s
+  Run 20/30 -> Fit: 8.440036E+02 | Tiempo: 55.95 s
+  Run 25/30 -> Fit: 7.740000E+02 | Tiempo: 60.66 s
+  Run 30/30 -> Fit: 7.940000E+02 | Tiempo: 65.81 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 7.720000E+02
+  Peor  : 8.845000E+02
+  Media : 8.150453E+02
+  Std   : 2.676038E+01
+  Tiempo Promedio: 63.92 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.019964E+02 | Tiempo: 43.71 s
+  Run 10/30 -> Fit: 8.019964E+02 | Tiempo: 45.17 s
+  Run 15/30 -> Fit: 8.009020E+02 | Tiempo: 43.28 s
+  Run 20/30 -> Fit: 8.011772E+02 | Tiempo: 42.92 s
+  Run 25/30 -> Fit: 8.006334E+02 | Tiempo: 46.62 s
+  Run 30/30 -> Fit: 8.015420E+02 | Tiempo: 43.34 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.004543E+02
+  Peor  : 8.043997E+02
+  Media : 8.018088E+02
+  Std   : 9.212502E-01
+  Tiempo Promedio: 44.12 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 3.060431E+03 | Tiempo: 51.39 s
+  Run 10/30 -> Fit: 4.023849E+03 | Tiempo: 53.98 s
+  Run 15/30 -> Fit: 3.637096E+03 | Tiempo: 48.30 s
+  Run 20/30 -> Fit: 3.111609E+03 | Tiempo: 52.01 s
+  Run 25/30 -> Fit: 4.189973E+03 | Tiempo: 49.56 s
+  Run 30/30 -> Fit: 4.206233E+03 | Tiempo: 52.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 2.136328E+03
+  Peor  : 4.812741E+03
+  Media : 3.775904E+03
+  Std   : 5.832697E+02
+  Tiempo Promedio: 50.63 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.375690E+03 | Tiempo: 66.72 s
+  Run 10/30 -> Fit: 1.087039E+03 | Tiempo: 67.31 s
+  Run 15/30 -> Fit: 1.136314E+03 | Tiempo: 67.97 s
+  Run 20/30 -> Fit: 1.302102E+03 | Tiempo: 66.49 s
+  Run 25/30 -> Fit: 1.038981E+03 | Tiempo: 62.91 s
+  Run 30/30 -> Fit: 1.117886E+03 | Tiempo: 66.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.036059E+03
+  Peor  : 2.445635E+03
+  Media : 1.247777E+03
+  Std   : 3.361196E+02
+  Tiempo Promedio: 66.73 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 2.355582E+03 | Tiempo: 83.96 s
+  Run 10/30 -> Fit: 4.199323E+03 | Tiempo: 83.34 s
+  Run 15/30 -> Fit: 2.973444E+03 | Tiempo: 82.89 s
+  Run 20/30 -> Fit: 2.478393E+03 | Tiempo: 77.06 s
+  Run 25/30 -> Fit: 3.258419E+03 | Tiempo: 60.23 s
+  Run 30/30 -> Fit: 3.128144E+03 | Tiempo: 81.05 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 1.834540E+03
+  Peor  : 6.708042E+03
+  Media : 3.145420E+03
+  Std   : 9.026543E+02
+  Tiempo Promedio: 107.50 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 1.627352E+03 | Tiempo: 70.50 s
+  Run 10/30 -> Fit: 1.840123E+03 | Tiempo: 51.52 s
+  Run 15/30 -> Fit: 1.302578E+03 | Tiempo: 65.85 s
+  Run 20/30 -> Fit: 1.436443E+03 | Tiempo: 65.50 s
+  Run 25/30 -> Fit: 1.273620E+03 | Tiempo: 64.54 s
+  Run 30/30 -> Fit: 1.317409E+03 | Tiempo: 63.61 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 1.247109E+03
+  Peor  : 6.636802E+03
+  Media : 2.030062E+03
+  Std   : 1.256512E+03
+  Tiempo Promedio: 64.33 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 2.325123E+03 | Tiempo: 60.61 s
+  Run 10/30 -> Fit: 3.560407E+03 | Tiempo: 54.46 s
+  Run 15/30 -> Fit: 6.008749E+03 | Tiempo: 52.32 s
+  Run 20/30 -> Fit: 2.266845E+03 | Tiempo: 59.66 s
+  Run 25/30 -> Fit: 3.904413E+03 | Tiempo: 52.37 s
+  Run 30/30 -> Fit: 5.404965E+03 | Tiempo: 53.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 1.453823E+03
+  Peor  : 6.644874E+03
+  Media : 3.042386E+03
+  Std   : 1.466666E+03
+  Tiempo Promedio: 58.46 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 1.489248E+03 | Tiempo: 65.84 s
+  Run 10/30 -> Fit: 2.190295E+03 | Tiempo: 64.75 s
+  Run 15/30 -> Fit: 1.446497E+03 | Tiempo: 66.00 s
+  Run 20/30 -> Fit: 1.454558E+03 | Tiempo: 66.44 s
+  Run 25/30 -> Fit: 1.437685E+03 | Tiempo: 65.58 s
+  Run 30/30 -> Fit: 1.483962E+03 | Tiempo: 66.40 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 1.420775E+03
+  Peor  : 2.190295E+03
+  Media : 1.623933E+03
+  Std   : 2.259750E+02
+  Tiempo Promedio: 65.89 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 1.503052E+03 | Tiempo: 97.12 s
+  Run 10/30 -> Fit: 1.503052E+03 | Tiempo: 95.31 s
+  Run 15/30 -> Fit: 1.777070E+03 | Tiempo: 96.01 s
+  Run 20/30 -> Fit: 1.503247E+03 | Tiempo: 94.50 s
+  Run 25/30 -> Fit: 1.503138E+03 | Tiempo: 95.92 s
+  Run 30/30 -> Fit: 1.866538E+03 | Tiempo: 94.79 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.502170E+03
+  Peor  : 2.252726E+03
+  Media : 1.653023E+03
+  Std   : 2.068395E+02
+  Tiempo Promedio: 95.61 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 1.996987E+03 | Tiempo: 199.87 s
+  Run 10/30 -> Fit: 1.726141E+03 | Tiempo: 196.02 s
+  Run 15/30 -> Fit: 1.718520E+03 | Tiempo: 193.12 s
+  Run 20/30 -> Fit: 1.667868E+03 | Tiempo: 199.90 s
+  Run 25/30 -> Fit: 2.014336E+03 | Tiempo: 193.30 s
+  Run 30/30 -> Fit: 1.920274E+03 | Tiempo: 203.20 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 1.655506E+03
+  Peor  : 3.197342E+03
+  Media : 1.997922E+03
+  Std   : 3.983533E+02
+  Tiempo Promedio: 197.43 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 1.977625E+03 | Tiempo: 67.42 s
+  Run 10/30 -> Fit: 1.766118E+03 | Tiempo: 64.92 s
+  Run 15/30 -> Fit: 1.998445E+03 | Tiempo: 68.02 s
+  Run 20/30 -> Fit: 1.927776E+03 | Tiempo: 65.75 s
+  Run 25/30 -> Fit: 2.122797E+03 | Tiempo: 67.50 s
+  Run 30/30 -> Fit: 1.837018E+03 | Tiempo: 63.08 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 1.750462E+03
+  Peor  : 2.824085E+03
+  Media : 1.900113E+03
+  Std   : 2.030295E+02
+  Tiempo Promedio: 66.17 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 1.829271E+03 | Tiempo: 124.19 s
+  Run 10/30 -> Fit: 1.829347E+03 | Tiempo: 123.00 s
+  Run 15/30 -> Fit: 1.820534E+03 | Tiempo: 122.56 s
+  Run 20/30 -> Fit: 1.833172E+03 | Tiempo: 122.35 s
+  Run 25/30 -> Fit: 1.824619E+03 | Tiempo: 122.29 s
+  Run 30/30 -> Fit: 1.828084E+03 | Tiempo: 123.52 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.816627E+03
+  Peor  : 1.836560E+03
+  Media : 1.827536E+03
+  Std   : 5.356156E+00
+  Tiempo Promedio: 123.20 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 2.180770E+03 | Tiempo: 193.02 s
+  Run 10/30 -> Fit: 1.933598E+03 | Tiempo: 195.86 s
+  Run 15/30 -> Fit: 2.379724E+03 | Tiempo: 181.55 s
+  Run 20/30 -> Fit: 2.214668E+03 | Tiempo: 195.62 s
+  Run 25/30 -> Fit: 1.949355E+03 | Tiempo: 195.87 s
+  Run 30/30 -> Fit: 2.392894E+03 | Tiempo: 196.62 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 1.933598E+03
+  Peor  : 2.525892E+03
+  Media : 2.115913E+03
+  Std   : 1.687199E+02
+  Tiempo Promedio: 194.02 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 2.307884E+03 | Tiempo: 66.05 s
+  Run 10/30 -> Fit: 2.311329E+03 | Tiempo: 61.05 s
+  Run 15/30 -> Fit: 2.300148E+03 | Tiempo: 49.81 s
+  Run 20/30 -> Fit: 2.294751E+03 | Tiempo: 64.91 s
+  Run 25/30 -> Fit: 2.257481E+03 | Tiempo: 63.40 s
+  Run 30/30 -> Fit: 2.333188E+03 | Tiempo: 56.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.100000E+03
+  Peor  : 2.417594E+03
+  Media : 2.236276E+03
+  Std   : 1.007493E+02
+  Tiempo Promedio: 62.37 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.302197E+03 | Tiempo: 67.24 s
+  Run 10/30 -> Fit: 2.312714E+03 | Tiempo: 66.59 s
+  Run 15/30 -> Fit: 2.295679E+03 | Tiempo: 54.77 s
+  Run 20/30 -> Fit: 2.271998E+03 | Tiempo: 71.32 s
+  Run 25/30 -> Fit: 2.294484E+03 | Tiempo: 70.07 s
+  Run 30/30 -> Fit: 2.299669E+03 | Tiempo: 70.78 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.271998E+03
+  Peor  : 2.330064E+03
+  Media : 2.295780E+03
+  Std   : 1.360542E+01
+  Tiempo Promedio: 66.85 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 2.400000E+03 | Tiempo: 83.78 s
+  Run 10/30 -> Fit: 2.400000E+03 | Tiempo: 83.33 s
+  Run 15/30 -> Fit: 2.400000E+03 | Tiempo: 83.05 s
+  Run 20/30 -> Fit: 2.400000E+03 | Tiempo: 82.78 s
+  Run 25/30 -> Fit: 2.602223E+03 | Tiempo: 80.79 s
+  Run 30/30 -> Fit: 2.400000E+03 | Tiempo: 83.01 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 2.639634E+03
+  Media : 2.436132E+03
+  Std   : 8.096665E+01
+  Tiempo Promedio: 82.77 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500000E+03 | Tiempo: 73.38 s
+  Run 10/30 -> Fit: 2.500000E+03 | Tiempo: 74.07 s
+  Run 15/30 -> Fit: 2.500000E+03 | Tiempo: 73.63 s
+  Run 20/30 -> Fit: 2.500000E+03 | Tiempo: 77.54 s
+  Run 25/30 -> Fit: 2.500000E+03 | Tiempo: 73.80 s
+  Run 30/30 -> Fit: 2.500000E+03 | Tiempo: 74.95 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 2.700769E+03
+  Media : 2.518206E+03
+  Std   : 5.498581E+01
+  Tiempo Promedio: 73.60 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 2.821237E+03 | Tiempo: 73.83 s
+  Run 10/30 -> Fit: 2.820964E+03 | Tiempo: 73.45 s
+  Run 15/30 -> Fit: 2.820818E+03 | Tiempo: 72.69 s
+  Run 20/30 -> Fit: 2.821154E+03 | Tiempo: 71.38 s
+  Run 25/30 -> Fit: 2.820725E+03 | Tiempo: 72.87 s
+  Run 30/30 -> Fit: 2.900477E+03 | Tiempo: 72.06 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 2.820725E+03
+  Peor  : 2.900477E+03
+  Media : 2.823695E+03
+  Std   : 1.425988E+01
+  Tiempo Promedio: 72.90 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 3.327866E+03 | Tiempo: 171.98 s
+  Run 10/30 -> Fit: 3.327935E+03 | Tiempo: 169.24 s
+  Run 15/30 -> Fit: 3.327869E+03 | Tiempo: 172.95 s
+  Run 20/30 -> Fit: 3.327914E+03 | Tiempo: 170.72 s
+  Run 25/30 -> Fit: 3.327912E+03 | Tiempo: 171.33 s
+  Run 30/30 -> Fit: 3.328058E+03 | Tiempo: 175.40 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 3.327849E+03
+  Peor  : 3.335867E+03
+  Media : 3.328942E+03
+  Std   : 2.655317E+00
+  Tiempo Promedio: 172.17 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.251856E+03 | Tiempo: 175.05 s
+  Run 10/30 -> Fit: 3.147329E+03 | Tiempo: 175.26 s
+  Run 15/30 -> Fit: 3.124596E+03 | Tiempo: 187.98 s
+  Run 20/30 -> Fit: 3.130066E+03 | Tiempo: 172.17 s
+  Run 25/30 -> Fit: 3.166396E+03 | Tiempo: 187.92 s
+  Run 30/30 -> Fit: 3.181154E+03 | Tiempo: 188.10 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.106958E+03
+  Peor  : 3.251856E+03
+  Media : 3.159517E+03
+  Std   : 3.546252E+01
+  Tiempo Promedio: 180.02 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 171.11 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 130.65 s
+  Run 15/30 -> Fit: 2.700000E+03 | Tiempo: 176.78 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 178.40 s
+  Run 25/30 -> Fit: 2.700000E+03 | Tiempo: 178.94 s
+  Run 30/30 -> Fit: 2.700000E+03 | Tiempo: 182.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.700000E+03
+  Media : 2.700000E+03
+  Std   : 4.094755E-11
+  Tiempo Promedio: 170.45 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 4.532050E+03 | Tiempo: 284.91 s
+  Run 10/30 -> Fit: 5.099557E+03 | Tiempo: 220.56 s
+  Run 15/30 -> Fit: 5.732457E+03 | Tiempo: 263.59 s
+  Run 20/30 -> Fit: 7.137911E+04 | Tiempo: 262.19 s
+  Run 25/30 -> Fit: 4.779673E+03 | Tiempo: 261.91 s
+  Run 30/30 -> Fit: 4.397058E+03 | Tiempo: 260.63 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 4.397058E+03
+  Peor  : 7.137911E+04
+  Media : 8.273355E+03
+  Std   : 1.189923E+04
+  Tiempo Promedio: 265.69 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 4.975551E+03 | Tiempo: 161.86 s
+  Run 10/30 -> Fit: 4.193891E+03 | Tiempo: 159.54 s
+  Run 15/30 -> Fit: 3.804463E+03 | Tiempo: 157.89 s
+  Run 20/30 -> Fit: 4.062119E+03 | Tiempo: 158.92 s
+  Run 25/30 -> Fit: 4.136632E+03 | Tiempo: 159.19 s
+  Run 30/30 -> Fit: 4.232605E+03 | Tiempo: 158.30 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 3.783610E+03
+  Peor  : 7.192869E+03
+  Media : 4.472603E+03
+  Std   : 6.428311E+02
+  Tiempo Promedio: 159.85 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+#######################################
+JADE 30 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-11
+INICIANDO EXPERIMENTO CON: JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-11\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 58.80 s
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 66.12 s
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 63.68 s
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 61.97 s
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 63.55 s
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 64.81 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000000E+02
+  Peor  : 1.000000E+02
+  Media : 1.000000E+02
+  Std   : 0.000000E+00
+  Tiempo Promedio: 58.52 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 63.17 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 59.72 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 60.89 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 60.98 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 61.20 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 55.53 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.000000E+02
+  Media : 2.000000E+02
+  Std   : 1.467691E-14
+  Tiempo Promedio: 60.98 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 3.318107E+02 | Tiempo: 60.66 s
+  Run 10/30 -> Fit: 3.318107E+02 | Tiempo: 58.96 s
+  Run 15/30 -> Fit: 3.318107E+02 | Tiempo: 58.23 s
+  Run 20/30 -> Fit: 3.318107E+02 | Tiempo: 58.51 s
+  Run 25/30 -> Fit: 3.318107E+02 | Tiempo: 59.07 s
+  Run 30/30 -> Fit: 3.318107E+02 | Tiempo: 59.13 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 3.318107E+02
+  Peor  : 3.318107E+02
+  Media : 3.318107E+02
+  Std   : 1.136868E-13
+  Tiempo Promedio: 59.06 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 4.412684E+02 | Tiempo: 58.97 s
+  Run 10/30 -> Fit: 4.746338E+02 | Tiempo: 56.11 s
+  Run 15/30 -> Fit: 4.717021E+02 | Tiempo: 56.97 s
+  Run 20/30 -> Fit: 4.418423E+02 | Tiempo: 58.96 s
+  Run 25/30 -> Fit: 4.519900E+02 | Tiempo: 59.26 s
+  Run 30/30 -> Fit: 4.534355E+02 | Tiempo: 56.90 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 4.363607E+02
+  Peor  : 4.830666E+02
+  Media : 4.563431E+02
+  Std   : 1.133074E+01
+  Tiempo Promedio: 57.85 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000005E+02 | Tiempo: 73.21 s
+  Run 10/30 -> Fit: 5.000001E+02 | Tiempo: 75.98 s
+  Run 15/30 -> Fit: 5.000002E+02 | Tiempo: 73.54 s
+  Run 20/30 -> Fit: 5.000003E+02 | Tiempo: 72.59 s
+  Run 25/30 -> Fit: 5.000003E+02 | Tiempo: 73.80 s
+  Run 30/30 -> Fit: 5.000002E+02 | Tiempo: 71.92 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000000E+02
+  Peor  : 5.000008E+02
+  Media : 5.000002E+02
+  Std   : 1.774048E-04
+  Tiempo Promedio: 74.18 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 7.026834E+02 | Tiempo: 62.56 s
+  Run 10/30 -> Fit: 6.860850E+02 | Tiempo: 63.71 s
+  Run 15/30 -> Fit: 6.976021E+02 | Tiempo: 63.11 s
+  Run 20/30 -> Fit: 6.855075E+02 | Tiempo: 64.26 s
+  Run 25/30 -> Fit: 6.891542E+02 | Tiempo: 64.39 s
+  Run 30/30 -> Fit: 6.918863E+02 | Tiempo: 63.71 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 6.713945E+02
+  Peor  : 7.165636E+02
+  Media : 6.935062E+02
+  Std   : 1.061806E+01
+  Tiempo Promedio: 63.26 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.349438E+02 | Tiempo: 76.14 s
+  Run 10/30 -> Fit: 8.874937E+02 | Tiempo: 75.34 s
+  Run 15/30 -> Fit: 8.298534E+02 | Tiempo: 74.68 s
+  Run 20/30 -> Fit: 7.877097E+02 | Tiempo: 77.49 s
+  Run 25/30 -> Fit: 8.522737E+02 | Tiempo: 74.11 s
+  Run 30/30 -> Fit: 8.295917E+02 | Tiempo: 74.72 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 7.877097E+02
+  Peor  : 8.938036E+02
+  Media : 8.319989E+02
+  Std   : 2.470689E+01
+  Tiempo Promedio: 75.08 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.000000E+02 | Tiempo: 59.17 s
+  Run 10/30 -> Fit: 8.000000E+02 | Tiempo: 60.71 s
+  Run 15/30 -> Fit: 8.000000E+02 | Tiempo: 60.72 s
+  Run 20/30 -> Fit: 8.000000E+02 | Tiempo: 60.74 s
+  Run 25/30 -> Fit: 8.000000E+02 | Tiempo: 61.08 s
+  Run 30/30 -> Fit: 8.000000E+02 | Tiempo: 61.42 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.000000E+02
+  Peor  : 8.000000E+02
+  Media : 8.000000E+02
+  Std   : 7.766290E-14
+  Tiempo Promedio: 60.52 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 4.819673E+03 | Tiempo: 69.76 s
+  Run 10/30 -> Fit: 5.352212E+03 | Tiempo: 69.07 s
+  Run 15/30 -> Fit: 5.455903E+03 | Tiempo: 67.70 s
+  Run 20/30 -> Fit: 5.542514E+03 | Tiempo: 67.36 s
+  Run 25/30 -> Fit: 6.295953E+03 | Tiempo: 69.91 s
+  Run 30/30 -> Fit: 5.664346E+03 | Tiempo: 67.73 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 4.712664E+03
+  Peor  : 6.748053E+03
+  Media : 5.516550E+03
+  Std   : 4.344565E+02
+  Tiempo Promedio: 68.65 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.065308E+03 | Tiempo: 69.11 s
+  Run 10/30 -> Fit: 1.069802E+03 | Tiempo: 63.92 s
+  Run 15/30 -> Fit: 1.071205E+03 | Tiempo: 52.13 s
+  Run 20/30 -> Fit: 6.614250E+03 | Tiempo: 65.33 s
+  Run 25/30 -> Fit: 1.234806E+03 | Tiempo: 72.22 s
+  Run 30/30 -> Fit: 1.097379E+03 | Tiempo: 49.90 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.018565E+03
+  Peor  : 1.125352E+04
+  Media : 2.089114E+03
+  Std   : 2.584735E+03
+  Tiempo Promedio: 92.42 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 2.487877E+03 | Tiempo: 77.20 s
+  Run 10/30 -> Fit: 2.425204E+03 | Tiempo: 78.19 s
+  Run 15/30 -> Fit: 2.632422E+03 | Tiempo: 76.84 s
+  Run 20/30 -> Fit: 2.327752E+03 | Tiempo: 78.41 s
+  Run 25/30 -> Fit: 2.514261E+03 | Tiempo: 76.55 s
+  Run 30/30 -> Fit: 3.010417E+03 | Tiempo: 77.03 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 1.664821E+03
+  Peor  : 5.005243E+03
+  Media : 2.703405E+03
+  Std   : 6.670761E+02
+  Tiempo Promedio: 77.19 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 1.264412E+03 | Tiempo: 66.74 s
+  Run 10/30 -> Fit: 1.315893E+03 | Tiempo: 67.89 s
+  Run 15/30 -> Fit: 1.258713E+03 | Tiempo: 66.62 s
+  Run 20/30 -> Fit: 1.906631E+03 | Tiempo: 65.40 s
+  Run 25/30 -> Fit: 1.279359E+03 | Tiempo: 66.43 s
+  Run 30/30 -> Fit: 1.298731E+03 | Tiempo: 65.61 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 1.255032E+03
+  Peor  : 2.050728E+03
+  Media : 1.403955E+03
+  Std   : 2.070927E+02
+  Tiempo Promedio: 66.25 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 5.770698E+03 | Tiempo: 68.21 s
+  Run 10/30 -> Fit: 2.710307E+03 | Tiempo: 68.19 s
+  Run 15/30 -> Fit: 1.409720E+03 | Tiempo: 68.13 s
+  Run 20/30 -> Fit: 2.041151E+03 | Tiempo: 68.74 s
+  Run 25/30 -> Fit: 2.189942E+03 | Tiempo: 67.40 s
+  Run 30/30 -> Fit: 6.283029E+04 | Tiempo: 73.83 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 1.391905E+03
+  Peor  : 2.310073E+05
+  Media : 2.037489E+04
+  Std   : 5.150294E+04
+  Tiempo Promedio: 69.20 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 1.786695E+03 | Tiempo: 67.61 s
+  Run 10/30 -> Fit: 1.484583E+03 | Tiempo: 68.35 s
+  Run 15/30 -> Fit: 1.513493E+03 | Tiempo: 67.88 s
+  Run 20/30 -> Fit: 1.493963E+03 | Tiempo: 67.88 s
+  Run 25/30 -> Fit: 1.826558E+03 | Tiempo: 68.96 s
+  Run 30/30 -> Fit: 1.530291E+03 | Tiempo: 69.07 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 1.415438E+03
+  Peor  : 2.881186E+03
+  Media : 1.789572E+03
+  Std   : 3.922191E+02
+  Tiempo Promedio: 68.23 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 1.508075E+03 | Tiempo: 99.18 s
+  Run 10/30 -> Fit: 1.508011E+03 | Tiempo: 98.84 s
+  Run 15/30 -> Fit: 1.721241E+03 | Tiempo: 99.21 s
+  Run 20/30 -> Fit: 2.325805E+03 | Tiempo: 99.27 s
+  Run 25/30 -> Fit: 1.510829E+03 | Tiempo: 99.08 s
+  Run 30/30 -> Fit: 1.510602E+03 | Tiempo: 98.25 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.503304E+03
+  Peor  : 2.325805E+03
+  Media : 1.557230E+03
+  Std   : 1.569360E+02
+  Tiempo Promedio: 99.06 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 1.655397E+03 | Tiempo: 212.94 s
+  Run 10/30 -> Fit: 1.648603E+03 | Tiempo: 211.31 s
+  Run 15/30 -> Fit: 1.657940E+03 | Tiempo: 213.48 s
+  Run 20/30 -> Fit: 1.647199E+03 | Tiempo: 212.62 s
+  Run 25/30 -> Fit: 1.994709E+03 | Tiempo: 211.37 s
+  Run 30/30 -> Fit: 1.647438E+03 | Tiempo: 212.83 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 1.645406E+03
+  Peor  : 2.630137E+03
+  Media : 1.776803E+03
+  Std   : 2.321685E+02
+  Tiempo Promedio: 212.60 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 2.307652E+03 | Tiempo: 71.38 s
+  Run 10/30 -> Fit: 1.795381E+03 | Tiempo: 71.78 s
+  Run 15/30 -> Fit: 1.778997E+03 | Tiempo: 70.92 s
+  Run 20/30 -> Fit: 1.780798E+03 | Tiempo: 72.21 s
+  Run 25/30 -> Fit: 1.799328E+03 | Tiempo: 70.33 s
+  Run 30/30 -> Fit: 2.197282E+03 | Tiempo: 70.61 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 1.752600E+03
+  Peor  : 1.192480E+05
+  Media : 1.059067E+04
+  Std   : 2.371858E+04
+  Tiempo Promedio: 71.36 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 1.834667E+03 | Tiempo: 124.32 s
+  Run 10/30 -> Fit: 1.833417E+03 | Tiempo: 124.12 s
+  Run 15/30 -> Fit: 1.827632E+03 | Tiempo: 123.58 s
+  Run 20/30 -> Fit: 1.831074E+03 | Tiempo: 123.24 s
+  Run 25/30 -> Fit: 1.828906E+03 | Tiempo: 123.67 s
+  Run 30/30 -> Fit: 1.835629E+03 | Tiempo: 123.35 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.815454E+03
+  Peor  : 5.634896E+04
+  Media : 5.708952E+03
+  Std   : 1.348499E+04
+  Tiempo Promedio: 122.39 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 1.951632E+03 | Tiempo: 214.21 s
+  Run 10/30 -> Fit: 1.986551E+03 | Tiempo: 213.16 s
+  Run 15/30 -> Fit: 1.962350E+03 | Tiempo: 211.63 s
+  Run 20/30 -> Fit: 1.979028E+03 | Tiempo: 213.86 s
+  Run 25/30 -> Fit: 1.946243E+03 | Tiempo: 211.57 s
+  Run 30/30 -> Fit: 1.965373E+03 | Tiempo: 210.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 1.935935E+03
+  Peor  : 2.187163E+03
+  Media : 2.008373E+03
+  Std   : 8.078167E+01
+  Tiempo Promedio: 208.38 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 2.289245E+03 | Tiempo: 74.32 s
+  Run 10/30 -> Fit: 2.100000E+03 | Tiempo: 74.73 s
+  Run 15/30 -> Fit: 2.100000E+03 | Tiempo: 75.97 s
+  Run 20/30 -> Fit: 2.100000E+03 | Tiempo: 75.35 s
+  Run 25/30 -> Fit: 2.264026E+03 | Tiempo: 73.20 s
+  Run 30/30 -> Fit: 2.260376E+03 | Tiempo: 74.75 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.100000E+03
+  Peor  : 2.296049E+03
+  Media : 2.197495E+03
+  Std   : 8.561466E+01
+  Tiempo Promedio: 74.67 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.262407E+03 | Tiempo: 87.87 s
+  Run 10/30 -> Fit: 2.264814E+03 | Tiempo: 85.44 s
+  Run 15/30 -> Fit: 2.262505E+03 | Tiempo: 86.04 s
+  Run 20/30 -> Fit: 2.259636E+03 | Tiempo: 86.21 s
+  Run 25/30 -> Fit: 2.263315E+03 | Tiempo: 84.29 s
+  Run 30/30 -> Fit: 2.264647E+03 | Tiempo: 83.78 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.259636E+03
+  Peor  : 2.270167E+03
+  Media : 2.265102E+03
+  Std   : 2.627786E+00
+  Tiempo Promedio: 85.56 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 2.400000E+03 | Tiempo: 89.27 s
+  Run 10/30 -> Fit: 2.400000E+03 | Tiempo: 89.94 s
+  Run 15/30 -> Fit: 2.400000E+03 | Tiempo: 89.61 s
+  Run 20/30 -> Fit: 2.400000E+03 | Tiempo: 89.52 s
+  Run 25/30 -> Fit: 2.400000E+03 | Tiempo: 89.91 s
+  Run 30/30 -> Fit: 2.400000E+03 | Tiempo: 90.05 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 2.634391E+03
+  Media : 2.407813E+03
+  Std   : 4.207450E+01
+  Tiempo Promedio: 89.56 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500000E+03 | Tiempo: 80.01 s
+  Run 10/30 -> Fit: 2.500000E+03 | Tiempo: 78.75 s
+  Run 15/30 -> Fit: 2.500000E+03 | Tiempo: 80.37 s
+  Run 20/30 -> Fit: 2.500000E+03 | Tiempo: 79.06 s
+  Run 25/30 -> Fit: 2.500000E+03 | Tiempo: 80.51 s
+  Run 30/30 -> Fit: 2.500000E+03 | Tiempo: 79.86 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 2.500000E+03
+  Media : 2.500000E+03
+  Std   : 3.106516E-13
+  Tiempo Promedio: 79.75 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 2.820577E+03 | Tiempo: 84.64 s
+  Run 10/30 -> Fit: 2.820522E+03 | Tiempo: 84.09 s
+  Run 15/30 -> Fit: 2.820626E+03 | Tiempo: 83.22 s
+  Run 20/30 -> Fit: 2.820528E+03 | Tiempo: 83.19 s
+  Run 25/30 -> Fit: 2.820605E+03 | Tiempo: 84.78 s
+  Run 30/30 -> Fit: 2.820836E+03 | Tiempo: 83.33 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 2.820466E+03
+  Peor  : 2.820836E+03
+  Media : 2.820577E+03
+  Std   : 6.745756E-02
+  Tiempo Promedio: 83.57 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 3.327840E+03 | Tiempo: 178.16 s
+  Run 10/30 -> Fit: 3.327839E+03 | Tiempo: 176.21 s
+  Run 15/30 -> Fit: 3.327889E+03 | Tiempo: 179.85 s
+  Run 20/30 -> Fit: 3.327843E+03 | Tiempo: 177.15 s
+  Run 25/30 -> Fit: 3.327910E+03 | Tiempo: 177.77 s
+  Run 30/30 -> Fit: 3.327885E+03 | Tiempo: 178.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 3.327834E+03
+  Peor  : 3.327959E+03
+  Media : 3.327858E+03
+  Std   : 2.856922E-02
+  Tiempo Promedio: 178.02 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.103633E+03 | Tiempo: 138.97 s
+  Run 10/30 -> Fit: 3.097858E+03 | Tiempo: 196.00 s
+  Run 15/30 -> Fit: 3.100869E+03 | Tiempo: 168.81 s
+  Run 20/30 -> Fit: 3.103858E+03 | Tiempo: 198.86 s
+  Run 25/30 -> Fit: 3.104988E+03 | Tiempo: 197.38 s
+  Run 30/30 -> Fit: 3.108094E+03 | Tiempo: 197.28 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.094765E+03
+  Peor  : 3.123333E+03
+  Media : 3.105062E+03
+  Std   : 6.420499E+00
+  Tiempo Promedio: 187.93 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 186.01 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 174.05 s
+  Run 15/30 -> Fit: 2.700000E+03 | Tiempo: 175.94 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 175.17 s
+  Run 25/30 -> Fit: 2.700000E+03 | Tiempo: 173.69 s
+  Run 30/30 -> Fit: 2.700000E+03 | Tiempo: 174.94 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.700000E+03
+  Media : 2.700000E+03
+  Std   : 1.438037E-13
+  Tiempo Promedio: 174.22 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 5.030027E+03 | Tiempo: 269.76 s
+  Run 10/30 -> Fit: 6.653470E+03 | Tiempo: 269.72 s
+  Run 15/30 -> Fit: 4.695960E+03 | Tiempo: 269.31 s
+  Run 20/30 -> Fit: 4.539190E+03 | Tiempo: 270.51 s
+  Run 25/30 -> Fit: 4.895133E+03 | Tiempo: 383.91 s
+  Run 30/30 -> Fit: 5.115386E+03 | Tiempo: 275.20 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 4.398275E+03
+  Peor  : 9.167922E+03
+  Media : 5.463305E+03
+  Std   : 1.264170E+03
+  Tiempo Promedio: 282.10 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 4.545272E+03 | Tiempo: 161.89 s
+  Run 10/30 -> Fit: 5.884626E+03 | Tiempo: 157.86 s
+  Run 15/30 -> Fit: 3.829864E+03 | Tiempo: 112.89 s
+  Run 20/30 -> Fit: 5.023466E+03 | Tiempo: 164.96 s
+  Run 25/30 -> Fit: 4.768323E+03 | Tiempo: 165.66 s
+  Run 30/30 -> Fit: 6.424350E+03 | Tiempo: 166.25 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 3.805523E+03
+  Peor  : 7.196935E+03
+  Media : 4.814705E+03
+  Std   : 7.923529E+02
+  Tiempo Promedio: 157.35 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+#######################################
+HÍBRIDO 50 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-12
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-12\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.000077E+02 | Tiempo: 54.71 s
+  Run 10/30 -> Fit: 1.002327E+02 | Tiempo: 69.65 s
+  Run 15/30 -> Fit: 1.000416E+02 | Tiempo: 64.16 s
+  Run 20/30 -> Fit: 1.000026E+02 | Tiempo: 66.27 s
+  Run 25/30 -> Fit: 1.001282E+02 | Tiempo: 70.14 s
+  Run 30/30 -> Fit: 1.001472E+02 | Tiempo: 70.02 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000007E+02
+  Peor  : 1.006268E+02
+  Media : 1.000987E+02
+  Std   : 1.360667E-01
+  Tiempo Promedio: 64.94 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 55.08 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 54.65 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 56.63 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 55.67 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 54.03 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 49.80 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.000000E+02
+  Media : 2.000000E+02
+  Std   : 6.400968E-12
+  Tiempo Promedio: 53.83 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 3.103011E+02 | Tiempo: 59.98 s
+  Run 10/30 -> Fit: 3.561408E+02 | Tiempo: 60.79 s
+  Run 15/30 -> Fit: 4.480044E+02 | Tiempo: 62.57 s
+  Run 20/30 -> Fit: 4.002786E+02 | Tiempo: 62.75 s
+  Run 25/30 -> Fit: 3.096902E+02 | Tiempo: 61.35 s
+  Run 30/30 -> Fit: 3.741526E+02 | Tiempo: 57.51 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 3.000280E+02
+  Peor  : 4.480044E+02
+  Media : 3.640195E+02
+  Std   : 3.857700E+01
+  Tiempo Promedio: 60.43 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 7.104256E+02 | Tiempo: 52.59 s
+  Run 10/30 -> Fit: 6.338134E+02 | Tiempo: 51.48 s
+  Run 15/30 -> Fit: 6.427691E+02 | Tiempo: 51.26 s
+  Run 20/30 -> Fit: 6.417740E+02 | Tiempo: 50.82 s
+  Run 25/30 -> Fit: 7.004739E+02 | Tiempo: 51.33 s
+  Run 30/30 -> Fit: 7.442529E+02 | Tiempo: 52.88 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 5.552131E+02
+  Peor  : 9.233402E+02
+  Media : 6.694662E+02
+  Std   : 7.728462E+01
+  Tiempo Promedio: 51.77 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000000E+02 | Tiempo: 90.99 s
+  Run 10/30 -> Fit: 5.000006E+02 | Tiempo: 92.74 s
+  Run 15/30 -> Fit: 5.000000E+02 | Tiempo: 78.43 s
+  Run 20/30 -> Fit: 5.000000E+02 | Tiempo: 90.00 s
+  Run 25/30 -> Fit: 5.000000E+02 | Tiempo: 88.71 s
+  Run 30/30 -> Fit: 5.000000E+02 | Tiempo: 90.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000000E+02
+  Peor  : 5.000006E+02
+  Media : 5.000001E+02
+  Std   : 1.682147E-04
+  Tiempo Promedio: 90.28 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.268580E+02 | Tiempo: 62.40 s
+  Run 10/30 -> Fit: 8.170643E+02 | Tiempo: 63.22 s
+  Run 15/30 -> Fit: 8.572935E+02 | Tiempo: 55.34 s
+  Run 20/30 -> Fit: 8.070634E+02 | Tiempo: 63.79 s
+  Run 25/30 -> Fit: 8.228179E+02 | Tiempo: 63.29 s
+  Run 30/30 -> Fit: 8.197033E+02 | Tiempo: 62.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 7.692995E+02
+  Peor  : 8.572935E+02
+  Media : 8.201052E+02
+  Std   : 2.051071E+01
+  Tiempo Promedio: 62.37 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.111963E+03 | Tiempo: 60.26 s
+  Run 10/30 -> Fit: 1.118500E+03 | Tiempo: 68.87 s
+  Run 15/30 -> Fit: 9.320000E+02 | Tiempo: 67.31 s
+  Run 20/30 -> Fit: 9.180000E+02 | Tiempo: 68.41 s
+  Run 25/30 -> Fit: 9.680000E+02 | Tiempo: 66.55 s
+  Run 30/30 -> Fit: 1.088500E+03 | Tiempo: 66.77 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 8.580000E+02
+  Peor  : 1.154017E+03
+  Media : 1.032803E+03
+  Std   : 7.400161E+01
+  Tiempo Promedio: 66.51 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.061436E+02 | Tiempo: 54.00 s
+  Run 10/30 -> Fit: 8.107113E+02 | Tiempo: 63.74 s
+  Run 15/30 -> Fit: 8.049909E+02 | Tiempo: 54.68 s
+  Run 20/30 -> Fit: 8.048118E+02 | Tiempo: 54.05 s
+  Run 25/30 -> Fit: 8.089835E+02 | Tiempo: 57.23 s
+  Run 30/30 -> Fit: 8.058928E+02 | Tiempo: 54.48 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.040756E+02
+  Peor  : 8.137733E+02
+  Media : 8.077098E+02
+  Std   : 2.441580E+00
+  Tiempo Promedio: 55.75 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 9.441419E+03 | Tiempo: 54.03 s
+  Run 10/30 -> Fit: 8.082139E+03 | Tiempo: 57.03 s
+  Run 15/30 -> Fit: 8.758927E+03 | Tiempo: 54.07 s
+  Run 20/30 -> Fit: 6.590345E+03 | Tiempo: 56.46 s
+  Run 25/30 -> Fit: 7.190467E+03 | Tiempo: 53.91 s
+  Run 30/30 -> Fit: 6.841194E+03 | Tiempo: 53.45 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 5.145270E+03
+  Peor  : 1.148997E+04
+  Media : 8.190451E+03
+  Std   : 1.486413E+03
+  Tiempo Promedio: 54.71 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.475743E+03 | Tiempo: 67.82 s
+  Run 10/30 -> Fit: 1.175376E+03 | Tiempo: 67.10 s
+  Run 15/30 -> Fit: 3.227857E+03 | Tiempo: 65.48 s
+  Run 20/30 -> Fit: 1.236622E+03 | Tiempo: 58.25 s
+  Run 25/30 -> Fit: 3.036708E+03 | Tiempo: 69.38 s
+  Run 30/30 -> Fit: 3.570616E+03 | Tiempo: 65.46 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.124035E+03
+  Peor  : 3.570616E+03
+  Media : 1.665090E+03
+  Std   : 6.454178E+02
+  Tiempo Promedio: 93.33 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 9.869588E+03 | Tiempo: 62.59 s
+  Run 10/30 -> Fit: 1.360467E+04 | Tiempo: 80.86 s
+  Run 15/30 -> Fit: 1.831994E+04 | Tiempo: 81.11 s
+  Run 20/30 -> Fit: 8.776671E+03 | Tiempo: 80.85 s
+  Run 25/30 -> Fit: 8.953299E+03 | Tiempo: 80.34 s
+  Run 30/30 -> Fit: 6.754727E+03 | Tiempo: 79.52 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 4.634463E+03
+  Peor  : 4.470796E+04
+  Media : 1.490225E+04
+  Std   : 8.814730E+03
+  Tiempo Promedio: 79.12 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 3.870502E+04 | Tiempo: 70.96 s
+  Run 10/30 -> Fit: 3.125468E+04 | Tiempo: 71.60 s
+  Run 15/30 -> Fit: 1.691625E+04 | Tiempo: 70.86 s
+  Run 20/30 -> Fit: 1.143920E+04 | Tiempo: 70.82 s
+  Run 25/30 -> Fit: 1.300666E+04 | Tiempo: 70.40 s
+  Run 30/30 -> Fit: 1.291642E+04 | Tiempo: 71.06 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 1.303755E+03
+  Peor  : 7.552064E+04
+  Media : 1.776599E+04
+  Std   : 1.583753E+04
+  Tiempo Promedio: 70.98 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 1.299540E+04 | Tiempo: 73.81 s
+  Run 10/30 -> Fit: 6.576823E+04 | Tiempo: 65.89 s
+  Run 15/30 -> Fit: 3.607940E+03 | Tiempo: 75.33 s
+  Run 20/30 -> Fit: 1.662396E+04 | Tiempo: 61.74 s
+  Run 25/30 -> Fit: 8.160043E+03 | Tiempo: 75.34 s
+  Run 30/30 -> Fit: 2.439256E+04 | Tiempo: 59.73 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 2.566311E+03
+  Peor  : 6.796385E+04
+  Media : 2.761736E+04
+  Std   : 1.878000E+04
+  Tiempo Promedio: 68.97 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 1.776437E+03 | Tiempo: 72.64 s
+  Run 10/30 -> Fit: 5.400065E+03 | Tiempo: 71.93 s
+  Run 15/30 -> Fit: 4.311438E+03 | Tiempo: 72.16 s
+  Run 20/30 -> Fit: 6.813111E+03 | Tiempo: 72.11 s
+  Run 25/30 -> Fit: 3.179747E+03 | Tiempo: 72.88 s
+  Run 30/30 -> Fit: 2.614603E+03 | Tiempo: 72.74 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 1.776437E+03
+  Peor  : 1.115794E+04
+  Media : 4.778936E+03
+  Std   : 2.281328E+03
+  Tiempo Promedio: 72.33 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 1.513357E+03 | Tiempo: 113.01 s
+  Run 10/30 -> Fit: 2.244652E+03 | Tiempo: 111.38 s
+  Run 15/30 -> Fit: 2.261838E+03 | Tiempo: 112.48 s
+  Run 20/30 -> Fit: 2.028821E+03 | Tiempo: 110.99 s
+  Run 25/30 -> Fit: 1.742038E+03 | Tiempo: 112.86 s
+  Run 30/30 -> Fit: 3.169636E+03 | Tiempo: 110.87 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.513357E+03
+  Peor  : 3.169636E+03
+  Media : 2.159909E+03
+  Std   : 4.045663E+02
+  Tiempo Promedio: 112.19 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 2.383359E+03 | Tiempo: 292.56 s
+  Run 10/30 -> Fit: 1.692432E+03 | Tiempo: 292.72 s
+  Run 15/30 -> Fit: 1.708990E+03 | Tiempo: 293.05 s
+  Run 20/30 -> Fit: 1.697929E+03 | Tiempo: 294.01 s
+  Run 25/30 -> Fit: 1.723593E+03 | Tiempo: 289.91 s
+  Run 30/30 -> Fit: 1.720879E+03 | Tiempo: 291.00 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 1.682759E+03
+  Peor  : 2.907852E+03
+  Media : 1.896746E+03
+  Std   : 2.942913E+02
+  Tiempo Promedio: 293.16 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 1.348390E+04 | Tiempo: 77.12 s
+  Run 10/30 -> Fit: 1.254283E+04 | Tiempo: 77.17 s
+  Run 15/30 -> Fit: 1.581729E+04 | Tiempo: 77.29 s
+  Run 20/30 -> Fit: 1.526157E+04 | Tiempo: 77.12 s
+  Run 25/30 -> Fit: 2.561858E+04 | Tiempo: 76.95 s
+  Run 30/30 -> Fit: 6.208522E+03 | Tiempo: 58.71 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 4.259841E+03
+  Peor  : 3.674830E+04
+  Media : 1.400820E+04
+  Std   : 7.933982E+03
+  Tiempo Promedio: 74.97 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 1.897625E+03 | Tiempo: 158.90 s
+  Run 10/30 -> Fit: 1.902308E+03 | Tiempo: 159.56 s
+  Run 15/30 -> Fit: 1.881504E+03 | Tiempo: 160.64 s
+  Run 20/30 -> Fit: 6.968598E+03 | Tiempo: 162.59 s
+  Run 25/30 -> Fit: 1.906332E+03 | Tiempo: 160.04 s
+  Run 30/30 -> Fit: 6.799032E+03 | Tiempo: 162.33 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.876812E+03
+  Peor  : 7.046445E+03
+  Media : 3.398669E+03
+  Std   : 2.126298E+03
+  Tiempo Promedio: 158.37 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 1.942073E+03 | Tiempo: 291.38 s
+  Run 10/30 -> Fit: 2.873767E+03 | Tiempo: 281.58 s
+  Run 15/30 -> Fit: 1.984191E+03 | Tiempo: 276.45 s
+  Run 20/30 -> Fit: 2.229114E+03 | Tiempo: 284.07 s
+  Run 25/30 -> Fit: 2.064499E+03 | Tiempo: 284.99 s
+  Run 30/30 -> Fit: 2.258509E+03 | Tiempo: 287.36 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 1.942073E+03
+  Peor  : 2.873767E+03
+  Media : 2.129825E+03
+  Std   : 1.790234E+02
+  Tiempo Promedio: 282.63 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 2.100000E+03 | Tiempo: 71.88 s
+  Run 10/30 -> Fit: 2.100000E+03 | Tiempo: 73.35 s
+  Run 15/30 -> Fit: 2.422467E+03 | Tiempo: 69.84 s
+  Run 20/30 -> Fit: 2.602569E+03 | Tiempo: 66.49 s
+  Run 25/30 -> Fit: 2.517836E+03 | Tiempo: 58.08 s
+  Run 30/30 -> Fit: 2.467663E+03 | Tiempo: 66.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.100000E+03
+  Peor  : 2.602569E+03
+  Media : 2.296957E+03
+  Std   : 1.901421E+02
+  Tiempo Promedio: 69.89 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.418899E+03 | Tiempo: 71.20 s
+  Run 10/30 -> Fit: 2.486860E+03 | Tiempo: 72.63 s
+  Run 15/30 -> Fit: 2.402511E+03 | Tiempo: 71.06 s
+  Run 20/30 -> Fit: 2.388766E+03 | Tiempo: 72.30 s
+  Run 25/30 -> Fit: 2.443323E+03 | Tiempo: 74.30 s
+  Run 30/30 -> Fit: 2.423939E+03 | Tiempo: 75.54 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.353180E+03
+  Peor  : 2.486860E+03
+  Media : 2.404731E+03
+  Std   : 2.484170E+01
+  Tiempo Promedio: 73.09 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 3.002654E+03 | Tiempo: 83.88 s
+  Run 10/30 -> Fit: 2.400000E+03 | Tiempo: 88.62 s
+  Run 15/30 -> Fit: 2.832440E+03 | Tiempo: 84.37 s
+  Run 20/30 -> Fit: 2.865348E+03 | Tiempo: 82.78 s
+  Run 25/30 -> Fit: 3.023919E+03 | Tiempo: 84.19 s
+  Run 30/30 -> Fit: 2.937278E+03 | Tiempo: 86.78 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 3.036595E+03
+  Media : 2.598164E+03
+  Std   : 2.646002E+02
+  Tiempo Promedio: 86.98 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500000E+03 | Tiempo: 79.28 s
+  Run 10/30 -> Fit: 2.888483E+03 | Tiempo: 63.97 s
+  Run 15/30 -> Fit: 2.500000E+03 | Tiempo: 79.06 s
+  Run 20/30 -> Fit: 2.500000E+03 | Tiempo: 79.66 s
+  Run 25/30 -> Fit: 2.500000E+03 | Tiempo: 79.18 s
+  Run 30/30 -> Fit: 2.804112E+03 | Tiempo: 75.24 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 2.905536E+03
+  Media : 2.557605E+03
+  Std   : 1.301839E+02
+  Tiempo Promedio: 78.15 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 3.192815E+03 | Tiempo: 78.26 s
+  Run 10/30 -> Fit: 3.155498E+03 | Tiempo: 79.53 s
+  Run 15/30 -> Fit: 3.152991E+03 | Tiempo: 81.22 s
+  Run 20/30 -> Fit: 3.192426E+03 | Tiempo: 79.81 s
+  Run 25/30 -> Fit: 3.318708E+03 | Tiempo: 80.15 s
+  Run 30/30 -> Fit: 3.155119E+03 | Tiempo: 84.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 3.133919E+03
+  Peor  : 3.327197E+03
+  Media : 3.200655E+03
+  Std   : 5.326513E+01
+  Tiempo Promedio: 80.87 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 4.129935E+03 | Tiempo: 200.63 s
+  Run 10/30 -> Fit: 4.129863E+03 | Tiempo: 243.67 s
+  Run 15/30 -> Fit: 3.703925E+03 | Tiempo: 248.59 s
+  Run 20/30 -> Fit: 3.703377E+03 | Tiempo: 247.89 s
+  Run 25/30 -> Fit: 4.083420E+03 | Tiempo: 252.43 s
+  Run 30/30 -> Fit: 3.692936E+03 | Tiempo: 217.57 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 3.692916E+03
+  Peor  : 4.186602E+03
+  Media : 3.935459E+03
+  Std   : 2.080151E+02
+  Tiempo Promedio: 236.70 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.362727E+03 | Tiempo: 242.22 s
+  Run 10/30 -> Fit: 3.224509E+03 | Tiempo: 239.77 s
+  Run 15/30 -> Fit: 3.285848E+03 | Tiempo: 243.04 s
+  Run 20/30 -> Fit: 3.298459E+03 | Tiempo: 241.02 s
+  Run 25/30 -> Fit: 3.273536E+03 | Tiempo: 240.87 s
+  Run 30/30 -> Fit: 3.247422E+03 | Tiempo: 239.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.165926E+03
+  Peor  : 3.410718E+03
+  Media : 3.267219E+03
+  Std   : 6.051897E+01
+  Tiempo Promedio: 239.92 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 227.50 s
+  Run 10/30 -> Fit: 2.725414E+03 | Tiempo: 225.78 s
+  Run 15/30 -> Fit: 2.726686E+03 | Tiempo: 370.68 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 239.13 s
+  Run 25/30 -> Fit: 2.721673E+03 | Tiempo: 209.45 s
+  Run 30/30 -> Fit: 2.723996E+03 | Tiempo: 202.17 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.735347E+03
+  Media : 2.710541E+03
+  Std   : 1.135848E+01
+  Tiempo Promedio: 237.04 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 8.291792E+03 | Tiempo: 368.54 s
+  Run 10/30 -> Fit: 7.667185E+03 | Tiempo: 356.90 s
+  Run 15/30 -> Fit: 7.684842E+03 | Tiempo: 323.08 s
+  Run 20/30 -> Fit: 1.020475E+04 | Tiempo: 336.96 s
+  Run 25/30 -> Fit: 9.714010E+03 | Tiempo: 343.97 s
+  Run 30/30 -> Fit: 9.240385E+03 | Tiempo: 341.82 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 6.571095E+03
+  Peor  : 1.056768E+04
+  Media : 8.732438E+03
+  Std   : 1.066192E+03
+  Tiempo Promedio: 339.42 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 5.592789E+04 | Tiempo: 188.70 s
+  Run 10/30 -> Fit: 3.659859E+04 | Tiempo: 185.31 s
+  Run 15/30 -> Fit: 3.139984E+04 | Tiempo: 141.37 s
+  Run 20/30 -> Fit: 1.106057E+04 | Tiempo: 185.22 s
+  Run 25/30 -> Fit: 2.654454E+04 | Tiempo: 187.15 s
+  Run 30/30 -> Fit: 1.456315E+04 | Tiempo: 185.54 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 1.106057E+04
+  Peor  : 6.242331E+04
+  Media : 2.392271E+04
+  Std   : 1.183113E+04
+  Tiempo Promedio: 183.92 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+#######################################
+JADE 50 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-12
+INICIANDO EXPERIMENTO CON: JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-12\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.006376E+02 | Tiempo: 55.19 s
+  Run 10/30 -> Fit: 1.002386E+02 | Tiempo: 68.39 s
+  Run 15/30 -> Fit: 1.005503E+02 | Tiempo: 63.07 s
+  Run 20/30 -> Fit: 1.001325E+02 | Tiempo: 65.14 s
+  Run 25/30 -> Fit: 1.000394E+02 | Tiempo: 68.42 s
+  Run 30/30 -> Fit: 1.000014E+02 | Tiempo: 68.03 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000000E+02
+  Peor  : 1.006376E+02
+  Media : 1.001026E+02
+  Std   : 1.655572E-01
+  Tiempo Promedio: 63.89 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 64.93 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 65.47 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 65.11 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 63.90 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 58.62 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 60.09 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.000000E+02
+  Media : 2.000000E+02
+  Std   : 7.338454E-15
+  Tiempo Promedio: 63.58 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 4.335187E+02 | Tiempo: 64.74 s
+  Run 10/30 -> Fit: 3.756177E+02 | Tiempo: 64.19 s
+  Run 15/30 -> Fit: 3.562197E+02 | Tiempo: 64.07 s
+  Run 20/30 -> Fit: 4.307309E+02 | Tiempo: 63.95 s
+  Run 25/30 -> Fit: 3.624344E+02 | Tiempo: 64.80 s
+  Run 30/30 -> Fit: 3.722624E+02 | Tiempo: 63.61 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 3.561408E+02
+  Peor  : 4.564616E+02
+  Media : 3.919825E+02
+  Std   : 3.461713E+01
+  Tiempo Promedio: 64.31 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 5.495038E+02 | Tiempo: 59.12 s
+  Run 10/30 -> Fit: 5.663489E+02 | Tiempo: 59.46 s
+  Run 15/30 -> Fit: 5.677915E+02 | Tiempo: 59.81 s
+  Run 20/30 -> Fit: 5.441667E+02 | Tiempo: 59.57 s
+  Run 25/30 -> Fit: 5.741008E+02 | Tiempo: 58.78 s
+  Run 30/30 -> Fit: 5.199359E+02 | Tiempo: 59.03 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 5.199359E+02
+  Peor  : 5.908809E+02
+  Media : 5.601975E+02
+  Std   : 1.881349E+01
+  Tiempo Promedio: 59.26 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000003E+02 | Tiempo: 90.53 s
+  Run 10/30 -> Fit: 5.000011E+02 | Tiempo: 87.73 s
+  Run 15/30 -> Fit: 5.000004E+02 | Tiempo: 90.87 s
+  Run 20/30 -> Fit: 5.000005E+02 | Tiempo: 90.79 s
+  Run 25/30 -> Fit: 5.000003E+02 | Tiempo: 91.80 s
+  Run 30/30 -> Fit: 5.000002E+02 | Tiempo: 91.84 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000000E+02
+  Peor  : 5.000022E+02
+  Media : 5.000005E+02
+  Std   : 4.569756E-04
+  Tiempo Promedio: 90.07 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.302091E+02 | Tiempo: 65.26 s
+  Run 10/30 -> Fit: 8.164809E+02 | Tiempo: 65.51 s
+  Run 15/30 -> Fit: 8.175984E+02 | Tiempo: 66.22 s
+  Run 20/30 -> Fit: 8.344988E+02 | Tiempo: 66.65 s
+  Run 25/30 -> Fit: 8.176384E+02 | Tiempo: 66.26 s
+  Run 30/30 -> Fit: 8.499927E+02 | Tiempo: 65.86 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 7.696950E+02
+  Peor  : 8.499927E+02
+  Media : 8.156537E+02
+  Std   : 1.923504E+01
+  Tiempo Promedio: 65.71 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 9.512801E+02 | Tiempo: 78.22 s
+  Run 10/30 -> Fit: 1.001230E+03 | Tiempo: 77.99 s
+  Run 15/30 -> Fit: 1.009161E+03 | Tiempo: 75.54 s
+  Run 20/30 -> Fit: 1.055670E+03 | Tiempo: 74.58 s
+  Run 25/30 -> Fit: 1.043840E+03 | Tiempo: 78.09 s
+  Run 30/30 -> Fit: 9.402036E+02 | Tiempo: 78.40 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 8.927055E+02
+  Peor  : 1.125560E+03
+  Media : 9.898255E+02
+  Std   : 5.523038E+01
+  Tiempo Promedio: 77.78 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.000895E+02 | Tiempo: 64.41 s
+  Run 10/30 -> Fit: 8.006334E+02 | Tiempo: 64.91 s
+  Run 15/30 -> Fit: 8.005439E+02 | Tiempo: 63.67 s
+  Run 20/30 -> Fit: 8.000000E+02 | Tiempo: 63.72 s
+  Run 25/30 -> Fit: 8.001791E+02 | Tiempo: 64.69 s
+  Run 30/30 -> Fit: 8.000000E+02 | Tiempo: 63.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.000000E+02
+  Peor  : 8.006334E+02
+  Media : 8.001053E+02
+  Std   : 1.752277E-01
+  Tiempo Promedio: 64.02 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 1.016120E+04 | Tiempo: 70.67 s
+  Run 10/30 -> Fit: 1.070162E+04 | Tiempo: 70.88 s
+  Run 15/30 -> Fit: 1.127878E+04 | Tiempo: 70.47 s
+  Run 20/30 -> Fit: 1.065873E+04 | Tiempo: 67.21 s
+  Run 25/30 -> Fit: 1.115862E+04 | Tiempo: 55.61 s
+  Run 30/30 -> Fit: 1.123527E+04 | Tiempo: 67.60 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 9.868197E+03
+  Peor  : 1.395567E+04
+  Media : 1.128322E+04
+  Std   : 1.192247E+03
+  Tiempo Promedio: 95.49 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.903812E+03 | Tiempo: 64.05 s
+  Run 10/30 -> Fit: 1.699990E+03 | Tiempo: 50.93 s
+  Run 15/30 -> Fit: 2.207338E+03 | Tiempo: 67.20 s
+  Run 20/30 -> Fit: 1.839955E+03 | Tiempo: 67.23 s
+  Run 25/30 -> Fit: 1.440499E+03 | Tiempo: 66.76 s
+  Run 30/30 -> Fit: 1.817011E+03 | Tiempo: 66.70 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.089126E+03
+  Peor  : 2.773249E+04
+  Media : 5.422914E+03
+  Std   : 7.534458E+03
+  Tiempo Promedio: 65.52 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 4.799056E+03 | Tiempo: 80.26 s
+  Run 10/30 -> Fit: 1.914575E+04 | Tiempo: 78.93 s
+  Run 15/30 -> Fit: 3.809602E+03 | Tiempo: 79.35 s
+  Run 20/30 -> Fit: 1.311650E+04 | Tiempo: 80.32 s
+  Run 25/30 -> Fit: 5.587151E+03 | Tiempo: 79.84 s
+  Run 30/30 -> Fit: 2.069181E+04 | Tiempo: 79.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 3.809602E+03
+  Peor  : 2.119199E+04
+  Media : 1.166618E+04
+  Std   : 5.211612E+03
+  Tiempo Promedio: 79.67 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 1.031564E+04 | Tiempo: 69.44 s
+  Run 10/30 -> Fit: 6.253696E+04 | Tiempo: 69.82 s
+  Run 15/30 -> Fit: 2.579542E+03 | Tiempo: 70.11 s
+  Run 20/30 -> Fit: 2.887442E+04 | Tiempo: 69.64 s
+  Run 25/30 -> Fit: 7.169731E+03 | Tiempo: 69.98 s
+  Run 30/30 -> Fit: 1.007098E+04 | Tiempo: 69.78 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 2.069817E+03
+  Peor  : 6.253696E+04
+  Media : 1.687390E+04
+  Std   : 1.330055E+04
+  Tiempo Promedio: 69.67 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 1.121485E+04 | Tiempo: 73.15 s
+  Run 10/30 -> Fit: 5.697964E+03 | Tiempo: 75.16 s
+  Run 15/30 -> Fit: 1.309059E+04 | Tiempo: 73.38 s
+  Run 20/30 -> Fit: 5.044733E+03 | Tiempo: 74.01 s
+  Run 25/30 -> Fit: 1.405418E+04 | Tiempo: 73.36 s
+  Run 30/30 -> Fit: 4.276133E+03 | Tiempo: 73.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 2.520812E+03
+  Peor  : 4.135567E+05
+  Media : 4.291556E+04
+  Std   : 9.269386E+04
+  Tiempo Promedio: 74.60 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 2.805605E+03 | Tiempo: 70.37 s
+  Run 10/30 -> Fit: 4.784211E+03 | Tiempo: 70.87 s
+  Run 15/30 -> Fit: 2.016076E+03 | Tiempo: 71.26 s
+  Run 20/30 -> Fit: 3.791333E+03 | Tiempo: 70.80 s
+  Run 25/30 -> Fit: 5.185716E+03 | Tiempo: 71.34 s
+  Run 30/30 -> Fit: 4.107290E+03 | Tiempo: 70.96 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 2.016076E+03
+  Peor  : 9.334759E+03
+  Media : 4.265224E+03
+  Std   : 1.945583E+03
+  Tiempo Promedio: 70.97 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 1.804716E+03 | Tiempo: 109.67 s
+  Run 10/30 -> Fit: 2.348076E+03 | Tiempo: 111.75 s
+  Run 15/30 -> Fit: 2.299974E+03 | Tiempo: 112.22 s
+  Run 20/30 -> Fit: 2.121965E+03 | Tiempo: 111.50 s
+  Run 25/30 -> Fit: 1.952094E+03 | Tiempo: 111.84 s
+  Run 30/30 -> Fit: 2.240865E+03 | Tiempo: 111.80 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.519261E+03
+  Peor  : 2.592623E+03
+  Media : 1.933455E+03
+  Std   : 3.059682E+02
+  Tiempo Promedio: 111.57 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 1.737867E+03 | Tiempo: 293.24 s
+  Run 10/30 -> Fit: 1.678021E+03 | Tiempo: 294.63 s
+  Run 15/30 -> Fit: 2.008737E+03 | Tiempo: 293.73 s
+  Run 20/30 -> Fit: 1.963656E+03 | Tiempo: 292.12 s
+  Run 25/30 -> Fit: 1.916402E+03 | Tiempo: 291.79 s
+  Run 30/30 -> Fit: 2.083967E+03 | Tiempo: 291.54 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 1.678021E+03
+  Peor  : 3.380442E+03
+  Media : 2.085055E+03
+  Std   : 4.139848E+02
+  Tiempo Promedio: 293.93 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 6.943517E+03 | Tiempo: 59.31 s
+  Run 10/30 -> Fit: 5.850564E+03 | Tiempo: 75.27 s
+  Run 15/30 -> Fit: 5.878990E+03 | Tiempo: 75.57 s
+  Run 20/30 -> Fit: 1.253261E+06 | Tiempo: 73.60 s
+  Run 25/30 -> Fit: 1.195894E+04 | Tiempo: 74.78 s
+  Run 30/30 -> Fit: 7.614343E+03 | Tiempo: 74.94 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 3.195888E+03
+  Peor  : 1.253261E+06
+  Media : 4.999686E+04
+  Std   : 2.234807E+05
+  Tiempo Promedio: 72.52 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 1.875302E+03 | Tiempo: 158.15 s
+  Run 10/30 -> Fit: 1.892800E+03 | Tiempo: 156.62 s
+  Run 15/30 -> Fit: 1.895743E+03 | Tiempo: 157.11 s
+  Run 20/30 -> Fit: 1.895462E+03 | Tiempo: 157.91 s
+  Run 25/30 -> Fit: 1.890990E+03 | Tiempo: 135.22 s
+  Run 30/30 -> Fit: 1.907906E+03 | Tiempo: 154.27 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.857985E+03
+  Peor  : 1.284341E+04
+  Media : 2.290160E+03
+  Std   : 1.962367E+03
+  Tiempo Promedio: 152.02 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 1.943986E+03 | Tiempo: 292.26 s
+  Run 10/30 -> Fit: 1.943246E+03 | Tiempo: 291.22 s
+  Run 15/30 -> Fit: 1.938209E+03 | Tiempo: 296.43 s
+  Run 20/30 -> Fit: 2.158231E+03 | Tiempo: 291.88 s
+  Run 25/30 -> Fit: 1.968174E+03 | Tiempo: 289.75 s
+  Run 30/30 -> Fit: 1.939612E+03 | Tiempo: 288.23 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 1.933872E+03
+  Peor  : 2.248156E+03
+  Media : 2.025067E+03
+  Std   : 1.078487E+02
+  Tiempo Promedio: 291.42 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 2.339880E+03 | Tiempo: 74.68 s
+  Run 10/30 -> Fit: 2.330768E+03 | Tiempo: 73.90 s
+  Run 15/30 -> Fit: 2.100000E+03 | Tiempo: 77.25 s
+  Run 20/30 -> Fit: 2.347748E+03 | Tiempo: 74.15 s
+  Run 25/30 -> Fit: 2.372151E+03 | Tiempo: 74.52 s
+  Run 30/30 -> Fit: 2.363234E+03 | Tiempo: 74.19 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.100000E+03
+  Peor  : 2.388511E+03
+  Media : 2.284949E+03
+  Std   : 1.117833E+02
+  Tiempo Promedio: 75.08 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.301694E+03 | Tiempo: 83.31 s
+  Run 10/30 -> Fit: 2.314558E+03 | Tiempo: 82.55 s
+  Run 15/30 -> Fit: 2.308831E+03 | Tiempo: 85.07 s
+  Run 20/30 -> Fit: 2.300345E+03 | Tiempo: 85.43 s
+  Run 25/30 -> Fit: 2.312422E+03 | Tiempo: 85.11 s
+  Run 30/30 -> Fit: 2.312290E+03 | Tiempo: 82.76 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.298359E+03
+  Peor  : 2.318417E+03
+  Media : 2.309360E+03
+  Std   : 5.918621E+00
+  Tiempo Promedio: 84.48 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 2.400000E+03 | Tiempo: 92.77 s
+  Run 10/30 -> Fit: 2.400000E+03 | Tiempo: 92.89 s
+  Run 15/30 -> Fit: 2.652853E+03 | Tiempo: 90.98 s
+  Run 20/30 -> Fit: 2.638028E+03 | Tiempo: 90.96 s
+  Run 25/30 -> Fit: 2.624483E+03 | Tiempo: 91.76 s
+  Run 30/30 -> Fit: 2.400000E+03 | Tiempo: 93.05 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 2.710844E+03
+  Media : 2.468204E+03
+  Std   : 1.137902E+02
+  Tiempo Promedio: 92.29 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500000E+03 | Tiempo: 82.26 s
+  Run 10/30 -> Fit: 2.500000E+03 | Tiempo: 82.72 s
+  Run 15/30 -> Fit: 2.500000E+03 | Tiempo: 84.81 s
+  Run 20/30 -> Fit: 2.500000E+03 | Tiempo: 83.61 s
+  Run 25/30 -> Fit: 2.500000E+03 | Tiempo: 82.24 s
+  Run 30/30 -> Fit: 2.500000E+03 | Tiempo: 83.82 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 2.751870E+03
+  Media : 2.508396E+03
+  Std   : 4.521207E+01
+  Tiempo Promedio: 83.17 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 3.159887E+03 | Tiempo: 87.59 s
+  Run 10/30 -> Fit: 3.125534E+03 | Tiempo: 60.25 s
+  Run 15/30 -> Fit: 3.153431E+03 | Tiempo: 94.30 s
+  Run 20/30 -> Fit: 3.154101E+03 | Tiempo: 92.74 s
+  Run 25/30 -> Fit: 3.190082E+03 | Tiempo: 93.23 s
+  Run 30/30 -> Fit: 3.147115E+03 | Tiempo: 68.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 3.101951E+03
+  Peor  : 3.204510E+03
+  Media : 3.143733E+03
+  Std   : 3.041564E+01
+  Tiempo Promedio: 86.19 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 4.039488E+03 | Tiempo: 250.67 s
+  Run 10/30 -> Fit: 4.039793E+03 | Tiempo: 252.64 s
+  Run 15/30 -> Fit: 4.039475E+03 | Tiempo: 252.36 s
+  Run 20/30 -> Fit: 3.703346E+03 | Tiempo: 235.44 s
+  Run 25/30 -> Fit: 4.041453E+03 | Tiempo: 236.76 s
+  Run 30/30 -> Fit: 3.703387E+03 | Tiempo: 234.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 3.692916E+03
+  Peor  : 4.041453E+03
+  Media : 3.852793E+03
+  Std   : 1.541410E+02
+  Tiempo Promedio: 239.69 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.104738E+03 | Tiempo: 237.75 s
+  Run 10/30 -> Fit: 3.122596E+03 | Tiempo: 237.78 s
+  Run 15/30 -> Fit: 3.125500E+03 | Tiempo: 237.30 s
+  Run 20/30 -> Fit: 3.126971E+03 | Tiempo: 239.12 s
+  Run 25/30 -> Fit: 3.117183E+03 | Tiempo: 236.82 s
+  Run 30/30 -> Fit: 3.105310E+03 | Tiempo: 234.92 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.099904E+03
+  Peor  : 3.156387E+03
+  Media : 3.119112E+03
+  Std   : 1.253583E+01
+  Tiempo Promedio: 237.47 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 268.89 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 225.53 s
+  Run 15/30 -> Fit: 2.700000E+03 | Tiempo: 215.65 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 204.19 s
+  Run 25/30 -> Fit: 2.700000E+03 | Tiempo: 232.09 s
+  Run 30/30 -> Fit: 2.700000E+03 | Tiempo: 227.69 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 3.146899E+03
+  Media : 2.742024E+03
+  Std   : 1.174447E+02
+  Tiempo Promedio: 235.39 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 9.614327E+03 | Tiempo: 354.74 s
+  Run 10/30 -> Fit: 9.401089E+03 | Tiempo: 264.94 s
+  Run 15/30 -> Fit: 8.848475E+03 | Tiempo: 333.30 s
+  Run 20/30 -> Fit: 7.580171E+03 | Tiempo: 340.65 s
+  Run 25/30 -> Fit: 9.844154E+03 | Tiempo: 341.38 s
+  Run 30/30 -> Fit: 1.165565E+04 | Tiempo: 336.70 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 6.383584E+03
+  Peor  : 1.165565E+04
+  Media : 8.685375E+03
+  Std   : 1.296462E+03
+  Tiempo Promedio: 334.64 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 1.606914E+04 | Tiempo: 182.67 s
+  Run 10/30 -> Fit: 2.257070E+04 | Tiempo: 182.24 s
+  Run 15/30 -> Fit: 2.395168E+04 | Tiempo: 182.12 s
+  Run 20/30 -> Fit: 1.724660E+04 | Tiempo: 164.31 s
+  Run 25/30 -> Fit: 1.471167E+04 | Tiempo: 167.86 s
+  Run 30/30 -> Fit: 2.561116E+04 | Tiempo: 167.91 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 1.019253E+04
+  Peor  : 4.147667E+04
+  Media : 2.156459E+04
+  Std   : 7.542911E+03
+  Tiempo Promedio: 173.02 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+#######################################
+HÍBRIDO 100 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-13
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_hibrid_JADE_2026-01-15_19-13\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.476988E+04 | Tiempo: 115.45 s
+  Run 10/30 -> Fit: 1.046724E+04 | Tiempo: 116.60 s
+  Run 15/30 -> Fit: 6.414933E+03 | Tiempo: 120.84 s
+  Run 20/30 -> Fit: 2.379454E+03 | Tiempo: 115.92 s
+  Run 25/30 -> Fit: 2.250816E+04 | Tiempo: 117.16 s
+  Run 30/30 -> Fit: 1.131375E+04 | Tiempo: 107.62 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.211871E+02
+  Peor  : 2.351110E+04
+  Media : 9.032545E+03
+  Std   : 6.584909E+03
+  Tiempo Promedio: 116.45 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 107.42 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 106.42 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 106.00 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 104.62 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 106.00 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 107.36 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.486251E+05
+  Media : 1.992894E+04
+  Std   : 6.033838E+04
+  Tiempo Promedio: 104.93 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 6.603670E+02 | Tiempo: 104.39 s
+  Run 10/30 -> Fit: 5.916426E+02 | Tiempo: 105.30 s
+  Run 15/30 -> Fit: 4.918760E+02 | Tiempo: 103.89 s
+  Run 20/30 -> Fit: 5.361889E+02 | Tiempo: 103.50 s
+  Run 25/30 -> Fit: 5.253930E+02 | Tiempo: 104.68 s
+  Run 30/30 -> Fit: 6.231028E+02 | Tiempo: 104.23 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 4.727886E+02
+  Peor  : 6.603670E+02
+  Media : 5.464101E+02
+  Std   : 4.853812E+01
+  Tiempo Promedio: 104.70 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.076567E+03 | Tiempo: 106.86 s
+  Run 10/30 -> Fit: 1.210883E+03 | Tiempo: 107.71 s
+  Run 15/30 -> Fit: 1.322319E+03 | Tiempo: 107.76 s
+  Run 20/30 -> Fit: 1.411860E+03 | Tiempo: 107.43 s
+  Run 25/30 -> Fit: 1.588958E+03 | Tiempo: 107.06 s
+  Run 30/30 -> Fit: 1.219838E+03 | Tiempo: 106.48 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 1.076567E+03
+  Peor  : 2.226700E+03
+  Media : 1.429501E+03
+  Std   : 2.277860E+02
+  Tiempo Promedio: 107.01 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000001E+02 | Tiempo: 161.19 s
+  Run 10/30 -> Fit: 5.000003E+02 | Tiempo: 160.76 s
+  Run 15/30 -> Fit: 5.000001E+02 | Tiempo: 160.90 s
+  Run 20/30 -> Fit: 5.000001E+02 | Tiempo: 160.19 s
+  Run 25/30 -> Fit: 5.000003E+02 | Tiempo: 162.76 s
+  Run 30/30 -> Fit: 5.000005E+02 | Tiempo: 157.45 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000000E+02
+  Peor  : 5.000007E+02
+  Media : 5.000002E+02
+  Std   : 1.532117E-04
+  Tiempo Promedio: 160.96 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.353382E+03 | Tiempo: 99.06 s
+  Run 10/30 -> Fit: 1.398001E+03 | Tiempo: 113.78 s
+  Run 15/30 -> Fit: 1.340150E+03 | Tiempo: 104.24 s
+  Run 20/30 -> Fit: 1.356799E+03 | Tiempo: 104.55 s
+  Run 25/30 -> Fit: 1.410283E+03 | Tiempo: 103.85 s
+  Run 30/30 -> Fit: 1.292909E+03 | Tiempo: 105.07 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 1.292909E+03
+  Peor  : 1.463602E+03
+  Media : 1.376225E+03
+  Std   : 3.750019E+01
+  Tiempo Promedio: 132.80 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.826000E+03 | Tiempo: 109.07 s
+  Run 10/30 -> Fit: 1.956500E+03 | Tiempo: 111.53 s
+  Run 15/30 -> Fit: 1.610000E+03 | Tiempo: 111.06 s
+  Run 20/30 -> Fit: 2.042500E+03 | Tiempo: 111.22 s
+  Run 25/30 -> Fit: 1.602500E+03 | Tiempo: 110.54 s
+  Run 30/30 -> Fit: 1.896500E+03 | Tiempo: 111.75 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 1.599000E+03
+  Peor  : 2.289850E+03
+  Media : 1.819751E+03
+  Std   : 1.611538E+02
+  Tiempo Promedio: 110.15 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.181528E+02 | Tiempo: 108.96 s
+  Run 10/30 -> Fit: 8.284165E+02 | Tiempo: 105.83 s
+  Run 15/30 -> Fit: 8.373063E+02 | Tiempo: 107.96 s
+  Run 20/30 -> Fit: 8.562159E+02 | Tiempo: 107.05 s
+  Run 25/30 -> Fit: 8.304300E+02 | Tiempo: 107.01 s
+  Run 30/30 -> Fit: 8.283430E+02 | Tiempo: 106.53 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.181180E+02
+  Peor  : 8.562159E+02
+  Media : 8.337755E+02
+  Std   : 8.689363E+00
+  Tiempo Promedio: 107.64 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 2.751012E+04 | Tiempo: 98.40 s
+  Run 10/30 -> Fit: 2.513824E+04 | Tiempo: 98.58 s
+  Run 15/30 -> Fit: 1.501883E+04 | Tiempo: 97.44 s
+  Run 20/30 -> Fit: 2.856614E+04 | Tiempo: 101.51 s
+  Run 25/30 -> Fit: 1.579437E+04 | Tiempo: 97.58 s
+  Run 30/30 -> Fit: 2.091229E+04 | Tiempo: 97.29 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 1.501883E+04
+  Peor  : 2.952159E+04
+  Media : 2.384707E+04
+  Std   : 4.088427E+03
+  Tiempo Promedio: 98.95 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.727175E+03 | Tiempo: 108.79 s
+  Run 10/30 -> Fit: 2.016292E+03 | Tiempo: 109.40 s
+  Run 15/30 -> Fit: 1.919081E+03 | Tiempo: 108.54 s
+  Run 20/30 -> Fit: 2.094582E+03 | Tiempo: 107.81 s
+  Run 25/30 -> Fit: 2.478883E+03 | Tiempo: 105.87 s
+  Run 30/30 -> Fit: 2.234479E+03 | Tiempo: 107.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.727175E+03
+  Peor  : 3.581184E+03
+  Media : 2.436647E+03
+  Std   : 4.307598E+02
+  Tiempo Promedio: 107.95 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 1.418470E+05 | Tiempo: 120.40 s
+  Run 10/30 -> Fit: 6.158147E+05 | Tiempo: 120.42 s
+  Run 15/30 -> Fit: 2.795868E+04 | Tiempo: 120.21 s
+  Run 20/30 -> Fit: 1.268725E+05 | Tiempo: 121.29 s
+  Run 25/30 -> Fit: 3.078857E+05 | Tiempo: 120.86 s
+  Run 30/30 -> Fit: 1.540601E+05 | Tiempo: 121.79 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 2.795868E+04
+  Peor  : 7.607778E+05
+  Media : 1.950550E+05
+  Std   : 1.702853E+05
+  Tiempo Promedio: 121.09 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 3.657935E+03 | Tiempo: 114.75 s
+  Run 10/30 -> Fit: 2.026624E+03 | Tiempo: 114.55 s
+  Run 15/30 -> Fit: 2.694438E+04 | Tiempo: 114.85 s
+  Run 20/30 -> Fit: 1.470173E+04 | Tiempo: 113.93 s
+  Run 25/30 -> Fit: 1.210996E+04 | Tiempo: 114.62 s
+  Run 30/30 -> Fit: 3.587708E+04 | Tiempo: 114.10 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 2.026624E+03
+  Peor  : 3.587708E+04
+  Media : 1.498389E+04
+  Std   : 1.127168E+04
+  Tiempo Promedio: 114.47 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 6.536492E+04 | Tiempo: 123.55 s
+  Run 10/30 -> Fit: 6.412807E+04 | Tiempo: 124.85 s
+  Run 15/30 -> Fit: 4.292709E+04 | Tiempo: 127.16 s
+  Run 20/30 -> Fit: 7.246181E+04 | Tiempo: 127.67 s
+  Run 25/30 -> Fit: 5.755171E+04 | Tiempo: 127.63 s
+  Run 30/30 -> Fit: 5.864440E+04 | Tiempo: 128.07 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 1.371193E+04
+  Peor  : 2.556094E+05
+  Media : 6.993976E+04
+  Std   : 4.719078E+04
+  Tiempo Promedio: 124.78 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 1.870956E+04 | Tiempo: 118.26 s
+  Run 10/30 -> Fit: 1.034903E+04 | Tiempo: 114.68 s
+  Run 15/30 -> Fit: 1.750385E+04 | Tiempo: 113.38 s
+  Run 20/30 -> Fit: 1.858061E+04 | Tiempo: 112.66 s
+  Run 25/30 -> Fit: 7.273336E+03 | Tiempo: 112.73 s
+  Run 30/30 -> Fit: 2.841258E+04 | Tiempo: 112.25 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 5.974496E+03
+  Peor  : 3.626444E+04
+  Media : 1.881549E+04
+  Std   : 8.715094E+03
+  Tiempo Promedio: 111.21 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 2.376780E+03 | Tiempo: 168.38 s
+  Run 10/30 -> Fit: 2.236589E+03 | Tiempo: 168.37 s
+  Run 15/30 -> Fit: 2.487908E+03 | Tiempo: 170.45 s
+  Run 20/30 -> Fit: 2.058269E+03 | Tiempo: 171.59 s
+  Run 25/30 -> Fit: 1.703146E+03 | Tiempo: 171.41 s
+  Run 30/30 -> Fit: 2.289601E+03 | Tiempo: 170.73 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.534925E+03
+  Peor  : 3.877183E+03
+  Media : 2.132023E+03
+  Std   : 5.887825E+02
+  Tiempo Promedio: 170.47 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 2.354954E+03 | Tiempo: 498.39 s
+  Run 10/30 -> Fit: 2.315243E+03 | Tiempo: 499.32 s
+  Run 15/30 -> Fit: 2.703355E+03 | Tiempo: 498.68 s
+  Run 20/30 -> Fit: 3.794884E+03 | Tiempo: 500.85 s
+  Run 25/30 -> Fit: 4.298384E+03 | Tiempo: 497.37 s
+  Run 30/30 -> Fit: 2.909134E+03 | Tiempo: 455.04 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 2.005350E+03
+  Peor  : 4.298384E+03
+  Media : 2.751290E+03
+  Std   : 5.893005E+02
+  Tiempo Promedio: 497.79 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 9.961204E+04 | Tiempo: 116.53 s
+  Run 10/30 -> Fit: 1.365926E+05 | Tiempo: 115.82 s
+  Run 15/30 -> Fit: 1.563365E+05 | Tiempo: 99.99 s
+  Run 20/30 -> Fit: 1.657676E+05 | Tiempo: 118.05 s
+  Run 25/30 -> Fit: 1.474940E+05 | Tiempo: 120.15 s
+  Run 30/30 -> Fit: 1.639152E+05 | Tiempo: 119.86 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 8.700005E+04
+  Peor  : 2.998430E+05
+  Media : 1.617661E+05
+  Std   : 4.966034E+04
+  Tiempo Promedio: 116.13 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 8.511938E+03 | Tiempo: 269.87 s
+  Run 10/30 -> Fit: 4.459031E+03 | Tiempo: 275.56 s
+  Run 15/30 -> Fit: 7.019018E+03 | Tiempo: 276.73 s
+  Run 20/30 -> Fit: 5.142887E+03 | Tiempo: 275.43 s
+  Run 25/30 -> Fit: 1.909079E+03 | Tiempo: 276.14 s
+  Run 30/30 -> Fit: 1.926740E+04 | Tiempo: 276.70 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.909079E+03
+  Peor  : 1.926740E+04
+  Media : 6.615846E+03
+  Std   : 4.845117E+03
+  Tiempo Promedio: 272.50 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 2.026358E+03 | Tiempo: 518.47 s
+  Run 10/30 -> Fit: 2.134093E+03 | Tiempo: 793.05 s
+  Run 15/30 -> Fit: 2.365622E+03 | Tiempo: 485.05 s
+  Run 20/30 -> Fit: 3.654707E+03 | Tiempo: 481.25 s
+  Run 25/30 -> Fit: 2.265008E+03 | Tiempo: 476.01 s
+  Run 30/30 -> Fit: 3.431911E+03 | Tiempo: 434.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 2.026358E+03
+  Peor  : 5.432462E+03
+  Media : 2.889483E+03
+  Std   : 9.756917E+02
+  Tiempo Promedio: 500.24 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 3.470367E+03 | Tiempo: 175.77 s
+  Run 10/30 -> Fit: 3.072558E+03 | Tiempo: 178.99 s
+  Run 15/30 -> Fit: 3.182055E+03 | Tiempo: 183.04 s
+  Run 20/30 -> Fit: 3.118271E+03 | Tiempo: 178.87 s
+  Run 25/30 -> Fit: 3.561291E+03 | Tiempo: 182.29 s
+  Run 30/30 -> Fit: 2.956538E+03 | Tiempo: 180.60 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.694161E+03
+  Peor  : 3.561291E+03
+  Media : 3.120121E+03
+  Std   : 2.180201E+02
+  Tiempo Promedio: 179.31 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.579508E+03 | Tiempo: 156.02 s
+  Run 10/30 -> Fit: 2.564188E+03 | Tiempo: 159.81 s
+  Run 15/30 -> Fit: 2.612729E+03 | Tiempo: 158.47 s
+  Run 20/30 -> Fit: 2.527308E+03 | Tiempo: 158.08 s
+  Run 25/30 -> Fit: 2.537052E+03 | Tiempo: 158.67 s
+  Run 30/30 -> Fit: 2.516591E+03 | Tiempo: 147.08 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.469693E+03
+  Peor  : 2.644252E+03
+  Media : 2.550751E+03
+  Std   : 4.325313E+01
+  Tiempo Promedio: 153.50 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 2.400001E+03 | Tiempo: 212.62 s
+  Run 10/30 -> Fit: 2.400002E+03 | Tiempo: 197.50 s
+  Run 15/30 -> Fit: 3.603413E+03 | Tiempo: 227.32 s
+  Run 20/30 -> Fit: 3.382546E+03 | Tiempo: 197.80 s
+  Run 25/30 -> Fit: 2.400001E+03 | Tiempo: 197.23 s
+  Run 30/30 -> Fit: 2.400001E+03 | Tiempo: 194.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 4.269137E+03
+  Media : 2.667340E+03
+  Std   : 5.509548E+02
+  Tiempo Promedio: 202.14 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500005E+03 | Tiempo: 189.05 s
+  Run 10/30 -> Fit: 2.500003E+03 | Tiempo: 192.02 s
+  Run 15/30 -> Fit: 3.862173E+03 | Tiempo: 188.11 s
+  Run 20/30 -> Fit: 2.500002E+03 | Tiempo: 189.18 s
+  Run 25/30 -> Fit: 2.500001E+03 | Tiempo: 190.60 s
+  Run 30/30 -> Fit: 3.839319E+03 | Tiempo: 187.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 3.862173E+03
+  Media : 2.732507E+03
+  Std   : 4.729143E+02
+  Tiempo Promedio: 190.16 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 3.282340E+03 | Tiempo: 218.84 s
+  Run 10/30 -> Fit: 3.363304E+03 | Tiempo: 219.80 s
+  Run 15/30 -> Fit: 3.318932E+03 | Tiempo: 220.34 s
+  Run 20/30 -> Fit: 3.323510E+03 | Tiempo: 216.90 s
+  Run 25/30 -> Fit: 3.333409E+03 | Tiempo: 221.14 s
+  Run 30/30 -> Fit: 3.301784E+03 | Tiempo: 220.46 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 3.282340E+03
+  Peor  : 3.393047E+03
+  Media : 3.323627E+03
+  Std   : 2.909349E+01
+  Tiempo Promedio: 219.06 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 6.003635E+03 | Tiempo: 430.45 s
+  Run 10/30 -> Fit: 6.288670E+03 | Tiempo: 426.04 s
+  Run 15/30 -> Fit: 6.282558E+03 | Tiempo: 428.83 s
+  Run 20/30 -> Fit: 5.990015E+03 | Tiempo: 426.71 s
+  Run 25/30 -> Fit: 6.161339E+03 | Tiempo: 427.23 s
+  Run 30/30 -> Fit: 6.055705E+03 | Tiempo: 426.24 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 5.971072E+03
+  Peor  : 6.291592E+03
+  Media : 6.106157E+03
+  Std   : 1.050965E+02
+  Tiempo Promedio: 424.80 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.651393E+03 | Tiempo: 459.13 s
+  Run 10/30 -> Fit: 3.437000E+03 | Tiempo: 473.60 s
+  Run 15/30 -> Fit: 3.375994E+03 | Tiempo: 468.22 s
+  Run 20/30 -> Fit: 3.583734E+03 | Tiempo: 463.38 s
+  Run 25/30 -> Fit: 3.541212E+03 | Tiempo: 474.36 s
+  Run 30/30 -> Fit: 3.625460E+03 | Tiempo: 467.94 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.324052E+03
+  Peor  : 3.775194E+03
+  Media : 3.511167E+03
+  Std   : 1.130893E+02
+  Tiempo Promedio: 465.23 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.719908E+03 | Tiempo: 459.96 s
+  Run 10/30 -> Fit: 2.737611E+03 | Tiempo: 458.74 s
+  Run 15/30 -> Fit: 2.724578E+03 | Tiempo: 490.47 s
+  Run 20/30 -> Fit: 3.132597E+03 | Tiempo: 502.17 s
+  Run 25/30 -> Fit: 2.724904E+03 | Tiempo: 484.72 s
+  Run 30/30 -> Fit: 2.734400E+03 | Tiempo: 501.23 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.717816E+03
+  Peor  : 3.132597E+03
+  Media : 2.742749E+03
+  Std   : 7.385470E+01
+  Tiempo Promedio: 474.90 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 2.750113E+04 | Tiempo: 539.83 s
+  Run 10/30 -> Fit: 1.512203E+04 | Tiempo: 533.62 s
+  Run 15/30 -> Fit: 1.300333E+04 | Tiempo: 531.75 s
+  Run 20/30 -> Fit: 1.437906E+04 | Tiempo: 530.38 s
+  Run 25/30 -> Fit: 1.775621E+04 | Tiempo: 534.78 s
+  Run 30/30 -> Fit: 1.749624E+04 | Tiempo: 532.08 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 1.159664E+04
+  Peor  : 2.750113E+04
+  Media : 1.642265E+04
+  Std   : 2.933043E+03
+  Tiempo Promedio: 538.08 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 6.449955E+04 | Tiempo: 300.53 s
+  Run 10/30 -> Fit: 8.256609E+04 | Tiempo: 298.10 s
+  Run 15/30 -> Fit: 4.830057E+04 | Tiempo: 303.17 s
+  Run 20/30 -> Fit: 4.456605E+04 | Tiempo: 302.87 s
+  Run 25/30 -> Fit: 5.973155E+04 | Tiempo: 230.92 s
+  Run 30/30 -> Fit: 5.033742E+04 | Tiempo: 322.48 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 2.926620E+04
+  Peor  : 1.171866E+05
+  Media : 6.765814E+04
+  Std   : 2.229008E+04
+  Tiempo Promedio: 296.62 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+#######################################
+JADE 100 DIMS
+#######################################
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/benchmark_CEC2017.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-13
+INICIANDO EXPERIMENTO CON: JADE
+Guardando en: c:\users\oswal\onedrive\documentos\udeg\maestría\tesis\codigo\Resultados_JADE_2026-01-15_19-13\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.450974E+03 | Tiempo: 118.57 s
+  Run 10/30 -> Fit: 2.256993E+03 | Tiempo: 116.22 s
+  Run 15/30 -> Fit: 1.988114E+03 | Tiempo: 121.90 s
+  Run 20/30 -> Fit: 3.599367E+03 | Tiempo: 116.78 s
+  Run 25/30 -> Fit: 1.022743E+02 | Tiempo: 119.26 s
+  Run 30/30 -> Fit: 5.025556E+02 | Tiempo: 107.88 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.022743E+02
+  Peor  : 1.806193E+04
+  Media : 3.914501E+03
+  Std   : 5.032160E+03
+  Tiempo Promedio: 117.79 s
+--------------------------------------------------
+
+Procesando: F2: Shifted and Rotated Zakharov Function ...
+  Run 5/30 -> Fit: 2.000000E+02 | Tiempo: 109.11 s
+  Run 10/30 -> Fit: 2.000000E+02 | Tiempo: 108.11 s
+  Run 15/30 -> Fit: 2.000000E+02 | Tiempo: 107.44 s
+  Run 20/30 -> Fit: 2.000000E+02 | Tiempo: 106.43 s
+  Run 25/30 -> Fit: 2.000000E+02 | Tiempo: 107.19 s
+  Run 30/30 -> Fit: 2.000000E+02 | Tiempo: 107.19 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F2: Shifted and Rotated Zakharov Function
+  Mejor : 2.000000E+02
+  Peor  : 2.000000E+02
+  Media : 2.000000E+02
+  Std   : 7.228389E-06
+  Tiempo Promedio: 107.88 s
+--------------------------------------------------
+
+Procesando: F3: Shifted and Rotated Rosenbrock’s Function ...
+  Run 5/30 -> Fit: 5.465298E+02 | Tiempo: 109.89 s
+  Run 10/30 -> Fit: 5.828229E+02 | Tiempo: 110.23 s
+  Run 15/30 -> Fit: 5.440055E+02 | Tiempo: 109.86 s
+  Run 20/30 -> Fit: 5.574443E+02 | Tiempo: 110.15 s
+  Run 25/30 -> Fit: 5.699837E+02 | Tiempo: 110.79 s
+  Run 30/30 -> Fit: 5.308555E+02 | Tiempo: 109.59 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F3: Shifted and Rotated Rosenbrock’s Function
+  Mejor : 4.076640E+02
+  Peor  : 5.841288E+02
+  Media : 5.247543E+02
+  Std   : 4.453538E+01
+  Tiempo Promedio: 109.69 s
+--------------------------------------------------
+
+Procesando: F4: Shifted and Rotated Rastrigin’s Function ...
+  Run 5/30 -> Fit: 9.813824E+02 | Tiempo: 106.10 s
+  Run 10/30 -> Fit: 1.043821E+03 | Tiempo: 107.25 s
+  Run 15/30 -> Fit: 8.667415E+02 | Tiempo: 105.87 s
+  Run 20/30 -> Fit: 9.191356E+02 | Tiempo: 106.98 s
+  Run 25/30 -> Fit: 9.275302E+02 | Tiempo: 106.94 s
+  Run 30/30 -> Fit: 9.778255E+02 | Tiempo: 107.02 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F4: Shifted and Rotated Rastrigin’s Function
+  Mejor : 8.667415E+02
+  Peor  : 1.087060E+03
+  Media : 9.709403E+02
+  Std   : 5.532363E+01
+  Tiempo Promedio: 106.92 s
+--------------------------------------------------
+
+Procesando: F5: Shifted and Rotated Schaffer’s F7 Function ...
+  Run 5/30 -> Fit: 5.000016E+02 | Tiempo: 160.70 s
+  Run 10/30 -> Fit: 5.000008E+02 | Tiempo: 160.70 s
+  Run 15/30 -> Fit: 5.000026E+02 | Tiempo: 159.76 s
+  Run 20/30 -> Fit: 5.000028E+02 | Tiempo: 158.48 s
+  Run 25/30 -> Fit: 5.000033E+02 | Tiempo: 161.52 s
+  Run 30/30 -> Fit: 5.000013E+02 | Tiempo: 1006.96 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F5: Shifted and Rotated Schaffer’s F7 Function
+  Mejor : 5.000001E+02
+  Peor  : 5.000052E+02
+  Media : 5.000021E+02
+  Std   : 1.114840E-03
+  Tiempo Promedio: 187.92 s
+--------------------------------------------------
+
+Procesando: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.309255E+03 | Tiempo: 110.83 s
+  Run 10/30 -> Fit: 1.243448E+03 | Tiempo: 93.21 s
+  Run 15/30 -> Fit: 1.293344E+03 | Tiempo: 106.71 s
+  Run 20/30 -> Fit: 1.316839E+03 | Tiempo: 106.36 s
+  Run 25/30 -> Fit: 1.350581E+03 | Tiempo: 106.18 s
+  Run 30/30 -> Fit: 1.272020E+03 | Tiempo: 106.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F6: Shifted and Rotated Lunacek Bi-Rastrigin’s Function
+  Mejor : 1.237077E+03
+  Peor  : 1.399740E+03
+  Media : 1.301697E+03
+  Std   : 3.942342E+01
+  Tiempo Promedio: 105.54 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 1.650170E+03 | Tiempo: 117.81 s
+  Run 10/30 -> Fit: 1.628646E+03 | Tiempo: 117.94 s
+  Run 15/30 -> Fit: 1.596628E+03 | Tiempo: 117.87 s
+  Run 20/30 -> Fit: 1.531692E+03 | Tiempo: 118.07 s
+  Run 25/30 -> Fit: 2.064170E+03 | Tiempo: 114.75 s
+  Run 30/30 -> Fit: 1.523886E+03 | Tiempo: 117.37 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 1.476958E+03
+  Peor  : 2.064170E+03
+  Media : 1.619568E+03
+  Std   : 1.003011E+02
+  Tiempo Promedio: 117.97 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.011706E+02 | Tiempo: 107.22 s
+  Run 10/30 -> Fit: 8.024506E+02 | Tiempo: 107.89 s
+  Run 15/30 -> Fit: 8.025335E+02 | Tiempo: 107.84 s
+  Run 20/30 -> Fit: 8.038721E+02 | Tiempo: 107.02 s
+  Run 25/30 -> Fit: 8.054217E+02 | Tiempo: 107.18 s
+  Run 30/30 -> Fit: 8.025335E+02 | Tiempo: 108.53 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.008124E+02
+  Peor  : 8.081400E+02
+  Media : 8.036107E+02
+  Std   : 1.687972E+00
+  Tiempo Promedio: 108.03 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 3.107000E+04 | Tiempo: 109.11 s
+  Run 10/30 -> Fit: 3.071798E+04 | Tiempo: 109.78 s
+  Run 15/30 -> Fit: 3.086696E+04 | Tiempo: 108.92 s
+  Run 20/30 -> Fit: 3.102327E+04 | Tiempo: 109.37 s
+  Run 25/30 -> Fit: 3.125243E+04 | Tiempo: 109.49 s
+  Run 30/30 -> Fit: 3.088284E+04 | Tiempo: 108.42 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 2.340323E+04
+  Peor  : 3.224864E+04
+  Media : 3.006861E+04
+  Std   : 2.277242E+03
+  Tiempo Promedio: 109.63 s
+--------------------------------------------------
+
+Procesando: F10: Hybrid Function 1 ...
+  Run 5/30 -> Fit: 1.311072E+03 | Tiempo: 109.51 s
+  Run 10/30 -> Fit: 4.875226E+03 | Tiempo: 109.20 s
+  Run 15/30 -> Fit: 5.365444E+03 | Tiempo: 110.06 s
+  Run 20/30 -> Fit: 2.093884E+03 | Tiempo: 110.01 s
+  Run 25/30 -> Fit: 1.412111E+03 | Tiempo: 110.10 s
+  Run 30/30 -> Fit: 1.463234E+03 | Tiempo: 110.36 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F10: Hybrid Function 1
+  Mejor : 1.271451E+03
+  Peor  : 7.322378E+03
+  Media : 2.301894E+03
+  Std   : 1.882427E+03
+  Tiempo Promedio: 109.78 s
+--------------------------------------------------
+
+Procesando: F11: Hybrid Function 2 ...
+  Run 5/30 -> Fit: 2.228532E+04 | Tiempo: 121.15 s
+  Run 10/30 -> Fit: 1.259609E+05 | Tiempo: 120.80 s
+  Run 15/30 -> Fit: 1.700008E+05 | Tiempo: 121.46 s
+  Run 20/30 -> Fit: 3.159248E+04 | Tiempo: 121.04 s
+  Run 25/30 -> Fit: 1.454220E+04 | Tiempo: 121.10 s
+  Run 30/30 -> Fit: 3.215428E+04 | Tiempo: 120.77 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F11: Hybrid Function 2
+  Mejor : 1.200451E+04
+  Peor  : 3.247219E+05
+  Media : 4.903636E+04
+  Std   : 6.189305E+04
+  Tiempo Promedio: 121.00 s
+--------------------------------------------------
+
+Procesando: F12: Hybrid Function 3 ...
+  Run 5/30 -> Fit: 4.171973E+03 | Tiempo: 112.24 s
+  Run 10/30 -> Fit: 2.223642E+03 | Tiempo: 112.35 s
+  Run 15/30 -> Fit: 8.711996E+03 | Tiempo: 112.84 s
+  Run 20/30 -> Fit: 8.879220E+03 | Tiempo: 112.88 s
+  Run 25/30 -> Fit: 1.073434E+04 | Tiempo: 112.80 s
+  Run 30/30 -> Fit: 1.728453E+03 | Tiempo: 112.04 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F12: Hybrid Function 3
+  Mejor : 1.525701E+03
+  Peor  : 1.329221E+04
+  Media : 6.244966E+03
+  Std   : 4.259876E+03
+  Tiempo Promedio: 112.50 s
+--------------------------------------------------
+
+Procesando: F13: Hybrid Function 4 ...
+  Run 5/30 -> Fit: 1.147241E+05 | Tiempo: 127.17 s
+  Run 10/30 -> Fit: 7.576632E+04 | Tiempo: 126.60 s
+  Run 15/30 -> Fit: 2.846501E+04 | Tiempo: 127.27 s
+  Run 20/30 -> Fit: 1.575207E+04 | Tiempo: 127.23 s
+  Run 25/30 -> Fit: 1.118570E+04 | Tiempo: 128.36 s
+  Run 30/30 -> Fit: 7.576745E+04 | Tiempo: 105.41 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F13: Hybrid Function 4
+  Mejor : 1.118570E+04
+  Peor  : 1.147241E+05
+  Media : 4.098411E+04
+  Std   : 2.481896E+04
+  Tiempo Promedio: 125.19 s
+--------------------------------------------------
+
+Procesando: F14: Hybrid Function 5 ...
+  Run 5/30 -> Fit: 8.049027E+03 | Tiempo: 113.63 s
+  Run 10/30 -> Fit: 1.209460E+04 | Tiempo: 113.05 s
+  Run 15/30 -> Fit: 9.803903E+03 | Tiempo: 112.90 s
+  Run 20/30 -> Fit: 1.086568E+04 | Tiempo: 97.16 s
+  Run 25/30 -> Fit: 1.315413E+04 | Tiempo: 115.48 s
+  Run 30/30 -> Fit: 6.288037E+03 | Tiempo: 116.04 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F14: Hybrid Function 5
+  Mejor : 3.020937E+03
+  Peor  : 2.289331E+04
+  Media : 9.907922E+03
+  Std   : 4.657442E+03
+  Tiempo Promedio: 111.56 s
+--------------------------------------------------
+
+Procesando: F15: Hybrid Function 6 ...
+  Run 5/30 -> Fit: 1.904995E+03 | Tiempo: 177.48 s
+  Run 10/30 -> Fit: 1.838237E+03 | Tiempo: 177.23 s
+  Run 15/30 -> Fit: 2.674478E+03 | Tiempo: 177.23 s
+  Run 20/30 -> Fit: 1.970061E+03 | Tiempo: 177.93 s
+  Run 25/30 -> Fit: 1.692011E+03 | Tiempo: 176.02 s
+  Run 30/30 -> Fit: 2.124016E+03 | Tiempo: 178.01 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F15: Hybrid Function 6
+  Mejor : 1.540095E+03
+  Peor  : 2.674478E+03
+  Media : 1.891372E+03
+  Std   : 2.433645E+02
+  Tiempo Promedio: 177.45 s
+--------------------------------------------------
+
+Procesando: F16: Hybrid Function 7 ...
+  Run 5/30 -> Fit: 2.717653E+03 | Tiempo: 514.30 s
+  Run 10/30 -> Fit: 4.340661E+03 | Tiempo: 511.24 s
+  Run 15/30 -> Fit: 3.747897E+03 | Tiempo: 512.21 s
+  Run 20/30 -> Fit: 3.922832E+03 | Tiempo: 515.27 s
+  Run 25/30 -> Fit: 2.076934E+03 | Tiempo: 516.03 s
+  Run 30/30 -> Fit: 3.774345E+03 | Tiempo: 508.29 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F16: Hybrid Function 7
+  Mejor : 1.977265E+03
+  Peor  : 6.251079E+03
+  Media : 3.464566E+03
+  Std   : 1.003474E+03
+  Tiempo Promedio: 511.36 s
+--------------------------------------------------
+
+Procesando: F17: Hybrid Function 8 ...
+  Run 5/30 -> Fit: 1.040711E+05 | Tiempo: 120.71 s
+  Run 10/30 -> Fit: 1.227778E+05 | Tiempo: 120.07 s
+  Run 15/30 -> Fit: 7.819611E+04 | Tiempo: 121.97 s
+  Run 20/30 -> Fit: 1.034446E+05 | Tiempo: 121.38 s
+  Run 25/30 -> Fit: 1.061799E+05 | Tiempo: 119.62 s
+  Run 30/30 -> Fit: 1.042261E+05 | Tiempo: 120.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F17: Hybrid Function 8
+  Mejor : 4.170495E+04
+  Peor  : 1.604414E+05
+  Media : 9.758634E+04
+  Std   : 2.414616E+04
+  Tiempo Promedio: 118.85 s
+--------------------------------------------------
+
+Procesando: F18: Hybrid Function 9 ...
+  Run 5/30 -> Fit: 5.215012E+03 | Tiempo: 276.63 s
+  Run 10/30 -> Fit: 3.911851E+03 | Tiempo: 275.45 s
+  Run 15/30 -> Fit: 1.140209E+04 | Tiempo: 275.97 s
+  Run 20/30 -> Fit: 2.181873E+03 | Tiempo: 277.76 s
+  Run 25/30 -> Fit: 6.252353E+03 | Tiempo: 276.01 s
+  Run 30/30 -> Fit: 1.996340E+03 | Tiempo: 275.21 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F18: Hybrid Function 9
+  Mejor : 1.903640E+03
+  Peor  : 1.397861E+04
+  Media : 4.911265E+03
+  Std   : 3.250710E+03
+  Tiempo Promedio: 273.37 s
+--------------------------------------------------
+
+Procesando: F19: Hybrid Function 10 ...
+  Run 5/30 -> Fit: 1.991430E+03 | Tiempo: 530.78 s
+  Run 10/30 -> Fit: 2.182878E+03 | Tiempo: 485.19 s
+  Run 15/30 -> Fit: 1.999166E+03 | Tiempo: 505.28 s
+  Run 20/30 -> Fit: 1.997490E+03 | Tiempo: 484.82 s
+  Run 25/30 -> Fit: 1.986949E+03 | Tiempo: 472.02 s
+  Run 30/30 -> Fit: 1.993495E+03 | Tiempo: 491.69 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F19: Hybrid Function 10
+  Mejor : 1.976893E+03
+  Peor  : 2.218889E+03
+  Media : 2.016104E+03
+  Std   : 5.345164E+01
+  Tiempo Promedio: 502.84 s
+--------------------------------------------------
+
+Procesando: F20: Composition Function 1 ...
+  Run 5/30 -> Fit: 2.771921E+03 | Tiempo: 183.31 s
+  Run 10/30 -> Fit: 2.764329E+03 | Tiempo: 184.05 s
+  Run 15/30 -> Fit: 2.712904E+03 | Tiempo: 181.07 s
+  Run 20/30 -> Fit: 2.753307E+03 | Tiempo: 183.87 s
+  Run 25/30 -> Fit: 2.768530E+03 | Tiempo: 180.18 s
+  Run 30/30 -> Fit: 2.880437E+03 | Tiempo: 182.21 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F20: Composition Function 1
+  Mejor : 2.712904E+03
+  Peor  : 2.889553E+03
+  Media : 2.780990E+03
+  Std   : 4.135263E+01
+  Tiempo Promedio: 179.81 s
+--------------------------------------------------
+
+Procesando: F21: Composition Function 2 ...
+  Run 5/30 -> Fit: 2.359197E+03 | Tiempo: 157.90 s
+  Run 10/30 -> Fit: 2.331668E+03 | Tiempo: 157.31 s
+  Run 15/30 -> Fit: 2.358773E+03 | Tiempo: 152.66 s
+  Run 20/30 -> Fit: 2.353725E+03 | Tiempo: 151.18 s
+  Run 25/30 -> Fit: 2.330858E+03 | Tiempo: 149.74 s
+  Run 30/30 -> Fit: 2.353295E+03 | Tiempo: 143.72 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F21: Composition Function 2
+  Mejor : 2.328459E+03
+  Peor  : 2.369816E+03
+  Media : 2.349999E+03
+  Std   : 1.044213E+01
+  Tiempo Promedio: 153.84 s
+--------------------------------------------------
+
+Procesando: F22: Composition Function 3 ...
+  Run 5/30 -> Fit: 2.400000E+03 | Tiempo: 205.12 s
+  Run 10/30 -> Fit: 2.968786E+03 | Tiempo: 202.61 s
+  Run 15/30 -> Fit: 2.400000E+03 | Tiempo: 204.03 s
+  Run 20/30 -> Fit: 2.400000E+03 | Tiempo: 205.49 s
+  Run 25/30 -> Fit: 2.400000E+03 | Tiempo: 205.26 s
+  Run 30/30 -> Fit: 2.400000E+03 | Tiempo: 207.67 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F22: Composition Function 3
+  Mejor : 2.400000E+03
+  Peor  : 2.968786E+03
+  Media : 2.418960E+03
+  Std   : 1.021002E+02
+  Tiempo Promedio: 206.29 s
+--------------------------------------------------
+
+Procesando: F23: Composition Function 4 ...
+  Run 5/30 -> Fit: 2.500000E+03 | Tiempo: 196.90 s
+  Run 10/30 -> Fit: 2.500000E+03 | Tiempo: 198.08 s
+  Run 15/30 -> Fit: 2.500000E+03 | Tiempo: 198.10 s
+  Run 20/30 -> Fit: 2.500000E+03 | Tiempo: 199.32 s
+  Run 25/30 -> Fit: 2.500000E+03 | Tiempo: 198.89 s
+  Run 30/30 -> Fit: 2.500000E+03 | Tiempo: 199.68 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F23: Composition Function 4
+  Mejor : 2.500000E+03
+  Peor  : 2.500000E+03
+  Media : 2.500000E+03
+  Std   : 4.330055E-06
+  Tiempo Promedio: 199.28 s
+--------------------------------------------------
+
+Procesando: F24: Composition Function 5 ...
+  Run 5/30 -> Fit: 3.299483E+03 | Tiempo: 231.09 s
+  Run 10/30 -> Fit: 3.316407E+03 | Tiempo: 230.58 s
+  Run 15/30 -> Fit: 3.357709E+03 | Tiempo: 233.07 s
+  Run 20/30 -> Fit: 3.283383E+03 | Tiempo: 231.35 s
+  Run 25/30 -> Fit: 3.296934E+03 | Tiempo: 229.76 s
+  Run 30/30 -> Fit: 3.322396E+03 | Tiempo: 228.42 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F24: Composition Function 5
+  Mejor : 3.282233E+03
+  Peor  : 3.362735E+03
+  Media : 3.314890E+03
+  Std   : 2.279853E+01
+  Tiempo Promedio: 230.14 s
+--------------------------------------------------
+
+Procesando: F25: Composition Function 6 ...
+  Run 5/30 -> Fit: 5.835814E+03 | Tiempo: 448.67 s
+  Run 10/30 -> Fit: 5.835875E+03 | Tiempo: 449.57 s
+  Run 15/30 -> Fit: 5.835348E+03 | Tiempo: 446.15 s
+  Run 20/30 -> Fit: 5.860665E+03 | Tiempo: 446.07 s
+  Run 25/30 -> Fit: 5.835179E+03 | Tiempo: 451.60 s
+  Run 30/30 -> Fit: 5.911247E+03 | Tiempo: 448.87 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F25: Composition Function 6
+  Mejor : 5.818027E+03
+  Peor  : 5.927680E+03
+  Media : 5.848638E+03
+  Std   : 2.851883E+01
+  Tiempo Promedio: 445.47 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.257130E+03 | Tiempo: 477.46 s
+  Run 10/30 -> Fit: 3.279457E+03 | Tiempo: 478.25 s
+  Run 15/30 -> Fit: 3.273218E+03 | Tiempo: 474.87 s
+  Run 20/30 -> Fit: 3.224251E+03 | Tiempo: 479.79 s
+  Run 25/30 -> Fit: 3.290722E+03 | Tiempo: 480.98 s
+  Run 30/30 -> Fit: 3.228317E+03 | Tiempo: 480.40 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.215936E+03
+  Peor  : 3.310732E+03
+  Media : 3.248079E+03
+  Std   : 2.568855E+01
+  Tiempo Promedio: 477.92 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.712378E+03 | Tiempo: 471.90 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 496.89 s
+  Run 15/30 -> Fit: 2.845782E+03 | Tiempo: 506.10 s
+  Run 20/30 -> Fit: 2.818405E+03 | Tiempo: 496.53 s
+  Run 25/30 -> Fit: 2.711411E+03 | Tiempo: 471.03 s
+  Run 30/30 -> Fit: 2.825188E+03 | Tiempo: 459.88 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.907963E+03
+  Media : 2.759672E+03
+  Std   : 6.629091E+01
+  Tiempo Promedio: 485.26 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 8.764085E+03 | Tiempo: 553.32 s
+  Run 10/30 -> Fit: 1.221098E+04 | Tiempo: 552.75 s
+  Run 15/30 -> Fit: 9.951183E+03 | Tiempo: 553.12 s
+  Run 20/30 -> Fit: 1.104859E+04 | Tiempo: 552.05 s
+  Run 25/30 -> Fit: 1.059798E+04 | Tiempo: 551.31 s
+  Run 30/30 -> Fit: 1.165517E+04 | Tiempo: 550.51 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 8.035185E+03
+  Peor  : 1.458792E+04
+  Media : 1.076334E+04
+  Std   : 1.772077E+03
+  Tiempo Promedio: 553.03 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 2.852922E+04 | Tiempo: 309.44 s
+  Run 10/30 -> Fit: 2.707532E+04 | Tiempo: 253.89 s
+  Run 15/30 -> Fit: 3.190445E+04 | Tiempo: 323.36 s
+  Run 20/30 -> Fit: 3.009943E+04 | Tiempo: 326.13 s
+  Run 25/30 -> Fit: 2.431489E+04 | Tiempo: 325.34 s
+  Run 30/30 -> Fit: 2.460043E+04 | Tiempo: 329.22 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 2.014065E+04
+  Peor  : 5.486803E+04
+  Media : 3.042792E+04
+  Std   : 7.250205E+03
+  Tiempo Promedio: 310.77 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
