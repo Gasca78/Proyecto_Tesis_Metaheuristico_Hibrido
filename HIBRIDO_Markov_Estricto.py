@@ -120,6 +120,7 @@ class hibrid_JADE(Optimizer):
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
         # Implementación de Cadenas de Markov
         self.transition_matriz = [[0.90,0.05,0.05],[0.05,0.90,0.05],[0.05,0.05,0.90]]
+        # self.best_model = ''
 
     def initialize_variables(self):
         self.dyn_miu_cr = self.miu_cr
@@ -191,19 +192,18 @@ class hibrid_JADE(Optimizer):
             prob_GA = 1 - (prob_DE+prob_PSO)
             if prob_GA < 0: prob_GA = 0.0
             self.strategies_probs = [prob_DE, prob_PSO, prob_GA]
-        
+            
+        # Configuración de las probs en Markov chain
+        self.best_model = np.argmax(qualities)
+        if self.best_model == 0:
+            self.transition_matriz = [[0.90,0.05,0.05],[0.90,0.05,0.05],[0.90,0.05,0.05]]
+        elif self.best_model == 1:
+            self.transition_matriz = [[0.05,0.90,0.05],[0.05,0.90,0.05],[0.05,0.90,0.05]]
+        else:
+            self.transition_matriz = [[0.05,0.05,0.90],[0.05,0.05,0.90],[0.05,0.05,0.90]]
+            
         self.strategies_rewards = {'DE':0.0, 'PSO':0.0, 'GA':0.0}
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
-        
-        # Configuración de las probs en Markov chain
-        best_model = np.argmax(qualities)
-        if best_model == 0:
-            self.transition_matriz = [[0.95,0.025,0.025],[0.80,0.15,0.05],[0.80,0.05,0.15]]
-        elif best_model == 1:
-            self.transition_matriz = [[0.15,0.80,0.05],[0.025,0.95,0.025],[0.05,0.80,0.15]]
-        else:
-            self.transition_matriz = [[0.15,0.05,0.80],[0.05,0.15,0.80],[0.025,0.025,0.95]]
-        
     
     def evolve(self, epoch):
         """
