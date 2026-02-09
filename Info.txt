@@ -4046,3 +4046,625 @@ RESUMEN: F29: Composition Function 10
 
 ============================================================
 EXPERIMENTO FINALIZADO
+
+
+################ EXPERIMENTO CON CADENAS DE MARKOV WINNER-TAKE-ALL ####################
+2026-02-04
+'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+Reloaded modules: config, HIBRIDO
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-04_14-11_30_dims
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-04_14-11_30_dims\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 21.67 s
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 18.87 s
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 18.67 s
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 20.47 s
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 18.62 s
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 18.54 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000000E+02
+  Peor  : 1.000000E+02
+  Media : 1.000000E+02
+  Std   : 3.865237E-11
+  Tiempo Promedio: 19.19 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.100000E+02 | Tiempo: 25.30 s
+  Run 10/30 -> Fit: 8.845000E+02 | Tiempo: 26.60 s
+  Run 15/30 -> Fit: 8.420000E+02 | Tiempo: 27.24 s
+  Run 20/30 -> Fit: 7.980000E+02 | Tiempo: 25.95 s
+  Run 25/30 -> Fit: 8.340000E+02 | Tiempo: 26.93 s
+  Run 30/30 -> Fit: 7.820000E+02 | Tiempo: 27.00 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 7.520000E+02
+  Peor  : 8.845000E+02
+  Media : 8.064000E+02
+  Std   : 3.167160E+01
+  Tiempo Promedio: 26.47 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.005439E+02 | Tiempo: 17.47 s
+  Run 10/30 -> Fit: 8.013630E+02 | Tiempo: 17.57 s
+  Run 15/30 -> Fit: 8.015420E+02 | Tiempo: 17.11 s
+  Run 20/30 -> Fit: 8.024507E+02 | Tiempo: 17.89 s
+  Run 25/30 -> Fit: 8.039454E+02 | Tiempo: 17.34 s
+  Run 30/30 -> Fit: 8.010877E+02 | Tiempo: 17.79 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.000000E+02
+  Peor  : 8.050298E+02
+  Media : 8.018380E+02
+  Std   : 1.279006E+00
+  Tiempo Promedio: 17.46 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 4.277460E+03 | Tiempo: 22.68 s
+  Run 10/30 -> Fit: 3.179626E+03 | Tiempo: 23.22 s
+  Run 15/30 -> Fit: 3.309889E+03 | Tiempo: 24.20 s
+  Run 20/30 -> Fit: 3.380058E+03 | Tiempo: 23.68 s
+  Run 25/30 -> Fit: 3.793494E+03 | Tiempo: 25.08 s
+  Run 30/30 -> Fit: 4.068119E+03 | Tiempo: 23.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 2.587693E+03
+  Peor  : 5.428715E+03
+  Media : 3.915365E+03
+  Std   : 7.352637E+02
+  Tiempo Promedio: 23.81 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.224852E+03 | Tiempo: 81.28 s
+  Run 10/30 -> Fit: 3.159946E+03 | Tiempo: 81.82 s
+  Run 15/30 -> Fit: 3.101841E+03 | Tiempo: 79.99 s
+  Run 20/30 -> Fit: 3.110065E+03 | Tiempo: 82.38 s
+  Run 25/30 -> Fit: 3.202934E+03 | Tiempo: 87.05 s
+  Run 30/30 -> Fit: 3.276403E+03 | Tiempo: 84.44 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.101841E+03
+  Peor  : 3.276403E+03
+  Media : 3.157987E+03
+  Std   : 4.077971E+01
+  Tiempo Promedio: 83.99 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 93.71 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 88.00 s
+  Run 15/30 -> Fit: 2.700000E+03 | Tiempo: 79.14 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 92.00 s
+  Run 25/30 -> Fit: 2.700000E+03 | Tiempo: 80.15 s
+  Run 30/30 -> Fit: 2.700000E+03 | Tiempo: 90.11 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.732113E+03
+  Media : 2.703260E+03
+  Std   : 8.517675E+00
+  Tiempo Promedio: 85.29 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 4.863033E+03 | Tiempo: 147.86 s
+  Run 10/30 -> Fit: 7.500607E+03 | Tiempo: 159.44 s
+  Run 15/30 -> Fit: 4.873368E+03 | Tiempo: 144.92 s
+  Run 20/30 -> Fit: 5.328019E+03 | Tiempo: 160.34 s
+  Run 25/30 -> Fit: 4.754432E+03 | Tiempo: 154.31 s
+  Run 30/30 -> Fit: 5.494431E+03 | Tiempo: 135.33 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 4.610583E+03
+  Peor  : 1.237399E+04
+  Media : 6.053708E+03
+  Std   : 1.675670E+03
+  Tiempo Promedio: 148.91 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 1.178428E+04 | Tiempo: 74.46 s
+  Run 10/30 -> Fit: 4.175140E+03 | Tiempo: 72.75 s
+  Run 15/30 -> Fit: 4.112066E+03 | Tiempo: 76.63 s
+  Run 20/30 -> Fit: 4.821622E+03 | Tiempo: 70.01 s
+  Run 25/30 -> Fit: 3.864022E+03 | Tiempo: 76.00 s
+  Run 30/30 -> Fit: 6.091956E+03 | Tiempo: 112.69 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 3.844933E+03
+  Peor  : 1.178428E+04
+  Media : 5.206550E+03
+  Std   : 1.823121E+03
+  Tiempo Promedio: 76.23 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+MARKOv 15-80-05
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-05_00-11_30_dims
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-05_00-11_30_dims\Fitness.csv
+============================================================
+
+Procesando: F1: Shifted and Rotated Bent Cigar ...
+  Run 5/30 -> Fit: 1.000000E+02 | Tiempo: 20.36 s
+  Run 10/30 -> Fit: 1.000000E+02 | Tiempo: 23.48 s
+  Run 15/30 -> Fit: 1.000000E+02 | Tiempo: 20.15 s
+  Run 20/30 -> Fit: 1.000000E+02 | Tiempo: 21.70 s
+  Run 25/30 -> Fit: 1.000000E+02 | Tiempo: 21.21 s
+  Run 30/30 -> Fit: 1.000000E+02 | Tiempo: 21.79 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F1: Shifted and Rotated Bent Cigar
+  Mejor : 1.000000E+02
+  Peor  : 1.000000E+02
+  Media : 1.000000E+02
+  Std   : 3.371983E-11
+  Tiempo Promedio: 22.00 s
+--------------------------------------------------
+
+Procesando: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function ...
+  Run 5/30 -> Fit: 8.260000E+02 | Tiempo: 33.17 s
+  Run 10/30 -> Fit: 8.945000E+02 | Tiempo: 33.72 s
+  Run 15/30 -> Fit: 7.580000E+02 | Tiempo: 33.40 s
+  Run 20/30 -> Fit: 8.060000E+02 | Tiempo: 32.22 s
+  Run 25/30 -> Fit: 8.060000E+02 | Tiempo: 35.34 s
+  Run 30/30 -> Fit: 7.540000E+02 | Tiempo: 39.45 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F7: Shifted and Rotated Non-Continuous Rastrigin’s Function
+  Mejor : 7.540000E+02
+  Peor  : 8.945000E+02
+  Media : 8.181833E+02
+  Std   : 3.094390E+01
+  Tiempo Promedio: 33.14 s
+--------------------------------------------------
+
+Procesando: F8: Shifted and Rotated Levy Function ...
+  Run 5/30 -> Fit: 8.011528E+02 | Tiempo: 19.08 s
+  Run 10/30 -> Fit: 8.014525E+02 | Tiempo: 19.15 s
+  Run 15/30 -> Fit: 8.000000E+02 | Tiempo: 20.50 s
+  Run 20/30 -> Fit: 8.021509E+02 | Tiempo: 19.44 s
+  Run 25/30 -> Fit: 8.020859E+02 | Tiempo: 20.40 s
+  Run 30/30 -> Fit: 8.037825E+02 | Tiempo: 20.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F8: Shifted and Rotated Levy Function
+  Mejor : 8.000000E+02
+  Peor  : 8.054452E+02
+  Media : 8.018640E+02
+  Std   : 1.301384E+00
+  Tiempo Promedio: 19.98 s
+--------------------------------------------------
+
+Procesando: F9: Shifted and Rotated Schwefel’s Function ...
+  Run 5/30 -> Fit: 3.257725E+03 | Tiempo: 27.63 s
+  Run 10/30 -> Fit: 4.418856E+03 | Tiempo: 29.18 s
+  Run 15/30 -> Fit: 3.505241E+03 | Tiempo: 28.63 s
+  Run 20/30 -> Fit: 3.673501E+03 | Tiempo: 26.30 s
+  Run 25/30 -> Fit: 3.287139E+03 | Tiempo: 28.57 s
+  Run 30/30 -> Fit: 3.796857E+03 | Tiempo: 28.98 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F9: Shifted and Rotated Schwefel’s Function
+  Mejor : 2.656472E+03
+  Peor  : 5.516040E+03
+  Media : 3.725228E+03
+  Std   : 6.266983E+02
+  Tiempo Promedio: 28.39 s
+--------------------------------------------------
+
+Procesando: F26: Composition Function 7 ...
+  Run 5/30 -> Fit: 3.143157E+03 | Tiempo: 98.49 s
+  Run 10/30 -> Fit: 3.189014E+03 | Tiempo: 99.01 s
+  Run 15/30 -> Fit: 3.116722E+03 | Tiempo: 111.86 s
+  Run 20/30 -> Fit: 3.183507E+03 | Tiempo: 100.72 s
+  Run 25/30 -> Fit: 3.344085E+03 | Tiempo: 108.63 s
+  Run 30/30 -> Fit: 3.140064E+03 | Tiempo: 118.56 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F26: Composition Function 7
+  Mejor : 3.101072E+03
+  Peor  : 3.344085E+03
+  Media : 3.152381E+03
+  Std   : 4.497295E+01
+  Tiempo Promedio: 109.89 s
+--------------------------------------------------
+
+Procesando: F27: Composition Function 8 ...
+  Run 5/30 -> Fit: 2.700000E+03 | Tiempo: 107.41 s
+  Run 10/30 -> Fit: 2.700000E+03 | Tiempo: 99.40 s
+  Run 15/30 -> Fit: 2.950957E+03 | Tiempo: 109.90 s
+  Run 20/30 -> Fit: 2.700000E+03 | Tiempo: 108.17 s
+  Run 25/30 -> Fit: 2.700000E+03 | Tiempo: 103.70 s
+  Run 30/30 -> Fit: 2.700000E+03 | Tiempo: 111.61 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F27: Composition Function 8
+  Mejor : 2.700000E+03
+  Peor  : 2.950957E+03
+  Media : 2.709054E+03
+  Std   : 4.507284E+01
+  Tiempo Promedio: 110.33 s
+--------------------------------------------------
+
+Procesando: F28: Composition Function 9 ...
+  Run 5/30 -> Fit: 4.697305E+03 | Tiempo: 177.61 s
+  Run 10/30 -> Fit: 4.166018E+03 | Tiempo: 176.45 s
+  Run 15/30 -> Fit: 7.499105E+03 | Tiempo: 150.68 s
+  Run 20/30 -> Fit: 7.973018E+03 | Tiempo: 145.19 s
+  Run 25/30 -> Fit: 5.460287E+03 | Tiempo: 146.89 s
+  Run 30/30 -> Fit: 4.839933E+03 | Tiempo: 170.96 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F28: Composition Function 9
+  Mejor : 4.166018E+03
+  Peor  : 1.195645E+04
+  Media : 6.292524E+03
+  Std   : 1.900860E+03
+  Tiempo Promedio: 162.07 s
+--------------------------------------------------
+
+Procesando: F29: Composition Function 10 ...
+  Run 5/30 -> Fit: 4.083461E+03 | Tiempo: 101.45 s
+  Run 10/30 -> Fit: 4.322469E+03 | Tiempo: 101.93 s
+  Run 15/30 -> Fit: 3.832767E+03 | Tiempo: 103.97 s
+  Run 20/30 -> Fit: 4.619743E+03 | Tiempo: 103.33 s
+  Run 25/30 -> Fit: 5.210575E+03 | Tiempo: 103.61 s
+  Run 30/30 -> Fit: 4.156700E+03 | Tiempo: 102.36 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: F29: Composition Function 10
+  Mejor : 3.832767E+03
+  Peor  : 1.629911E+04
+  Media : 5.001405E+03
+  Std   : 2.248260E+03
+  Tiempo Promedio: 102.96 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+EXPERIMENTO 06/02/2026
+FUNCIONES DE ENOPPY (PROBLEMAS DE INGENIERÍA)
+JADE
+'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+Reloaded modules: HIBRIDO, HIBRIDO_Markov_Estricto, HIBRIDO_pensante, config
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_JADE_2026-02-06_17-22
+INICIANDO EXPERIMENTO CON: JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_JADE_2026-02-06_17-22\Fitness.csv
+============================================================
+
+Procesando: Weight minimization of a speed reducer (Mechanical design problems) ...
+  Run 5/30 -> Fit: 2.994424E+03 | Tiempo: 26.04 s
+  Run 10/30 -> Fit: 2.994424E+03 | Tiempo: 31.48 s
+  Run 15/30 -> Fit: 2.994424E+03 | Tiempo: 29.29 s
+  Run 20/30 -> Fit: 2.994424E+03 | Tiempo: 42.44 s
+  Run 25/30 -> Fit: 2.994424E+03 | Tiempo: 28.37 s
+  Run 30/30 -> Fit: 2.994424E+03 | Tiempo: 29.97 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Weight minimization of a speed reducer (Mechanical design problems)
+  Mejor : 2.994424E+03
+  Peor  : 2.994424E+03
+  Media : 2.994424E+03
+  Std   : 9.094947E-13
+  Tiempo Promedio: 30.53 s
+--------------------------------------------------
+
+Procesando: Tension/compression spring design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.266523E-02 | Tiempo: 28.92 s
+  Run 10/30 -> Fit: 1.266523E-02 | Tiempo: 26.75 s
+  Run 15/30 -> Fit: 1.266523E-02 | Tiempo: 29.25 s
+  Run 20/30 -> Fit: 1.266523E-02 | Tiempo: 28.91 s
+  Run 25/30 -> Fit: 1.266523E-02 | Tiempo: 26.97 s
+  Run 30/30 -> Fit: 1.266523E-02 | Tiempo: 28.72 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Tension/compression spring design (Mechanical design problems)
+  Mejor : 1.266523E-02
+  Peor  : 1.266523E-02
+  Media : 1.266523E-02
+  Std   : 3.651579E-12
+  Tiempo Promedio: 27.88 s
+--------------------------------------------------
+
+Procesando: Pressure vessel design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 6.059714E+03 | Tiempo: 27.76 s
+  Run 10/30 -> Fit: 6.059714E+03 | Tiempo: 27.31 s
+  Run 15/30 -> Fit: 6.059714E+03 | Tiempo: 27.37 s
+  Run 20/30 -> Fit: 6.059714E+03 | Tiempo: 28.70 s
+  Run 25/30 -> Fit: 6.090526E+03 | Tiempo: 27.77 s
+  Run 30/30 -> Fit: 6.059714E+03 | Tiempo: 28.69 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Pressure vessel design (Mechanical design problems)
+  Mejor : 6.059714E+03
+  Peor  : 6.090526E+03
+  Media : 6.065877E+03
+  Std   : 1.232475E+01
+  Tiempo Promedio: 27.99 s
+--------------------------------------------------
+
+Procesando: Welded beam design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.670218E+00 | Tiempo: 28.05 s
+  Run 10/30 -> Fit: 1.670218E+00 | Tiempo: 27.43 s
+  Run 15/30 -> Fit: 1.670218E+00 | Tiempo: 25.64 s
+  Run 20/30 -> Fit: 1.670218E+00 | Tiempo: 24.14 s
+  Run 25/30 -> Fit: 1.670218E+00 | Tiempo: 25.19 s
+  Run 30/30 -> Fit: 1.670218E+00 | Tiempo: 24.63 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Welded beam design (Mechanical design problems)
+  Mejor : 1.670218E+00
+  Peor  : 1.670218E+00
+  Media : 1.670218E+00
+  Std   : 2.220446E-16
+  Tiempo Promedio: 26.33 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+HÍBRIDO MARKOV 15-08-05
+'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-23
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-23\Fitness.csv
+============================================================
+
+Procesando: Weight minimization of a speed reducer (Mechanical design problems) ...
+  Run 5/30 -> Fit: 2.994424E+03 | Tiempo: 19.31 s
+  Run 10/30 -> Fit: 2.994424E+03 | Tiempo: 21.50 s
+  Run 15/30 -> Fit: 2.994424E+03 | Tiempo: 21.90 s
+  Run 20/30 -> Fit: 2.994424E+03 | Tiempo: 21.54 s
+  Run 25/30 -> Fit: 2.994424E+03 | Tiempo: 30.42 s
+  Run 30/30 -> Fit: 2.994424E+03 | Tiempo: 21.21 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Weight minimization of a speed reducer (Mechanical design problems)
+  Mejor : 2.994424E+03
+  Peor  : 2.994424E+03
+  Media : 2.994424E+03
+  Std   : 4.975970E-12
+  Tiempo Promedio: 23.17 s
+--------------------------------------------------
+
+Procesando: Tension/compression spring design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.266523E-02 | Tiempo: 26.28 s
+  Run 10/30 -> Fit: 1.266523E-02 | Tiempo: 19.02 s
+  Run 15/30 -> Fit: 1.266523E-02 | Tiempo: 23.61 s
+  Run 20/30 -> Fit: 1.266523E-02 | Tiempo: 20.13 s
+  Run 25/30 -> Fit: 1.266524E-02 | Tiempo: 28.08 s
+  Run 30/30 -> Fit: 1.266523E-02 | Tiempo: 26.39 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Tension/compression spring design (Mechanical design problems)
+  Mejor : 1.266523E-02
+  Peor  : 1.266524E-02
+  Media : 1.266523E-02
+  Std   : 1.009647E-09
+  Tiempo Promedio: 22.89 s
+--------------------------------------------------
+
+Procesando: Pressure vessel design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 6.059714E+03 | Tiempo: 19.87 s
+  Run 10/30 -> Fit: 6.410087E+03 | Tiempo: 18.47 s
+  Run 15/30 -> Fit: 6.059714E+03 | Tiempo: 21.63 s
+  Run 20/30 -> Fit: 6.059714E+03 | Tiempo: 19.89 s
+  Run 25/30 -> Fit: 6.059714E+03 | Tiempo: 19.11 s
+  Run 30/30 -> Fit: 6.059714E+03 | Tiempo: 18.89 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Pressure vessel design (Mechanical design problems)
+  Mejor : 6.059714E+03
+  Peor  : 7.332842E+03
+  Media : 6.258937E+03
+  Std   : 3.511428E+02
+  Tiempo Promedio: 20.06 s
+--------------------------------------------------
+
+Procesando: Welded beam design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.670218E+00 | Tiempo: 20.33 s
+  Run 10/30 -> Fit: 1.670218E+00 | Tiempo: 20.26 s
+  Run 15/30 -> Fit: 1.670218E+00 | Tiempo: 21.44 s
+  Run 20/30 -> Fit: 1.670218E+00 | Tiempo: 21.35 s
+  Run 25/30 -> Fit: 1.670218E+00 | Tiempo: 21.50 s
+  Run 30/30 -> Fit: 1.670218E+00 | Tiempo: 20.13 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Welded beam design (Mechanical design problems)
+  Mejor : 1.670218E+00
+  Peor  : 1.670218E+00
+  Media : 1.670218E+00
+  Std   : 4.115959E-12
+  Tiempo Promedio: 20.66 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+HÍBRIDO MARKOV WTA
+'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+Reloaded modules: HIBRIDO, HIBRIDO_Markov_Estricto, HIBRIDO_pensante, config, benchmarks.benchmark_CEC2017, benchmarks.RWCO_2020
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-27
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-27\Fitness.csv
+============================================================
+
+Procesando: Weight minimization of a speed reducer (Mechanical design problems) ...
+  Run 5/30 -> Fit: 2.994424E+03 | Tiempo: 22.28 s
+  Run 10/30 -> Fit: 2.994424E+03 | Tiempo: 31.10 s
+  Run 15/30 -> Fit: 2.994424E+03 | Tiempo: 22.12 s
+  Run 20/30 -> Fit: 2.994424E+03 | Tiempo: 21.41 s
+  Run 25/30 -> Fit: 2.994424E+03 | Tiempo: 21.88 s
+  Run 30/30 -> Fit: 2.994424E+03 | Tiempo: 21.28 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Weight minimization of a speed reducer (Mechanical design problems)
+  Mejor : 2.994424E+03
+  Peor  : 2.994424E+03
+  Media : 2.994424E+03
+  Std   : 2.206032E-12
+  Tiempo Promedio: 23.60 s
+--------------------------------------------------
+
+Procesando: Tension/compression spring design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.266523E-02 | Tiempo: 17.37 s
+  Run 10/30 -> Fit: 1.266523E-02 | Tiempo: 20.12 s
+  Run 15/30 -> Fit: 1.266523E-02 | Tiempo: 19.02 s
+  Run 20/30 -> Fit: 1.266523E-02 | Tiempo: 18.95 s
+  Run 25/30 -> Fit: 1.266523E-02 | Tiempo: 17.46 s
+  Run 30/30 -> Fit: 1.266523E-02 | Tiempo: 22.31 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Tension/compression spring design (Mechanical design problems)
+  Mejor : 1.266523E-02
+  Peor  : 1.266523E-02
+  Media : 1.266523E-02
+  Std   : 5.873096E-10
+  Tiempo Promedio: 20.98 s
+--------------------------------------------------
+
+Procesando: Pressure vessel design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 6.090526E+03 | Tiempo: 23.28 s
+  Run 10/30 -> Fit: 6.059714E+03 | Tiempo: 19.71 s
+  Run 15/30 -> Fit: 6.059714E+03 | Tiempo: 19.14 s
+  Run 20/30 -> Fit: 6.059714E+03 | Tiempo: 19.14 s
+  Run 25/30 -> Fit: 6.370780E+03 | Tiempo: 21.15 s
+  Run 30/30 -> Fit: 6.090526E+03 | Tiempo: 18.67 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Pressure vessel design (Mechanical design problems)
+  Mejor : 6.059714E+03
+  Peor  : 6.820410E+03
+  Media : 6.150034E+03
+  Std   : 2.029383E+02
+  Tiempo Promedio: 20.12 s
+--------------------------------------------------
+
+Procesando: Welded beam design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.670218E+00 | Tiempo: 20.37 s
+  Run 10/30 -> Fit: 1.670218E+00 | Tiempo: 20.75 s
+  Run 15/30 -> Fit: 1.670218E+00 | Tiempo: 21.91 s
+  Run 20/30 -> Fit: 1.670218E+00 | Tiempo: 20.23 s
+  Run 25/30 -> Fit: 1.670218E+00 | Tiempo: 19.28 s
+  Run 30/30 -> Fit: 1.670218E+00 | Tiempo: 19.92 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Welded beam design (Mechanical design problems)
+  Mejor : 1.670218E+00
+  Peor  : 1.670218E+00
+  Media : 1.670218E+00
+  Std   : 1.417250E-12
+  Tiempo Promedio: 20.58 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO
+
+HÍBRIDO PENSANTE (PROBABILIDADES)
+'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+Reloaded modules: HIBRIDO, HIBRIDO_Markov_Estricto, HIBRIDO_pensante, config, benchmarks.benchmark_CEC2017, benchmarks.RWCO_2020
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-28
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-06_17-28\Fitness.csv
+============================================================
+
+Procesando: Weight minimization of a speed reducer (Mechanical design problems) ...
+  Run 5/30 -> Fit: 2.994424E+03 | Tiempo: 22.74 s
+  Run 10/30 -> Fit: 2.994424E+03 | Tiempo: 32.66 s
+  Run 15/30 -> Fit: 2.994424E+03 | Tiempo: 22.23 s
+  Run 20/30 -> Fit: 2.994424E+03 | Tiempo: 21.61 s
+  Run 25/30 -> Fit: 2.994424E+03 | Tiempo: 22.76 s
+  Run 30/30 -> Fit: 2.994424E+03 | Tiempo: 21.90 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Weight minimization of a speed reducer (Mechanical design problems)
+  Mejor : 2.994424E+03
+  Peor  : 2.994424E+03
+  Media : 2.994424E+03
+  Std   : 1.084948E-10
+  Tiempo Promedio: 24.31 s
+--------------------------------------------------
+
+Procesando: Tension/compression spring design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.266523E-02 | Tiempo: 19.48 s
+  Run 10/30 -> Fit: 1.266523E-02 | Tiempo: 27.53 s
+  Run 15/30 -> Fit: 1.266523E-02 | Tiempo: 18.76 s
+  Run 20/30 -> Fit: 1.266523E-02 | Tiempo: 19.07 s
+  Run 25/30 -> Fit: 1.266523E-02 | Tiempo: 26.49 s
+  Run 30/30 -> Fit: 1.266523E-02 | Tiempo: 20.74 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Tension/compression spring design (Mechanical design problems)
+  Mejor : 1.266523E-02
+  Peor  : 1.267699E-02
+  Media : 1.266562E-02
+  Std   : 2.110590E-06
+  Tiempo Promedio: 21.15 s
+--------------------------------------------------
+
+Procesando: Pressure vessel design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 6.370780E+03 | Tiempo: 21.18 s
+  Run 10/30 -> Fit: 6.090526E+03 | Tiempo: 21.77 s
+  Run 15/30 -> Fit: 6.370780E+03 | Tiempo: 21.55 s
+  Run 20/30 -> Fit: 6.059714E+03 | Tiempo: 21.96 s
+  Run 25/30 -> Fit: 6.090526E+03 | Tiempo: 20.93 s
+  Run 30/30 -> Fit: 6.059714E+03 | Tiempo: 22.00 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Pressure vessel design (Mechanical design problems)
+  Mejor : 6.059714E+03
+  Peor  : 7.332842E+03
+  Media : 6.242531E+03
+  Std   : 3.136498E+02
+  Tiempo Promedio: 20.81 s
+--------------------------------------------------
+
+Procesando: Welded beam design (Mechanical design problems) ...
+  Run 5/30 -> Fit: 1.716033E+00 | Tiempo: 18.71 s
+  Run 10/30 -> Fit: 1.670218E+00 | Tiempo: 21.64 s
+  Run 15/30 -> Fit: 1.670218E+00 | Tiempo: 21.03 s
+  Run 20/30 -> Fit: 1.670218E+00 | Tiempo: 20.90 s
+  Run 25/30 -> Fit: 1.670677E+00 | Tiempo: 18.86 s
+  Run 30/30 -> Fit: 1.781203E+00 | Tiempo: 17.06 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: Welded beam design (Mechanical design problems)
+  Mejor : 1.670218E+00
+  Peor  : 1.921869E+00
+  Media : 1.716155E+00
+  Std   : 6.794940E-02
+  Tiempo Promedio: 19.60 s
+--------------------------------------------------
+
+============================================================
+EXPERIMENTO FINALIZADO

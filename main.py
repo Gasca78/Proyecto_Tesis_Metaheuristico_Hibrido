@@ -6,7 +6,9 @@ Created on Tue Feb  3 15:14:52 2026
 """
 
 from mealpy import FloatVar, DE
-from HIBRIDO import hibrid_JADE
+import HIBRIDO
+import HIBRIDO_Markov_Estricto
+import HIBRIDO_pensante
 import opfunu
 import numpy as np
 import time
@@ -15,22 +17,26 @@ import os
 import datetime as dt
 import config 
 from benchmarks import benchmark_CEC2017
+from benchmarks import RWCO_2020
 
 # ==========================================
 # CONFIGURACIÓN DEL EXPERIMENTO
 # ==========================================
-dims = config.DIMS
+# dims = config.DIMS
 runs = config.RUNS
 epochs = config.EPOCHS
 pop_size = config.POP_SIZE
 
 # Selección del Modelo
-Modelo_Clase = hibrid_JADE
+# Modelo_Clase = HIBRIDO.hibrid_JADE # Markov con Inercia
+# Modelo_Clase = HIBRIDO_Markov_Estricto.hibrid_JADE # Markov WTA
+# Modelo_Clase = HIBRIDO_pensante.hibrid_JADE # Sin Markov, solo probabilidades cambiantes
 # Modelo_Clase = DE.JADE
 
 # 2. Crear Nombre de Carpeta (Ej: "Resultados_hibrid_JADE_2025-12-16_14-30")
 timestamp = dt.datetime.now().strftime("%Y-%m-%d_%H-%M")
-folder_name = f"Resultados_{Modelo_Clase.__name__}_{timestamp}_{dims}_dims"
+# folder_name = f"Resultados_{Modelo_Clase.__name__}_{timestamp}_{dims}_dims"
+folder_name = f"Resultados_{Modelo_Clase.__name__}_{timestamp}"
 data_path = os.path.join(config.RESULTS_DIR, folder_name)
 
 # 3. Crear la carpeta físicamente
@@ -55,7 +61,8 @@ def guardar_csv(raw, nombre_archivo, name):
 # ==========================================
 # CARGA DE FUNCIONES
 # ==========================================
-functions = benchmark_CEC2017.functions
+# functions = benchmark_CEC2017.functions
+functions = RWCO_2020.problems
 
 # Diccionario para guardar TODOS los resultados crudos
 # Estructura: {'F1': [run1, run2...], 'F2': [run1, run2...]}
