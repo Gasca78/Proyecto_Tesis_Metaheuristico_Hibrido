@@ -5,6 +5,7 @@ DIMS = 30
 RUNS = 30
 EPOCHS = 1000
 POP_SIZE = 100
+EPOCHS_COMBINATORIA = 3000
 
 # Rutas (Hacerlas relativas para que funcionen en cualquier compu)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

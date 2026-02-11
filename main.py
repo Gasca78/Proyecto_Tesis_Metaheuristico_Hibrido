@@ -18,19 +18,21 @@ import datetime as dt
 import config 
 from benchmarks import benchmark_CEC2017
 from benchmarks import RWCO_2020
+from benchmarks.tsp import tsp
 
 # ==========================================
 # CONFIGURACIÓN DEL EXPERIMENTO
 # ==========================================
 # dims = config.DIMS
 runs = config.RUNS
-epochs = config.EPOCHS
+# epochs = config.EPOCHS
+epochs = config.EPOCHS_COMBINATORIA
 pop_size = config.POP_SIZE
 
 # Selección del Modelo
 # Modelo_Clase = HIBRIDO.hibrid_JADE # Markov con Inercia
 # Modelo_Clase = HIBRIDO_Markov_Estricto.hibrid_JADE # Markov WTA
-# Modelo_Clase = HIBRIDO_pensante.hibrid_JADE # Sin Markov, solo probabilidades cambiantes
+Modelo_Clase = HIBRIDO_pensante.hibrid_JADE # Sin Markov, solo probabilidades cambiantes
 # Modelo_Clase = DE.JADE
 
 # 2. Crear Nombre de Carpeta (Ej: "Resultados_hibrid_JADE_2025-12-16_14-30")
@@ -62,7 +64,8 @@ def guardar_csv(raw, nombre_archivo, name):
 # CARGA DE FUNCIONES
 # ==========================================
 # functions = benchmark_CEC2017.functions
-functions = RWCO_2020.problems
+# functions = RWCO_2020.problems
+functions = tsp.problems
 
 # Diccionario para guardar TODOS los resultados crudos
 # Estructura: {'F1': [run1, run2...], 'F2': [run1, run2...]}
