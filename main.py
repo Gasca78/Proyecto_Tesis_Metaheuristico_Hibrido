@@ -31,8 +31,8 @@ pop_size = config.POP_SIZE
 
 # Selección del Modelo
 # Modelo_Clase = HIBRIDO.hibrid_JADE # Markov con Inercia
-# Modelo_Clase = HIBRIDO_Markov_Estricto.hibrid_JADE # Markov WTA
-Modelo_Clase = HIBRIDO_pensante.hibrid_JADE # Sin Markov, solo probabilidades cambiantes
+# Modelo_Clase = HIBRIDO_Markov_Estricto.hibrid_JADE_Markov_WTA # Markov WTA
+Modelo_Clase = HIBRIDO_pensante.hibrid_JADE_probs # Sin Markov, solo probabilidades cambiantes
 # Modelo_Clase = DE.JADE
 
 # 2. Crear Nombre de Carpeta (Ej: "Resultados_hibrid_JADE_2025-12-16_14-30")

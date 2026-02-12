@@ -16,7 +16,7 @@ from mealpy.optimizer import Optimizer
 from scipy.stats import cauchy
 # from mealpy.utils.agent import Agent
 
-class hibrid_JADE(Optimizer):
+class hibrid_JADE_Markov_WTA(Optimizer):
     """
     The original version of: Differential Evolution (JADE)
 

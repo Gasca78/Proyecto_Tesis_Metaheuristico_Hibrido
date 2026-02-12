@@ -51,10 +51,10 @@ class TSPInstance:
 base_path = os.path.dirname(os.path.abspath(__file__))
 
 files = [
-    'burma14.tsp',
-    'bayg29.tsp',
-    'att48.tsp',
-    'berlin52.tsp',
+    # 'burma14.tsp',
+    # 'bayg29.tsp',
+    # 'att48.tsp',
+    # 'berlin52.tsp',
     'eil76.tsp'
 ]
 

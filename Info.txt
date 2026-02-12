@@ -4713,5 +4713,353 @@ Best fitness Híbrido: 1874.0, Tiempo Híbrido: 117.593871
 Best fitness JADE: 1424.0, Tiempo JADE: 122.066014
 Best fitness JADE: 692.0, Tiempo GA: 113.997365
 
-LA PROXIMA EXPERIMENTACIÓN SERÁ CON 3000 épocas
+##################################################################
+# PRUEBA CON PROBLEMAS DE LA MOCHILA
+##################################################################
+
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/lab_pruebas.py' --wdir
+Reloaded modules: HIBRIDO
+Resultados problema: mknap1.txt_P1_6items
+Best fitness Híbrido: -3800.0, Tiempo Híbrido: 36.538872
+Best fitness JADE: -3800.0, Tiempo JADE: 34.432184
+Best fitness GA: -3800.0, Tiempo GA: 26.376882
+Resultados problema: mknap1.txt_P2_10items
+Best fitness Híbrido: -8706.1, Tiempo Híbrido: 40.519560
+Best fitness JADE: -8706.1, Tiempo JADE: 37.402794
+Best fitness GA: -8336.9, Tiempo GA: 30.554177
+Resultados problema: mknap1.txt_P3_15items
+Best fitness Híbrido: -4015.0, Tiempo Híbrido: 37.863531
+Best fitness JADE: -4015.0, Tiempo JADE: 36.438302
+Best fitness GA: -4015.0, Tiempo GA: 33.011367
+Resultados problema: mknap1.txt_P4_20items
+Best fitness Híbrido: -6120.0, Tiempo Híbrido: 42.910552
+Best fitness JADE: -6120.0, Tiempo JADE: 38.083609
+Best fitness GA: -6120.0, Tiempo GA: 33.347328
+Resultados problema: mknap1.txt_P5_28items
+Best fitness Híbrido: -12400.0, Tiempo Híbrido: 41.702571
+Best fitness JADE: -12400.0, Tiempo JADE: 38.859323
+Best fitness GA: -12360.0, Tiempo GA: 44.227113
+Resultados problema: mknap1.txt_P6_39items
+Best fitness Híbrido: -10451.0, Tiempo Híbrido: 39.033564
+Best fitness JADE: -10618.0, Tiempo JADE: 40.669389
+Best fitness GA: -10604.0, Tiempo GA: 32.322023
+Resultados problema: mknap1.txt_P7_50items
+Best fitness Híbrido: -16322.0, Tiempo Híbrido: 41.505783
+Best fitness JADE: -16511.0, Tiempo JADE: 40.217770
+Best fitness GA: -16519.0, Tiempo GA: 34.808874
+
+####################################################################
+# EXPERIMENTACIÓN TSP CON 3000 épocas
+####################################################################
+JADE 
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_JADE_2026-02-11_09-51
+INICIANDO EXPERIMENTO CON: JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_JADE_2026-02-11_09-51\Fitness.csv
+============================================================
+
+Procesando: burma14 ...
+  Run 5/30 -> Fit: 3.323000E+03 | Tiempo: 209.68 s
+  Run 10/30 -> Fit: 3.323000E+03 | Tiempo: 164.84 s
+  Run 15/30 -> Fit: 3.323000E+03 | Tiempo: 121.58 s
+  Run 20/30 -> Fit: 3.323000E+03 | Tiempo: 164.39 s
+  Run 25/30 -> Fit: 3.323000E+03 | Tiempo: 178.48 s
+  Run 30/30 -> Fit: 3.323000E+03 | Tiempo: 215.49 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: burma14
+  Mejor : 3.323000E+03
+  Peor  : 3.323000E+03
+  Media : 3.323000E+03
+  Std   : 0.000000E+00
+  Tiempo Promedio: 169.39 s
+--------------------------------------------------
+
+Procesando: bayg29 ...
+  Run 5/30 -> Fit: 1.980000E+03 | Tiempo: 236.50 s
+  Run 10/30 -> Fit: 2.210000E+03 | Tiempo: 184.86 s
+  Run 15/30 -> Fit: 1.713000E+03 | Tiempo: 137.25 s
+  Run 20/30 -> Fit: 1.972000E+03 | Tiempo: 136.71 s
+  Run 25/30 -> Fit: 1.822000E+03 | Tiempo: 140.03 s
+  Run 30/30 -> Fit: 2.068000E+03 | Tiempo: 141.36 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: bayg29
+  Mejor : 1.671000E+03
+  Peor  : 2.210000E+03
+  Media : 1.935300E+03
+  Std   : 1.450644E+02
+  Tiempo Promedio: 172.60 s
+--------------------------------------------------
+
+Procesando: att48 ...
+  Run 5/30 -> Fit: 2.231300E+04 | Tiempo: 226.02 s
+  Run 10/30 -> Fit: 1.760100E+04 | Tiempo: 257.52 s
+  Run 15/30 -> Fit: 1.911700E+04 | Tiempo: 258.58 s
+  Run 20/30 -> Fit: 1.997200E+04 | Tiempo: 246.46 s
+  Run 25/30 -> Fit: 1.844000E+04 | Tiempo: 235.76 s
+  Run 30/30 -> Fit: 1.387400E+04 | Tiempo: 240.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: att48
+  Mejor : 1.387400E+04
+  Peor  : 2.231300E+04
+  Media : 1.894250E+04
+  Std   : 2.036096E+03
+  Tiempo Promedio: 242.07 s
+--------------------------------------------------
+
+Procesando: berlin52 ...
+  Run 5/30 -> Fit: 1.459800E+04 | Tiempo: 202.68 s
+  Run 10/30 -> Fit: 1.511300E+04 | Tiempo: 240.31 s
+  Run 15/30 -> Fit: 1.264800E+04 | Tiempo: 215.32 s
+  Run 20/30 -> Fit: 1.314000E+04 | Tiempo: 251.80 s
+  Run 25/30 -> Fit: 1.437000E+04 | Tiempo: 314.78 s
+  Run 30/30 -> Fit: 1.497400E+04 | Tiempo: 318.19 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: berlin52
+  Mejor : 1.264800E+04
+  Peor  : 1.587400E+04
+  Media : 1.442123E+04
+  Std   : 7.919720E+02
+  Tiempo Promedio: 270.16 s
+--------------------------------------------------
+
+HIBRIDO_MARKOV
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-11_09-51
+INICIANDO EXPERIMENTO CON: hibrid_JADE
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_2026-02-11_09-51\Fitness.csv
+============================================================
+
+Procesando: burma14 ...
+  Run 5/30 -> Fit: 3.323000E+03 | Tiempo: 240.62 s
+  Run 10/30 -> Fit: 3.323000E+03 | Tiempo: 156.18 s
+  Run 15/30 -> Fit: 3.323000E+03 | Tiempo: 129.51 s
+  Run 20/30 -> Fit: 3.323000E+03 | Tiempo: 193.16 s
+  Run 25/30 -> Fit: 3.336000E+03 | Tiempo: 215.53 s
+  Run 30/30 -> Fit: 3.551000E+03 | Tiempo: 243.67 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: burma14
+  Mejor : 3.323000E+03
+  Peor  : 3.551000E+03
+  Media : 3.373667E+03
+  Std   : 7.309917E+01
+  Tiempo Promedio: 187.90 s
+--------------------------------------------------
+
+Procesando: bayg29 ...
+  Run 5/30 -> Fit: 1.680000E+03 | Tiempo: 232.06 s
+  Run 10/30 -> Fit: 1.869000E+03 | Tiempo: 187.40 s
+  Run 15/30 -> Fit: 1.615000E+03 | Tiempo: 143.12 s
+  Run 20/30 -> Fit: 1.719000E+03 | Tiempo: 151.23 s
+  Run 25/30 -> Fit: 2.546000E+03 | Tiempo: 150.66 s
+  Run 30/30 -> Fit: 1.654000E+03 | Tiempo: 161.04 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: bayg29
+  Mejor : 1.615000E+03
+  Peor  : 2.546000E+03
+  Media : 1.799100E+03
+  Std   : 1.759775E+02
+  Tiempo Promedio: 173.43 s
+--------------------------------------------------
+
+Procesando: att48 ...
+  Run 5/30 -> Fit: 1.260100E+04 | Tiempo: 270.34 s
+  Run 10/30 -> Fit: 1.734500E+04 | Tiempo: 275.43 s
+  Run 15/30 -> Fit: 1.346800E+04 | Tiempo: 260.85 s
+  Run 20/30 -> Fit: 1.242500E+04 | Tiempo: 251.73 s
+  Run 25/30 -> Fit: 1.382300E+04 | Tiempo: 247.36 s
+  Run 30/30 -> Fit: 1.224400E+04 | Tiempo: 244.39 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: att48
+  Mejor : 1.180700E+04
+  Peor  : 2.080900E+04
+  Media : 1.432760E+04
+  Std   : 2.713994E+03
+  Tiempo Promedio: 257.85 s
+--------------------------------------------------
+
+Procesando: berlin52 ...
+  Run 5/30 -> Fit: 1.328500E+04 | Tiempo: 238.18 s
+  Run 10/30 -> Fit: 1.448800E+04 | Tiempo: 249.27 s
+  Run 15/30 -> Fit: 1.431800E+04 | Tiempo: 264.56 s
+  Run 20/30 -> Fit: 1.044400E+04 | Tiempo: 323.78 s
+  Run 25/30 -> Fit: 1.918200E+04 | Tiempo: 318.19 s
+  Run 30/30 -> Fit: 1.317400E+04 | Tiempo: 283.85 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: berlin52
+  Mejor : 8.634000E+03
+  Peor  : 1.918200E+04
+  Media : 1.201863E+04
+  Std   : 2.502277E+03
+  Tiempo Promedio: 280.79 s
+--------------------------------------------------
+
+HIBRIDO_MARKOV_WTA
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_Markov_WTA_2026-02-11_09-52
+INICIANDO EXPERIMENTO CON: hibrid_JADE_Markov_WTA
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_Markov_WTA_2026-02-11_09-52\Fitness.csv
+============================================================
+
+Procesando: burma14 ...
+  Run 5/30 -> Fit: 3.323000E+03 | Tiempo: 238.96 s
+  Run 10/30 -> Fit: 3.336000E+03 | Tiempo: 150.02 s
+  Run 15/30 -> Fit: 3.336000E+03 | Tiempo: 128.80 s
+  Run 20/30 -> Fit: 3.323000E+03 | Tiempo: 184.61 s
+  Run 25/30 -> Fit: 3.323000E+03 | Tiempo: 216.15 s
+  Run 30/30 -> Fit: 3.323000E+03 | Tiempo: 242.72 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: burma14
+  Mejor : 3.323000E+03
+  Peor  : 3.762000E+03
+  Media : 3.386000E+03
+  Std   : 1.215376E+02
+  Tiempo Promedio: 186.20 s
+--------------------------------------------------
+
+Procesando: bayg29 ...
+  Run 5/30 -> Fit: 1.754000E+03 | Tiempo: 232.17 s
+  Run 10/30 -> Fit: 1.783000E+03 | Tiempo: 188.99 s
+  Run 15/30 -> Fit: 2.030000E+03 | Tiempo: 143.08 s
+  Run 20/30 -> Fit: 1.832000E+03 | Tiempo: 147.08 s
+  Run 25/30 -> Fit: 1.754000E+03 | Tiempo: 149.19 s
+  Run 30/30 -> Fit: 1.707000E+03 | Tiempo: 159.47 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: bayg29
+  Mejor : 1.610000E+03
+  Peor  : 2.183000E+03
+  Media : 1.814200E+03
+  Std   : 1.378403E+02
+  Tiempo Promedio: 171.89 s
+--------------------------------------------------
+
+Procesando: att48 ...
+  Run 5/30 -> Fit: 1.245500E+04 | Tiempo: 272.65 s
+  Run 10/30 -> Fit: 1.485900E+04 | Tiempo: 272.55 s
+  Run 15/30 -> Fit: 1.855900E+04 | Tiempo: 264.27 s
+  Run 20/30 -> Fit: 1.954400E+04 | Tiempo: 246.48 s
+  Run 25/30 -> Fit: 1.319900E+04 | Tiempo: 245.64 s
+  Run 30/30 -> Fit: 1.279700E+04 | Tiempo: 247.81 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: att48
+  Mejor : 1.206700E+04
+  Peor  : 1.954400E+04
+  Media : 1.421713E+04
+  Std   : 2.378561E+03
+  Tiempo Promedio: 256.67 s
+--------------------------------------------------
+
+Procesando: berlin52 ...
+  Run 5/30 -> Fit: 8.956000E+03 | Tiempo: 237.40 s
+  Run 10/30 -> Fit: 1.242400E+04 | Tiempo: 252.48 s
+  Run 15/30 -> Fit: 1.164400E+04 | Tiempo: 237.99 s
+  Run 20/30 -> Fit: 9.728000E+03 | Tiempo: 326.06 s
+  Run 25/30 -> Fit: 1.010700E+04 | Tiempo: 333.91 s
+  Run 30/30 -> Fit: 1.147900E+04 | Tiempo: 266.00 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: berlin52
+  Mejor : 8.551000E+03
+  Peor  : 1.703300E+04
+  Media : 1.172140E+04
+  Std   : 2.279632E+03
+  Tiempo Promedio: 278.61 s
+--------------------------------------------------
+
+HIBRIDO_PROBS
+%runfile 'C:/Users/oswal/OneDrive/Documentos/UdeG/Maestría/Tesis/Codigo/main.py' --wdir
+C:\Users\oswal\miniforge3\envs\maestria\lib\site-packages\opfunu\cec_based\cec.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Carpeta de resultados creada en:
+    C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_probs_2026-02-11_09-52
+INICIANDO EXPERIMENTO CON: hibrid_JADE_probs
+Guardando en: C:\Users\oswal\OneDrive\Documentos\UdeG\Maestría\Tesis\Codigo\resultados\Resultados_hibrid_JADE_probs_2026-02-11_09-52\Fitness.csv
+============================================================
+
+Procesando: burma14 ...
+  Run 5/30 -> Fit: 3.416000E+03 | Tiempo: 156.39 s
+  Run 10/30 -> Fit: 3.323000E+03 | Tiempo: 138.33 s
+  Run 15/30 -> Fit: 3.323000E+03 | Tiempo: 108.08 s
+  Run 20/30 -> Fit: 3.323000E+03 | Tiempo: 112.90 s
+  Run 25/30 -> Fit: 3.323000E+03 | Tiempo: 110.24 s
+  Run 30/30 -> Fit: 3.323000E+03 | Tiempo: 148.24 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: burma14
+  Mejor : 3.323000E+03
+  Peor  : 3.675000E+03
+  Media : 3.350867E+03
+  Std   : 7.101255E+01
+  Tiempo Promedio: 132.25 s
+--------------------------------------------------
+
+Procesando: bayg29 ...
+  Run 5/30 -> Fit: 1.725000E+03 | Tiempo: 244.69 s
+  Run 10/30 -> Fit: 1.630000E+03 | Tiempo: 211.01 s
+  Run 15/30 -> Fit: 1.926000E+03 | Tiempo: 149.66 s
+  Run 20/30 -> Fit: 1.640000E+03 | Tiempo: 143.99 s
+  Run 25/30 -> Fit: 1.807000E+03 | Tiempo: 125.05 s
+  Run 30/30 -> Fit: 1.844000E+03 | Tiempo: 137.18 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: bayg29
+  Mejor : 1.623000E+03
+  Peor  : 2.314000E+03
+  Media : 1.768767E+03
+  Std   : 1.395399E+02
+  Tiempo Promedio: 168.21 s
+--------------------------------------------------
+
+Procesando: att48 ...
+  Run 5/30 -> Fit: 1.307400E+04 | Tiempo: 176.73 s
+  Run 10/30 -> Fit: 1.417500E+04 | Tiempo: 186.21 s
+  Run 15/30 -> Fit: 1.357500E+04 | Tiempo: 187.50 s
+  Run 20/30 -> Fit: 1.258000E+04 | Tiempo: 189.24 s
+  Run 25/30 -> Fit: 2.051500E+04 | Tiempo: 178.41 s
+  Run 30/30 -> Fit: 1.294700E+04 | Tiempo: 171.48 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: att48
+  Mejor : 1.215500E+04
+  Peor  : 2.051500E+04
+  Media : 1.368367E+04
+  Std   : 1.935247E+03
+  Tiempo Promedio: 180.92 s
+--------------------------------------------------
+
+Procesando: berlin52 ...
+  Run 5/30 -> Fit: 1.267900E+04 | Tiempo: 185.77 s
+  Run 10/30 -> Fit: 1.021600E+04 | Tiempo: 197.28 s
+  Run 15/30 -> Fit: 1.082300E+04 | Tiempo: 198.69 s
+  Run 20/30 -> Fit: 1.324400E+04 | Tiempo: 235.45 s
+  Run 25/30 -> Fit: 1.211700E+04 | Tiempo: 221.29 s
+  Run 30/30 -> Fit: 9.383000E+03 | Tiempo: 244.52 s
+Guardado parcial exitoso.
+--------------------------------------------------
+RESUMEN: berlin52
+  Mejor : 8.651000E+03
+  Peor  : 1.750500E+04
+  Media : 1.169643E+04
+  Std   : 2.260200E+03
+  Tiempo Promedio: 206.88 s
+--------------------------------------------------
 
