@@ -50,12 +50,59 @@ class TSPInstance:
 
 base_path = os.path.dirname(os.path.abspath(__file__))
 
+# files = [
+#     # --- NIVEL 1: Pequeños ---
+#     'burma14.tsp', 
+#     'ulysses16.tsp', 
+#     'ulysses22.tsp', 
+#     'bayg29.tsp', 
+#     'att48.tsp', 
+    
+#     # --- NIVEL 2: Medianos ---
+#     'eil51.tsp', 
+#     'berlin52.tsp', 
+#     'st70.tsp', 
+#     'eil76.tsp', 
+#     'pr76.tsp', 
+#     'gr96.tsp', 
+#     'rat99.tsp', 
+#     'kroA100.tsp', 
+    
+#     # --- NIVEL 3: Grandes ---
+#     'eil101.tsp', 
+#     'lin105.tsp', 
+#     'pr107.tsp', 
+#     'pr124.tsp', 
+#     'bier127.tsp', 
+#     'ch130.tsp', 
+#     'pr136.tsp', 
+#     'pr144.tsp', 
+#     'ch150.tsp', 
+#     'kroA150.tsp', 
+#     'pr152.tsp', 
+#     'u159.tsp', 
+#     'rat195.tsp' 
+    
+#     # --- NIVEL 4: Muy Grandes ---
+#     'a280.tsp', 
+#     'd493.tsp',
+#     'ali535.tsp', 
+#     'd657.tsp'
+# ]
 files = [
-    # 'burma14.tsp',
-    # 'bayg29.tsp',
-    # 'att48.tsp',
-    # 'berlin52.tsp',
-    'eil76.tsp'
+    # --- NIVEL 1: Pequeños ---
+    'burma14.tsp', 
+    'bayg29.tsp', 
+    'att48.tsp', 
+    
+    # --- NIVEL 2: Medianos ---
+    'berlin52.tsp', 
+    'eil76.tsp', 
+    
+    # --- NIVEL 3: Grandes ---
+    'eil101.tsp', 
+    # 'ch150.tsp', 
+    # 'rat195.tsp' 
 ]
 
 problems = []

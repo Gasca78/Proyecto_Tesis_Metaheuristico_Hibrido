@@ -5,13 +5,9 @@ Created on Tue Feb  3 15:14:52 2026
 @author: oswal
 """
 
+import concurrent.futures
 from mealpy import FloatVar, DE
-import HIBRIDO_sin_filtro
 import HIBRIDO
-import HIBRIDO_Markov_Estricto
-import HIBRIDO_pensante
-import HIBRIDO_pensante_sin_filtro
-import HIBRIDO_Markov_Estricto_sin_filtro
 import opfunu
 import numpy as np
 import time

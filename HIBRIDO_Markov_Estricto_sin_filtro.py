@@ -16,7 +16,7 @@ from mealpy.optimizer import Optimizer
 from scipy.stats import cauchy
 # from mealpy.utils.agent import Agent
 
-class hibrid_JADE(Optimizer):
+class hibrid_JADE_Markov_WTA_sin_filtro(Optimizer):
     """
     The original version of: Differential Evolution (JADE)
 
@@ -58,10 +58,7 @@ class hibrid_JADE(Optimizer):
                  miu_cr: float = 0.5, pt: float = 0.1, ap: float = 0.1, 
                  c1: float = 2.05, c2: float = 2.05, w: float = 0.4, # Variables PSO
                  pc: float = 0.95, pm: float = 0.025, # Variables GA
-                 update_interval: int = 10, # Evaluación cada cantidad de épocas
-                 matriz_type: str = "moderado", # Options: "estricto", "moderado", "conservador"
-                 success_filter: bool = False, # True (solo cuenta cuando mejoró), False (cuenta el total)
-                 memory_type: str = "markov", # Options: "markov", "probs"
+                 update_interval: int = 10,
                  **kwargs: object) -> None:
         """
         Args:
@@ -124,16 +121,13 @@ class hibrid_JADE(Optimizer):
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
         # Implementación de Cadenas de Markov
         self.transition_matriz = [[0.90,0.05,0.05],[0.05,0.90,0.05],[0.05,0.05,0.90]]
+        # self.best_model = ''
         # Modificador del valor para el actualizador de valores
         self.update_interval = update_interval
         # Arreglos para guardar el conteo de usos de cada modelo
         self.list_usage_DE = []
         self.list_usage_PSO = []
         self.list_usage_GA = []
-        # Toma de datos para elección de modelo
-        self.matriz_type = matriz_type
-        self.success_filter = success_filter
-        self.memory_type = memory_type
 
     def initialize_variables(self):
         self.dyn_miu_cr = self.miu_cr
@@ -205,37 +199,19 @@ class hibrid_JADE(Optimizer):
             prob_GA = 1 - (prob_DE+prob_PSO)
             if prob_GA < 0: prob_GA = 0.0
             self.strategies_probs = [prob_DE, prob_PSO, prob_GA]
-        
+            
+        # Configuración de las probs en Markov chain
+        self.best_model = np.argmax(qualities)
+        if self.best_model == 0:
+            self.transition_matriz = [[0.90,0.05,0.05],[0.90,0.05,0.05],[0.90,0.05,0.05]]
+        elif self.best_model == 1:
+            self.transition_matriz = [[0.05,0.90,0.05],[0.05,0.90,0.05],[0.05,0.90,0.05]]
+        else:
+            self.transition_matriz = [[0.05,0.05,0.90],[0.05,0.05,0.90],[0.05,0.05,0.90]]
+            
         self.strategies_rewards = {'DE':0.0, 'PSO':0.0, 'GA':0.0}
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
-        
-        # Configuración de las probs en Markov chain
-        best_model = np.argmax(qualities)
-        self.matriz_configuration(best_model)
-        
-    def matriz_configuration(self, best_model):
-        if self.matriz_type == "moderado":
-            if best_model == 0:
-                self.transition_matriz = [[0.95,0.025,0.025],[0.80,0.15,0.05],[0.80,0.05,0.15]]
-            elif best_model == 1:
-                self.transition_matriz = [[0.15,0.80,0.05],[0.025,0.95,0.025],[0.05,0.80,0.15]]
-            else:
-                self.transition_matriz = [[0.15,0.05,0.80],[0.05,0.15,0.80],[0.025,0.025,0.95]]
-        elif self.matriz_type == "conservador":
-            if best_model == 0:
-                self.transition_matriz = [[0.80,0.15,0.05],[0.60,0.30,0.10],[0.60,0.10,0.30]]
-            elif best_model == 1:
-                self.transition_matriz = [[0.30,0.60,0.10],[0.20,0.80,0.20],[0.10,0.60,0.30]]
-            else:
-                self.transition_matriz = [[0.30,0.10,0.60],[0.10,0.30,0.60],[0.05,0.080,0.15]]
-        elif self.matriz_type == "estricto":
-            if best_model == 0:
-                self.transition_matriz = [[0.90,0.05,0.05],[0.90,0.05,0.05],[0.90,0.05,0.05]]
-            elif best_model == 1:
-                self.transition_matriz = [[0.05,0.90,0.05],[0.05,0.90,0.05],[0.05,0.90,0.05]]
-            else:
-                self.transition_matriz = [[0.05,0.05,0.90],[0.05,0.05,0.90],[0.05,0.05,0.90]]
-                
+    
     def evolve(self, epoch):
         """
         The main operations (equations) of algorithm. Inherit from Optimizer class
@@ -259,16 +235,13 @@ class hibrid_JADE(Optimizer):
             if epoch == 1:
                 strategy_idx = self.generator.choice([0,1,2], p=self.strategies_probs)
             else:
-                if self.memory_type == "markov":
-                    previus_model = self.pop[idx].model
-                    if previus_model == 'PSO':
-                        strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[1])
-                    elif previus_model == 'GA':
-                        strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[2])
-                    else:
-                        strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[0])
-                elif self.memory_type == "probs":
-                    strategy_idx = self.generator.choice([0,1,2], p=self.strategies_probs)
+                previus_model = self.pop[idx].model
+                if previus_model == 'PSO':
+                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[1])
+                elif previus_model == 'GA':
+                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[2])
+                else:
+                    strategy_idx = self.generator.choice([0,1,2], p=self.transition_matriz[0])
             # Uso para cada método
             if strategy_idx == 1:
                 # Usamos el método de PSO
@@ -321,8 +294,7 @@ class hibrid_JADE(Optimizer):
                 pop[-1].target = self.get_target(pos_new)
         pop = self.update_target_for_population(pop)
         for idx in range(0, self.pop_size):
-            if not self.success_filter:
-                self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
+            self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
             if self.compare_target(pop[idx].target, self.pop[idx].target, self.problem.minmax):
                 self.dyn_pop_archive.append(self.pop[idx].copy())
                 list_cr.append(temp_cr[idx])
@@ -331,8 +303,6 @@ class hibrid_JADE(Optimizer):
                 # Calculamos cuánto mejoró
                 improvement = np.abs(self.pop[idx].target.fitness - pop[idx].target.fitness)
                 self.strategies_rewards[self.pop[idx].model] += improvement
-                if self.success_filter:
-                    self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
                 # Espacio para pasar atributos de PSO
                 pop[idx].velocity = self.pop[idx].velocity.copy() # Si o si pasamos velocidad al hijo
                 # Si se usa "PSO", se debe de actualizar la "Memoria Personal"

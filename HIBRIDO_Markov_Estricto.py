@@ -58,6 +58,7 @@ class hibrid_JADE_Markov_WTA(Optimizer):
                  miu_cr: float = 0.5, pt: float = 0.1, ap: float = 0.1, 
                  c1: float = 2.05, c2: float = 2.05, w: float = 0.4, # Variables PSO
                  pc: float = 0.95, pm: float = 0.025, # Variables GA
+                 update_interval: int = 10,
                  **kwargs: object) -> None:
         """
         Args:
@@ -121,6 +122,12 @@ class hibrid_JADE_Markov_WTA(Optimizer):
         # Implementación de Cadenas de Markov
         self.transition_matriz = [[0.90,0.05,0.05],[0.05,0.90,0.05],[0.05,0.05,0.90]]
         # self.best_model = ''
+        # Modificador del valor para el actualizador de valores
+        self.update_interval = update_interval
+        # Arreglos para guardar el conteo de usos de cada modelo
+        self.list_usage_DE = []
+        self.list_usage_PSO = []
+        self.list_usage_GA = []
 
     def initialize_variables(self):
         self.dyn_miu_cr = self.miu_cr
@@ -220,6 +227,9 @@ class hibrid_JADE_Markov_WTA(Optimizer):
         temp_cr = list()
         pop_sorted = self.get_sorted_population(self.pop, self.problem.minmax)
         pop = []
+        count_DE = 0
+        count_PSO = 0
+        count_GA = 0
         for idx in range(0, self.pop_size):
             # Se elige el método para este agente
             if epoch == 1:
@@ -236,6 +246,7 @@ class hibrid_JADE_Markov_WTA(Optimizer):
             if strategy_idx == 1:
                 # Usamos el método de PSO
                 self.pop[idx].model = 'PSO'
+                count_PSO += 1
                 x_new = self.PSO(idx)
                 temp_f.append(0.5)
                 cr = 0.9
@@ -243,6 +254,7 @@ class hibrid_JADE_Markov_WTA(Optimizer):
             elif strategy_idx == 2:
                 # Usamos el método de GA
                 self.pop[idx].model = 'GA'
+                count_GA += 1
                 x_new = self.GA(idx)
                 temp_f.append(0.5)
                 cr = 0.9
@@ -250,6 +262,7 @@ class hibrid_JADE_Markov_WTA(Optimizer):
             else:
                 # Usamos el método de JADE
                 self.pop[idx].model = 'DE'
+                count_DE += 1
                 ## Calculate adaptive parameter cr and f
                 cr = self.generator.normal(self.dyn_miu_cr, 0.1)
                 cr = np.clip(cr, 0, 1)
@@ -301,7 +314,7 @@ class hibrid_JADE_Markov_WTA(Optimizer):
                     pop[idx].local_target = self.pop[idx].local_target.copy()
                 self.pop[idx] = pop[idx].copy()
         # ACTUALIZACIÓN de Probabilidades (cada 10 épocas)
-        if epoch % 10 == 0:
+        if epoch % self.update_interval == 0:
             self.update_strategies_probabilities()
         # Randomly remove solution
         temp = len(self.dyn_pop_archive) - self.pop_size
@@ -321,3 +334,9 @@ class hibrid_JADE_Markov_WTA(Optimizer):
             self.dyn_miu_f = (1 - self.ap) * self.dyn_miu_f + self.ap * 0.5
         else:
             self.dyn_miu_f = (1 - self.ap) * self.dyn_miu_f + self.ap * self.lehmer_mean(np.array(list_f))
+        # =================================================================
+        # New: Count the model used for all the agents in each epoch
+        # =================================================================
+        self.list_usage_DE.append(count_DE)
+        self.list_usage_PSO.append(count_PSO)
+        self.list_usage_GA.append(count_GA)

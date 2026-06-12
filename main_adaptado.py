@@ -5,13 +5,13 @@ Created on Tue Feb  3 15:14:52 2026
 @author: oswal
 """
 
+import argparse # <--- LIBRERÍA NUEVA PARA LEER ARGUMENTOS
 from mealpy import FloatVar, DE
 import HIBRIDO_sin_filtro
 import HIBRIDO
 import HIBRIDO_Markov_Estricto
 import HIBRIDO_pensante
 import HIBRIDO_pensante_sin_filtro
-import HIBRIDO_Markov_Estricto_sin_filtro
 import opfunu
 import numpy as np
 import time
@@ -24,27 +24,51 @@ from benchmarks import problemas_ingenieria
 from benchmarks.tsp import tsp
 
 # ==========================================
+# LECTURA DE ARGUMENTOS DESDE TERMINAL
+# ==========================================
+parser = argparse.ArgumentParser(description="Ejecutor de Metaheurísticas")
+parser.add_argument("--modelo", type=str, required=True, help="Nombre del modelo a ejecutar")
+parser.add_argument("--benchmark", type=str, required=True, help="Benchmark a resolver (cec2017, tsp, ingenieria)")
+args = parser.parse_args()
+
+# ==========================================
+# MAPEO DE MODELOS Y BENCHMARKS
+# ==========================================
+# Diccionario para seleccionar la clase dinámicamente
+diccionario_modelos = {
+    "hibrid_JADE": HIBRIDO.hibrid_JADE,
+    "Markov_WTA": HIBRIDO_Markov_Estricto.hibrid_JADE_Markov_WTA,
+    "Markov_80_15_5": HIBRIDO.hibrid_JADE, # 80-15-5
+    "probs_sin_filtro": HIBRIDO_pensante_sin_filtro.hibrid_JADE_probs_sin_filtro,
+    "JADE": DE.JADE
+}
+
+# Diccionario para seleccionar los problemas
+diccionario_benchmarks = {
+    "cec2017": benchmark_CEC2017.functions,
+    "ingenieria": problemas_ingenieria.problems,
+    "tsp": tsp.problems
+}
+
+# Asignación basada en lo que recibe la terminal
+Modelo_Clase = diccionario_modelos[args.modelo]
+functions = diccionario_benchmarks[args.benchmark]
+
+# ==========================================
 # CONFIGURACIÓN DEL EXPERIMENTO
 # ==========================================
 dims = config.DIMS
 runs = config.RUNS
 epochs = config.EPOCHS
-# epochs = config.EPOCHS_COMBINATORIA
+# epochs = config.EPOCHS_COMBINATORIA # (Descomentar en tu lógica interna si es necesario)
 pop_size = config.POP_SIZE
 
-# Selección del Modelo
-# Modelo_Clase = HIBRIDO.hibrid_JADE # Markov con Inercia
-# Modelo_Clase = HIBRIDO_Markov_Estricto.hibrid_JADE_Markov_WTA # Markov WTA
-# Modelo_Clase = HIBRIDO_Markov_Estricto_sin_filtro.hibrid_JADE_Markov_WTA_sin_filtro # Markov WTA sin filtro
-# Modelo_Clase = HIBRIDO_pensante.hibrid_JADE_probs # Sin Markov, solo probabilidades cambiantes
-# Modelo_Clase = HIBRIDO_sin_filtro.hibrid_JADE_sin_filtro # Markov con Inercia y sin filtro de éxito
-# Modelo_Clase = HIBRIDO_pensante_sin_filtro.hibrid_JADE_probs_sin_filtro # Sin Markov, solo probabilidades cambiantes
-Modelo_Clase = DE.JADE
-
-# 2. Crear Nombre de Carpeta (Ej: "Resultados_hibrid_JADE_2025-12-16_14-30")
+# 2. Crear Nombre de Carpeta (Añadiendo el nombre del benchmark para no sobreescribir)
 timestamp = dt.datetime.now().strftime("%Y-%m-%d_%H-%M")
-# folder_name = f"Resultados_{Modelo_Clase.__name__}_{timestamp}_{dims}_dims"
-folder_name = f"Resultados_{Modelo_Clase.__name__}_{timestamp}"
+if functions == "cec2017":
+    folder_name = f"Resultados_{Modelo_Clase.__name__}_{args.benchmark}_{timestamp}_{dims}_dims"
+else:
+    folder_name = f"Resultados_{Modelo_Clase.__name__}_{args.benchmark}_{timestamp}"
 data_path = os.path.join(config.RESULTS_DIR, folder_name)
 
 # 3. Crear la carpeta físicamente
@@ -58,24 +82,15 @@ nombre_archivo_convergencia = os.path.join(data_path, "Convergencia.csv")
 nombre_archivo_diversidad   = os.path.join(data_path, "Diversidad.csv")
 nombre_archivo_exploracion  = os.path.join(data_path, "Exploracion.csv")
 nombre_archivo_explotacion  = os.path.join(data_path, "Explotacion.csv")
-# nombre_archivo_uso_modelos  = os.path.join(data_path, "Uso_Modelos.csv")
+nombre_archivo_uso_modelos  = os.path.join(data_path, "Uso_Modelos.csv")
 
-# Función para guardado en CSV
 def guardar_csv(raw, nombre_archivo, name):
-    df_temp = pd.DataFrame(dict([ (k,pd.Series(v)) for k,v in raw.items()]))
+    df_temp = pd.DataFrame(dict([ (k,pd.Series(v)) for k,v in raw.items() ]))
     df_temp.index.name = name
     df_temp.index += 1
     df_temp.to_csv(nombre_archivo)
     
-# ==========================================
-# CARGA DE FUNCIONES
-# ==========================================
-# functions = benchmark_CEC2017.functions
-# functions = problemas_ingenieria.problems
-functions = tsp.problems
-
-# Diccionario para guardar TODOS los resultados crudos
-# Estructura: {'F1': [run1, run2...], 'F2': [run1, run2...]}
+# Variables de almacenamiento (sin cambios)
 raw_data = {} 
 raw_times = {}
 final_results = {}
@@ -83,9 +98,9 @@ convergence_history = {}
 raw_diversity = {}
 raw_exploration = {}
 raw_exploitation = {}
-# raw_usage_models = {}
+raw_usage_models = {}
 
-print(f">>> INICIANDO EXPERIMENTO CON: {Modelo_Clase.__name__}")
+print(f">>> INICIANDO EXPERIMENTO CON: {Modelo_Clase.__name__} en {args.benchmark.upper()}")
 print(f">>> Guardando en: {nombre_archivo_fitness}")
 print("="*60)
 
@@ -96,9 +111,9 @@ for function in functions:
     diversity_per_epochs = np.zeros((runs, epochs))
     exploration_per_epochs = np.zeros((runs, epochs))
     exploitation_per_epochs = np.zeros((runs, epochs))
-    # usage_DE_per_epochs = np.zeros((runs, epochs))
-    # usage_PSO_per_epochs = np.zeros((runs, epochs))
-    # usage_GA_per_epochs = np.zeros((runs, epochs))
+    usage_DE_per_epochs = np.zeros((runs, epochs))
+    usage_PSO_per_epochs = np.zeros((runs, epochs))
+    usage_GA_per_epochs = np.zeros((runs, epochs))
     
     print(f"\nProcesando: {function.name} ...")
     
@@ -127,9 +142,9 @@ for function in functions:
         diversity_per_epochs[i, :] = model.history.list_diversity[:epochs]
         exploration_per_epochs[i, :] = model.history.list_exploration[:epochs]
         exploitation_per_epochs[i, :] = model.history.list_exploitation[:epochs]
-        # usage_DE_per_epochs[i, :] = model.list_usage_DE[:epochs]
-        # usage_PSO_per_epochs[i, :] = model.list_usage_PSO[:epochs]
-        # usage_GA_per_epochs[i, :] = model.list_usage_GA[:epochs]
+        usage_DE_per_epochs[i, :] = model.list_usage_DE[:epochs]
+        usage_PSO_per_epochs[i, :] = model.list_usage_PSO[:epochs]
+        usage_GA_per_epochs[i, :] = model.list_usage_GA[:epochs]
         
         # 4. Guardar datos
         run_fitnesses.append(fitness)
@@ -151,10 +166,10 @@ for function in functions:
     raw_diversity[function.name] = np.mean(diversity_per_epochs, axis=0)
     raw_exploration[function.name] = np.mean(exploration_per_epochs, axis=0)
     raw_exploitation[function.name] = np.mean(exploitation_per_epochs, axis=0)
-    # raw_usage_models[f"{function.name}_DE"] = np.mean(usage_DE_per_epochs, axis=0)
-    # raw_usage_models[f"{function.name}_PSO"] = np.mean(usage_PSO_per_epochs, axis=0)
-    # raw_usage_models[f"{function.name}_GA"] = np.mean(usage_GA_per_epochs, axis=0)
-        
+    raw_usage_models[f"{function.name}_DE"] = np.mean(usage_DE_per_epochs, axis=0)
+    raw_usage_models[f"{function.name}_PSO"] = np.mean(usage_PSO_per_epochs, axis=0)
+    raw_usage_models[f"{function.name}_GA"] = np.mean(usage_GA_per_epochs, axis=0)
+    
     # 2. GUARDADO DE SEGURIDAD (Progressive Save)
     # Esto sobrescribe el archivo cada vez que termina una función.
     try:
@@ -170,8 +185,8 @@ for function in functions:
         guardar_csv(raw_exploration, nombre_archivo_exploracion, 'Epoca')
         # Para la explotacion
         guardar_csv(raw_exploitation, nombre_archivo_explotacion, 'Epoca')
-        # # Para el uso de los modelos
-        # guardar_csv(raw_usage_models, nombre_archivo_uso_modelos, 'Epoca')
+        # Para el uso de los modelos
+        guardar_csv(raw_usage_models, nombre_archivo_uso_modelos, 'Epoca')
     except Exception as e:
         print(f"⚠️ Advertencia: No se pudo guardar el temporal ({e})")
     print("  >>> Guardado parcial exitoso.")
