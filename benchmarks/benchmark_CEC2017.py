@@ -49,14 +49,14 @@ dims = config.DIMS
 #     opfunu.cec_based.cec2017.F292017(ndim=dims)
 # ]
 
-# # Funciones de Prueba para revisar resultados (resultados mostrados con probs fijas)
+# # # Funciones de Prueba para revisar resultados (resultados mostrados con probs fijas)
 functions = [
-    opfunu.cec_based.cec2017.F12017(ndim=dims), # Empate
-    opfunu.cec_based.cec2017.F72017(ndim=dims), # No diferencias
+    # opfunu.cec_based.cec2017.F12017(ndim=dims), # Empate
+    # opfunu.cec_based.cec2017.F72017(ndim=dims), # No diferencias
     opfunu.cec_based.cec2017.F82017(ndim=dims), # Perdedor
     opfunu.cec_based.cec2017.F92017(ndim=dims), # Ganador
     opfunu.cec_based.cec2017.F262017(ndim=dims), # Perdedor (compleja)
-    opfunu.cec_based.cec2017.F272017(ndim=dims), # Empate (compleja)
+    # opfunu.cec_based.cec2017.F272017(ndim=dims), # Empate (compleja)
     opfunu.cec_based.cec2017.F282017(ndim=dims), # No diferencias
     opfunu.cec_based.cec2017.F292017(ndim=dims) # Ganador (compleja)
 ]

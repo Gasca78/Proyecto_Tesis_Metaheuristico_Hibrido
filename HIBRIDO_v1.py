@@ -62,8 +62,6 @@ class hibrid_JADE(Optimizer):
                  matriz_type: str = "moderado", # Options: "estricto", "moderado", "conservador"
                  success_filter: bool = False, # True (solo cuenta cuando mejoró), False (cuenta el total)
                  memory_type: str = "markov", # Options: "markov", "probs"
-                 one_model_only: bool = False, # Options: True, False
-                 model_selected: str = 'DE', # Options: 'DE', 'GA', 'PSO'
                  **kwargs: object) -> None:
         """
         Args:
@@ -114,38 +112,13 @@ class hibrid_JADE(Optimizer):
         self.crossover = "uniform"
         self.mutation = "flip"
         self.mutation_multipoints = True
-        if "selection" in kwargs:
-            self.selection = self.validator.check_str("selection", kwargs["selection"], ["tournament", "random", "roulette"])
-        if "k_way" in kwargs:
-            self.k_way = self.validator.check_float("k_way", kwargs["k_way"], (0, 1.0))
-        if "crossover" in kwargs:
-            self.crossover = self.validator.check_str("crossover", kwargs["crossover"], ["one_point", "multi_points", "uniform", "arithmetic"])
-        if "mutation_multipoints" in kwargs:
-            self.mutation_multipoints = self.validator.check_bool("mutation_multipoints", kwargs["mutation_multipoints"])
-        if self.mutation_multipoints:
-            if "mutation" in kwargs:
-                self.mutation = self.validator.check_str("mutation", kwargs["mutation"], ["flip", "swap"])
-        else:
-            if "mutation" in kwargs:
-                self.mutation = self.validator.check_str("mutation", kwargs["mutation"], ["flip", "swap", "scramble", "inversion"])
-        
         # Seteado de parámetros
         self.set_parameters(["epoch", "pop_size", "miu_f", "miu_cr", "pt", "ap", # Variables JADE ("DE") 
                              "c1", "c2", "w", # Variables PSO
                              "pc", "pm"]) # Variables GA 
         self.sort_flag = False
         # Variables para Hibridación
-        self.one_model_only = one_model_only
-        self.model_selected = model_selected
-        if self.one_model_only:
-            if self.model_selected == 'PSO':
-                self.strategies_probs = [0.0, 1.0, 0.0]
-            elif self.model_selected == 'GA':
-                self.strategies_probs = [0.0, 0.0, 1.0]
-            else: # model_selected == 'DE'
-                self.strategies_probs = [1.0, 0.0, 0.0]
-        else:                
-            self.strategies_probs = [1/3, 1/3, 1/3]
+        self.strategies_probs = [1/3, 1/3, 1/3]
         # Acumuladores para ver qué tanto funcionó cada uno
         self.strategies_rewards = {'DE':0.0, 'PSO':0.0, 'GA':0.0}
         self.strategies_usage = {'DE':0, 'PSO':0, 'GA':0}
@@ -193,88 +166,23 @@ class hibrid_JADE(Optimizer):
         return self.correct_solution(x_new)
     
     ### GA model
-    def GA(self, idx, list_fitness):
-        # Selection process
-        if self.selection == "roulette":
-            id_c2 = self.get_index_roulette_wheel_selection(list_fitness)
-            while id_c2 == idx:
-                id_c2 = self.get_index_roulette_wheel_selection(list_fitness)
-        elif self.selection == "random":
-            id_c1, id_c2 = self.generator.choice(range(list_fitness), 2, replace=False)
-        else:   ## tournament
-            # k_way = max(2, int(self.pop_size*self.k_way))
-            # competitors = self.generator.choice(self.pop, k_way, replace=False)
-            # agent_c2 = min(competitors, key=lambda ag: ag.target.fitness)
-            # id_c2 = agent_c2.solution.copy()
-            id_c2 = self.get_index_kway_tournament_selection(self.pop, k_way=self.k_way, output=1)[0]
-        child1, child2 = self.pop[idx].solution.copy(), self.pop[id_c2].solution.copy()
-            
-        if self.generator.random() < self.pc:
-            # Crossover
-            if self.crossover == "arithmetic":
-                x_new, _ = self.crossover_arithmetic(child1, child2)
-            elif self.crossover == "one_point":
-                cut = self.generator.integers(1, self.problem.n_dims-1)
-                x_new = np.concatenate([child1[:cut], child2[cut:]])
-            elif self.crossover == "multi_points":
-                idxs = self.generator.choice(range(1, self.problem.n_dims-1), 2, replace=False)
-                cut1, cut2 = np.min(idxs), np.max(idxs)
-                x_new = np.concatenate([child1[:cut1], child2[cut1:cut2], child1[cut2:]])
-            else:           # uniform
-                flip = self.generator.integers(0, 2, self.problem.n_dims)
-                x_new = child1 * flip + child2 * (1 - flip)
-        else:
-            x_new = child1.copy()
-        
-        # Mutation
-        if self.mutation_multipoints:
-            if self.mutation == "swap":
-                for i in range(self.problem.n_dims):
-                    if self.generator.random() < self.pm:
-                        idx_swap = self.generator.choice(list(set(range(0, self.problem.n_dims)) - {i}))
-                        x_new[i], x_new[idx_swap] = x_new[idx_swap], x_new[i]
-                return self.correct_solution(x_new)
-            else:       # "flip"
-                mutation_child = self.problem.generate_solution()
-                flag_child = self.generator.uniform(0, 1, self.problem.n_dims) < self.pm
-                return self.correct_solution(np.where(flag_child, mutation_child, x_new))
-        else:
-            if self.mutation == "swap":
-                idx1, idx2 = self.generator.choice(range(0, self.problem.n_dims), 2, replace=False)
-                x_new[idx1], x_new[idx2] = x_new[idx2], x_new[idx1]
-                return self.correct_solution(x_new)
-            elif self.mutation == "inversion":
-                cut1, cut2 = self.generator.choice(range(0, self.problem.n_dims), 2, replace=False)
-                temp = x_new[cut1:cut2]
-                temp = temp[::-1]
-                x_new[cut1:cut2] = temp
-                return self.correct_solution(x_new)
-            elif self.mutation == "scramble":
-                cut1, cut2 = self.generator.choice(range(0, self.problem.n_dims), 2, replace=False)
-                temp = x_new[cut1:cut2]
-                self.generator.shuffle(temp)
-                x_new[cut1:cut2] = temp
-                return self.correct_solution(x_new)
-            else:   # "flip"
-                idx = self.generator.integers(0, self.problem.n_dims)
-                x_new[idx] = self.generator.uniform(self.problem.lb[idx], self.problem.ub[idx])
-                return self.correct_solution(x_new)
-   
-    ### JADE model
-    def JADE(self, idx, cr, f, x_best):
+    def GA(self, idx):
+        # Crossover
         r1_idx = self.generator.choice(list(set(range(0, self.pop_size)) - {idx}))
-        new_pop = self.pop + self.dyn_pop_archive
-        r2_idx = self.generator.choice(list(set(range(0, len(new_pop))) - {idx, r1_idx}))
-        x_r1 = self.pop[r1_idx].solution
-        x_r2 = new_pop[r2_idx].solution
-        x_new = self.pop[idx].solution + f * (x_best.solution - self.pop[idx].solution) + f * (x_r1 - x_r2)      
-        # Primer cambio importante, esta sección debió de haber estado identada para solo JADE
-        # -------------------------------------------------------------------------------------------------
-        pos_new = np.where(self.generator.random(self.problem.n_dims) < cr, x_new, self.pop[idx].solution)
-        j_rand = self.generator.integers(0, self.problem.n_dims)
-        pos_new[j_rand] = x_new[j_rand]
-        # -------------------------------------------------------------------------------------------------
-        return self.correct_solution(pos_new)
+        
+        current_pos = self.pop[idx].solution
+        partner_pos = self.pop[r1_idx].solution
+        
+        if self.generator.random() < self.pc:
+            alpha = self.generator.random() # Crea un valor entre 0 y 1
+            x_new = current_pos * alpha + partner_pos * (1-alpha)
+        else:
+            x_new = current_pos.copy()
+            
+        # Mutation
+        mutation = self.generator.normal(0, 0.1, size=self.problem.n_dims)
+        x_new = x_new + mutation
+        return self.correct_solution(x_new)
     
     ### Función para calcular y actualizar los porcentajes para los modelos
     def update_strategies_probabilities(self):
@@ -346,7 +254,6 @@ class hibrid_JADE(Optimizer):
         count_DE = 0
         count_PSO = 0
         count_GA = 0
-        list_fitness = np.array([agent.target.fitness for agent in self.pop])
         for idx in range(0, self.pop_size):
             # Se elige el método para este agente
             if epoch == 1:
@@ -367,7 +274,7 @@ class hibrid_JADE(Optimizer):
                 # Usamos el método de PSO
                 self.pop[idx].model = 'PSO'
                 count_PSO += 1
-                pos_new = self.PSO(idx)
+                x_new = self.PSO(idx)
                 temp_f.append(0.5)
                 cr = 0.9
                 temp_cr.append(cr)
@@ -375,7 +282,7 @@ class hibrid_JADE(Optimizer):
                 # Usamos el método de GA
                 self.pop[idx].model = 'GA'
                 count_GA += 1
-                pos_new = self.GA(idx, list_fitness)
+                x_new = self.GA(idx)
                 temp_f.append(0.5)
                 cr = 0.9
                 temp_cr.append(cr)
@@ -397,22 +304,25 @@ class hibrid_JADE(Optimizer):
                 temp_cr.append(cr)
                 top = int(self.pop_size * self.pt)
                 x_best = pop_sorted[self.generator.integers(0, top)]
-                pos_new = self.JADE(idx, cr, f, x_best)
+                r1_idx = self.generator.choice(list(set(range(0, self.pop_size)) - {idx}))
+                new_pop = self.pop + self.dyn_pop_archive
+                r2_idx = self.generator.choice(list(set(range(0, len(new_pop))) - {idx, r1_idx}))
+                x_r1 = self.pop[r1_idx].solution
+                x_r2 = new_pop[r2_idx].solution
+                x_new = self.pop[idx].solution + f * (x_best.solution - self.pop[idx].solution) + f * (x_r1 - x_r2)      
+            pos_new = np.where(self.generator.random(self.problem.n_dims) < cr, x_new, self.pop[idx].solution)
+            j_rand = self.generator.integers(0, self.problem.n_dims)
+            pos_new[j_rand] = x_new[j_rand]
+            pos_new = self.correct_solution(pos_new)
             agent = self.generate_empty_agent(pos_new)
             agent.model = self.pop[idx].model
             pop.append(agent)
             if self.mode not in self.AVAILABLE_MODES:
                 pop[-1].target = self.get_target(pos_new)
         pop = self.update_target_for_population(pop)
-        # Update strategies_usage if success_filter is False
-        if not self.success_filter:
-            self.strategies_usage['PSO'] += count_PSO
-            self.strategies_usage['GA'] += count_GA 
-            self.strategies_usage['DE'] += count_DE
         for idx in range(0, self.pop_size):
-            # Moved (wait to confirm if its ok)
-            # if not self.success_filter:
-            #     self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
+            if not self.success_filter:
+                self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
             if self.compare_target(pop[idx].target, self.pop[idx].target, self.problem.minmax):
                 self.dyn_pop_archive.append(self.pop[idx].copy())
                 list_cr.append(temp_cr[idx])
@@ -424,24 +334,18 @@ class hibrid_JADE(Optimizer):
                 if self.success_filter:
                     self.strategies_usage[self.pop[idx].model] += 1 # Sumamos 1 a la estrategia utilizada
                 # Espacio para pasar atributos de PSO
-                # Child survive replace father
                 pop[idx].velocity = self.pop[idx].velocity.copy() # Si o si pasamos velocidad al hijo
-                # --- HERENCIA AL HIJO GANADOR ---
-                pop[idx].local_solution = self.pop[idx].local_solution.copy() # Hereda memoria
-                pop[idx].local_target = self.pop[idx].local_target.copy()     # Hereda memoria
+                # Si se usa "PSO", se debe de actualizar la "Memoria Personal"
+                if self.pop[idx].model == 'PSO':
+                    pop[idx].local_solution = pop[idx].solution.copy()
+                    pop[idx].local_target = pop[idx].target.copy()
+                else: # De no usar PSO, se heredará las características del padre
+                    pop[idx].local_solution = self.pop[idx].local_solution.copy()
+                    pop[idx].local_target = self.pop[idx].local_target.copy()
                 self.pop[idx] = pop[idx].copy()
-     
-            # Evaluate if the current position is the best of its life if doesn't matter if child survive or not
-            if self.compare_target(self.pop[idx].target, self.pop[idx].local_target, self.problem.minmax):
-                self.pop[idx].local_solution = self.pop[idx].solution.copy()
-                self.pop[idx].local_target = self.pop[idx].target.copy()
-        
-        
         # ACTUALIZACIÓN de Probabilidades (cada 10 épocas)
-        if not self.one_model_only:
-            if epoch % self.update_interval == 0:
-                self.update_strategies_probabilities()
-            
+        if epoch % self.update_interval == 0:
+            self.update_strategies_probabilities()
         # Randomly remove solution
         temp = len(self.dyn_pop_archive) - self.pop_size
         if temp > 0:

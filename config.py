@@ -1,16 +1,19 @@
 import os
 
-# Parámetros del Algoritmo (Esto SI se sube)
+# Parámetros del Algoritmo
 DIMS = 30
 RUNS = 30
 EPOCHS = 1000
 POP_SIZE = 100
+# EPOCHS = 500
+# POP_SIZE = 50
 EPOCHS_COMBINATORIA = 3000
 
 # Rutas (Hacerlas relativas para que funcionen en cualquier compu)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(BASE_DIR, 'resultados') # Todo se guardará en la carpeta 'results'
 SENSIBILIDAD_DIR = os.path.join(BASE_DIR, 'Estudio_de_Sensibilidad') # Aquí se guardará el estudio de sensibilidad
+RESULTS_APLICATIONS_DIR = os.path.join(BASE_DIR, 'Aplicaciones_CD')
 
 # Crear la carpeta de resultados si no existe (buena práctica)
 os.makedirs(RESULTS_DIR, exist_ok=True)

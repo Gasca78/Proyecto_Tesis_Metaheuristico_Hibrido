@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Tue Feb 10 19:15:42 2026
 
@@ -13,29 +12,23 @@ class TSPInstance:
         """
         Carga el problema TSP y prepara los datos.
         """
-        # Cargamos el problema
         self.problem = tsplib95.load(filepath)
-        # Extraemos datos relevantes para main
         self.name = self.problem.name
         self.dimension = self.problem.dimension
-        # Obtenemos la lista de nodos 
         self.nodes = list(self.problem.get_nodes())
-        # Definimos los límites inferior y superior 
         self.lb = [0.0]*self.dimension
         self.ub = [1.0]*self.dimension
+        
     def evaluate(self, solution):
         """
         Función de Fitness usando RANDOM KEYS.
         Convierte el vector continuo (floats) en una ruta (permutación).
         """
-        # Obtenemos la ruta
         ruta = np.argsort(solution)
-        # Calculamos la distancia total recorriendo la ruta
         distancia_total = 0
         for i in range(len(ruta)-1):
             u = self.nodes[ruta[i]]
             v = self.nodes[ruta[i+1]]
-            # La librería calcula la distancia (geográfica o euclidiana)
             distancia_total += self.problem.get_weight(u, v)
         # Sumar el regreso al inicio
         u = self.nodes[ruta[-1]]
@@ -89,6 +82,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 #     'ali535.tsp', 
 #     'd657.tsp'
 # ]
+
 files = [
     # --- NIVEL 1: Pequeños ---
     'burma14.tsp', 
@@ -105,10 +99,17 @@ files = [
     # 'rat195.tsp' 
 ]
 
+# MODIFICACIÓN CLAVE: En lugar de guardar los objetos que no se pueden serializar,
+# guardamos diccionarios simples con la ruta del archivo y el nombre.
 problems = []
 for f in files:
     full_path = os.path.join(base_path, f)
     if os.path.exists(full_path):
-        problems.append(TSPInstance(full_path))
+        # Guardamos la ruta pura (texto) para que el ProcessPoolExecutor no se congele
+        problems.append({
+            'is_tsp': True,
+            'name': f.replace('.tsp', ''),
+            'filepath': full_path
+        })
     else:
         print(f"⚠️ Advertencia: No se encontró {f} en {base_path}")
