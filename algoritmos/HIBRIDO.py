@@ -161,6 +161,9 @@ class hibrid_JADE(Optimizer):
         self.matriz_type = matriz_type
         self.success_filter = success_filter
         self.memory_type = memory_type
+        # Guarda la Distancia Media al Global Best y La Diversidad del Fitness
+        self.db = []
+        self.fd = []
 
     def initialize_variables(self):
         self.dyn_miu_cr = self.miu_cr
@@ -328,6 +331,20 @@ class hibrid_JADE(Optimizer):
             else:
                 self.transition_matriz = [[0.05,0.05,0.90],[0.05,0.05,0.90],[0.05,0.05,0.90]]
                 
+    def avg_dist_gb(self, pop):
+        distances = []
+        for agent in pop:
+            dist = np.linalg.norm(agent.solution - self.g_best.solution)
+            distances.append(dist)
+        return np.mean(distances)
+        
+    def fitness_diversity(self, pop, e=1e-10):
+        fitness_values = np.array([agent.target.fitness for agent in pop])
+        std_fit = np.std(fitness_values)
+        range_fit = np.max(fitness_values) - np.min(fitness_values)
+        return std_fit / (range_fit + e)
+            
+    
     def evolve(self, epoch):
         """
         The main operations (equations) of algorithm. Inherit from Optimizer class
@@ -466,3 +483,8 @@ class hibrid_JADE(Optimizer):
         self.list_usage_DE.append(count_DE)
         self.list_usage_PSO.append(count_PSO)
         self.list_usage_GA.append(count_GA)
+        # =======================================================================
+        # Guardado del historial para diversidades (distancia con best y fitness)
+        # =======================================================================
+        self.db.append(self.avg_dist_gb(pop))
+        self.fd.append(self.fitness_diversity(pop))

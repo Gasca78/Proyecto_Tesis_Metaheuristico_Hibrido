@@ -5,11 +5,11 @@ Created on Tue Sep 8 10:55:25 2026
 @author: oswal
 """
 
-from HIBRIDO import hibrid_JADE
+from Algoritmos import HIBRIDO
 
 # --- FAMILIA: MARKOV CONSERVADOR ---
 
-class hibrid_JADE_markov_conservador_5_F(hibrid_JADE):
+class hibrid_JADE_markov_conservador_5_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -24,7 +24,7 @@ class hibrid_JADE_markov_conservador_5_F(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Conservador_Int5_Falso"
         
-class hibrid_JADE_markov_conservador_5_V(hibrid_JADE):
+class hibrid_JADE_markov_conservador_5_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -39,7 +39,7 @@ class hibrid_JADE_markov_conservador_5_V(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Conservador_Int5_Verdadero"
         
-class hibrid_JADE_markov_conservador_10_F(hibrid_JADE):
+class hibrid_JADE_markov_conservador_10_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -52,7 +52,7 @@ class hibrid_JADE_markov_conservador_10_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Conservador_Int10_Falso"
         
-class hibrid_JADE_markov_conservador_10_V(hibrid_JADE):
+class hibrid_JADE_markov_conservador_10_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -65,7 +65,7 @@ class hibrid_JADE_markov_conservador_10_V(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Conservador_Int10_Verdadero"
         
-class hibrid_JADE_markov_conservador_50_F(hibrid_JADE):
+class hibrid_JADE_markov_conservador_50_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -78,7 +78,7 @@ class hibrid_JADE_markov_conservador_50_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Conservador_Int50_Falso"
         
-class hibrid_JADE_markov_conservador_50_V(hibrid_JADE):
+class hibrid_JADE_markov_conservador_50_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -93,7 +93,7 @@ class hibrid_JADE_markov_conservador_50_V(hibrid_JADE):
         
 # --- FAMILIA: MARKOV MODERADO ---
 
-class hibrid_JADE_markov_moderado_5_F(hibrid_JADE):
+class hibrid_JADE_markov_moderado_5_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -108,7 +108,7 @@ class hibrid_JADE_markov_moderado_5_F(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Moderado_Int5_Falso"
         
-class hibrid_JADE_markov_moderado_5_V(hibrid_JADE):
+class hibrid_JADE_markov_moderado_5_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -123,7 +123,7 @@ class hibrid_JADE_markov_moderado_5_V(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Moderado_Int5_Verdadero"
         
-class hibrid_JADE_markov_moderado_10_F(hibrid_JADE):
+class hibrid_JADE_markov_moderado_10_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -136,7 +136,7 @@ class hibrid_JADE_markov_moderado_10_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Moderado_Int10_Falso"
         
-class hibrid_JADE_markov_moderado_10_V(hibrid_JADE):
+class hibrid_JADE_markov_moderado_10_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -149,7 +149,7 @@ class hibrid_JADE_markov_moderado_10_V(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Moderado_Int10_Verdadero"
         
-class hibrid_JADE_markov_moderado_50_F(hibrid_JADE):
+class hibrid_JADE_markov_moderado_50_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -162,7 +162,7 @@ class hibrid_JADE_markov_moderado_50_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Moderado_Int50_Falso"
         
-class hibrid_JADE_markov_moderado_50_V(hibrid_JADE):
+class hibrid_JADE_markov_moderado_50_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -177,7 +177,7 @@ class hibrid_JADE_markov_moderado_50_V(hibrid_JADE):
         
 # --- FAMILIA: MARKOV ESTRICTO ---
 
-class hibrid_JADE_markov_estricto_5_F(hibrid_JADE):
+class hibrid_JADE_markov_estricto_5_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -192,7 +192,7 @@ class hibrid_JADE_markov_estricto_5_F(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Estricto_Int5_Falso"
         
-class hibrid_JADE_markov_estricto_5_V(hibrid_JADE):
+class hibrid_JADE_markov_estricto_5_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         # Llamamos al __init__ del padre forzando los parámetros que queremos
         super().__init__(
@@ -207,7 +207,7 @@ class hibrid_JADE_markov_estricto_5_V(hibrid_JADE):
         # Opcional pero súper útil: Esto hace que Mealpy imprima el nombre bonito en la consola
         self.name = "Hibrido_Markov_Estricto_Int5_Verdadero"
         
-class hibrid_JADE_markov_estricto_10_F(hibrid_JADE):
+class hibrid_JADE_markov_estricto_10_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -220,7 +220,7 @@ class hibrid_JADE_markov_estricto_10_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Estricto_Int10_Falso"
         
-class hibrid_JADE_markov_estricto_10_V(hibrid_JADE):
+class hibrid_JADE_markov_estricto_10_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -233,7 +233,7 @@ class hibrid_JADE_markov_estricto_10_V(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Estricto_Int10_Verdadero"
         
-class hibrid_JADE_markov_estricto_50_F(hibrid_JADE):
+class hibrid_JADE_markov_estricto_50_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -246,7 +246,7 @@ class hibrid_JADE_markov_estricto_50_F(hibrid_JADE):
         )
         self.name = "Hibrido_Markov_Estricto_Int50_Falso"
         
-class hibrid_JADE_markov_estricto_50_V(hibrid_JADE):
+class hibrid_JADE_markov_estricto_50_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -261,7 +261,7 @@ class hibrid_JADE_markov_estricto_50_V(hibrid_JADE):
 
 # --- FAMILIA: PROBABILIDADES ---
 
-class hibrid_JADE_probabilidades_5_F(hibrid_JADE):
+class hibrid_JADE_probabilidades_5_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -273,7 +273,7 @@ class hibrid_JADE_probabilidades_5_F(hibrid_JADE):
         )
         self.name = "Hibrido_Probabilidades_Int5_Falso"
         
-class hibrid_JADE_probabilidades_5_V(hibrid_JADE):
+class hibrid_JADE_probabilidades_5_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -285,7 +285,7 @@ class hibrid_JADE_probabilidades_5_V(hibrid_JADE):
         )
         self.name = "Hibrido_Probabilidades_Int5_Verdadero"
         
-class hibrid_JADE_probabilidades_10_F(hibrid_JADE):
+class hibrid_JADE_probabilidades_10_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -297,7 +297,7 @@ class hibrid_JADE_probabilidades_10_F(hibrid_JADE):
         )
         self.name = "Hibrido_Probabilidades_Int10_Falso"
         
-class hibrid_JADE_probabilidades_10_V(hibrid_JADE):
+class hibrid_JADE_probabilidades_10_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -309,7 +309,7 @@ class hibrid_JADE_probabilidades_10_V(hibrid_JADE):
         )
         self.name = "Hibrido_Probabilidades_Int10_Verdadero"
         
-class hibrid_JADE_probabilidades_50_F(hibrid_JADE):
+class hibrid_JADE_probabilidades_50_F(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 
@@ -321,7 +321,7 @@ class hibrid_JADE_probabilidades_50_F(hibrid_JADE):
         )
         self.name = "Hibrido_Probabilidades_Int50_Falso"
         
-class hibrid_JADE_probabilidades_50_V(hibrid_JADE):
+class hibrid_JADE_probabilidades_50_V(HIBRIDO.hibrid_JADE):
     def __init__(self, epoch=10000, pop_size=100, **kwargs):
         super().__init__(
             epoch=epoch, 

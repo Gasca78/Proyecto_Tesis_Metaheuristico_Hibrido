@@ -1,13 +1,15 @@
 import os
 
 # Parámetros del Algoritmo
-DIMS = 30
+DIMS_30 = 30
+DIMS_50 = 50
+DIMS_100 = 100
 RUNS = 30
 EPOCHS = 1000
 POP_SIZE = 100
 # EPOCHS = 500
 # POP_SIZE = 50
-EPOCHS_COMBINATORIA = 3000
+EPOCHS_COMBINATORIA = 1000
 
 # Rutas (Hacerlas relativas para que funcionen en cualquier compu)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

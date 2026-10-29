@@ -14,7 +14,7 @@ import pandas as pd
 import os
 import datetime as dt
 import config 
-import HIBRIDO
+from algoritmos import HIBRIDO, ETO, SPA
 from benchmarks import benchmark_CEC2017
 from benchmarks import problemas_ingenieria
 from benchmarks.tsp import tsp
@@ -73,6 +73,8 @@ def corrida_individual(run_id, Modelo_Clase, config_modelo, function, epochs, po
         'uso_DE': getattr(model, 'list_usage_DE', [0]*epochs)[:epochs],
         'uso_PSO': getattr(model, 'list_usage_PSO', [0]*epochs)[:epochs],
         'uso_GA': getattr(model, 'list_usage_GA', [0]*epochs)[:epochs],
+        'distancia_best': getattr(model, 'db', [0.0]*epochs)[:epochs],
+        'distancia_fitness': getattr(model, 'fd', [0.0]*epochs)[:epochs]
     }
     
     if hasattr(function, 'get_metrics'):
@@ -107,22 +109,34 @@ if __name__=="__main__":
     # ==========================================
     # CONFIGURACIÓN DEL EXPERIMENTO
     # ==========================================
-    dims = config.DIMS
-    runs = config.RUNS
+    dims = config.DIMS_30 # <--- El fijo es 30 dims
+    # dims = config.DIMS_50 
+    # dims = config.DIMS_100
+    runs = config.RUNS # <--- El fijo es 30
     # ---- COMENTA Y DESCOMENTA EN FUNCIÓN DE LOS PROBLEMAS (MATEMÁTICOS E INGENIERIA O COMBINATORIA)
-    # epochs = config.EPOCHS 
-    epochs = config.EPOCHS_COMBINATORIA 
-    pop_size = config.POP_SIZE
+    epochs = config.EPOCHS # <--- Usar solo este, sería 1000 épocas
+    # epochs = config.EPOCHS_COMBINATORIA 
+    pop_size = config.POP_SIZE # <--- El fijo es 100
     
     # ==========================================
     # CARGA DE FUNCIONES
     # ==========================================
     # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS PROBLEMAS QUE SE VAYA A CORRER
-    # functions = benchmark_CEC2017.functions
+    # ==== CEC2017 ====
+    functions = benchmark_CEC2017.functions
+    # functions = benchmark_CEC2017.functions_50
+    # functions = benchmark_CEC2017.functions_100
+    # ==== CEC2017 TODAS LAS DIM JUNTAS ====
+    # functions = benchmark_CEC2017.functions + benchmark_CEC2017.functions_50 + benchmark_CEC2017.functions_100
+    # ==== INGENIERÍA ====
     # functions = problemas_ingenieria.problems 
-    functions = tsp.problems
+    # ==== TSP ====
+    # functions = tsp.problems
+    # ==== TODOS JUNTITOS ====
+    # functions = benchmark_CEC2017.functions + benchmark_CEC2017.functions_50 + benchmark_CEC2017.functions_100 + problemas_ingenieria.problems + tsp.problems
     ############################################
     # Bioinformatics Aplication Genes
+    # ---- SE DESCOMENTA PARA CORRER BIOINFORMATICS APLICATION
     # X_train, X_test, y_train, y_test, best_k, selected_gens = leukemia_enviroment()
     # BioInstance = BioinformaticsFS(X_train, y_train, best_k)
     # functions = [BioInstance]
@@ -130,15 +144,22 @@ if __name__=="__main__":
     # ==========================================
     # CONFIGURACIÓN ESTUDIO DE SENSIBILIDAD
     # ==========================================
-    # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS MODELOS QUE SE QUIERAN CORRER
-    modelos_a_probar = modelos.models
+    
+    # ================== SECCIÓN NO NECESARIA ======================
+    # modelos_a_probar = modelos.models
     # modelos_a_probar = modelos.models_no_hybrids
     # modelos_a_probar = modelos.models + modelos.models_no_hybrids
-    # modelos_a_probar = [{
-    #     'modelo': HIBRIDO.hibrid_JADE,
-    #     'nombre_carpeta': 'Hibrido_Markov_Extricto_Int5_Verdadero',
-    #     'parametros': {'update_interval': 5, 'matriz_type': 'extricto', 'success_filter': True, 'memory_type': 'markov'}
-    # }]
+    # ==============================================================
+    
+    # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS MODELOS QUE SE QUIERAN CORRER
+    modelos_a_probar = modelos.models + modelos.models_metrics # <--- Comentar hasta después de correr las funciones CEC, ING y TSP
+    # modelos_a_probar = modelos.models_metrics + [
+    #     {'modelo': HIBRIDO.hibrid_JADE,
+    #      'nombre_carpeta': 'Hibrido_Probabilidades_Int5_Verdadero',
+    #      'parametros': {'update_interval': 5, 'success_filter': True, 'memory_type': 'probs'}
+    #     }
+    # ] # <--- Descomentar cuando se corra la función de Bioinfomatics, es para solo correr el modelo que se mostrará en el artículo
+    
     
     for modelo_config in modelos_a_probar:
     
@@ -151,27 +172,35 @@ if __name__=="__main__":
         timestamp = dt.datetime.now().strftime("%Y-%m-%d_%H-%M")
         
         # ---- SE COMENTA Y DESCOMENTA SEGÚN SI ES CEC2017 U OTROS PROBLEMAS
-        # folder_name = f"Resultados_{nombre_modelo}_{timestamp}_{dims}_dims" # <--- Se descomenta si se correrán funciones matemáticas y se comenta el otro
-        folder_name = f"Resultados_{nombre_modelo}_{timestamp}" 
-        # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS PROBLEMAS QUE SE VAYA A CORRER
+        folder_name = f"Resultados_{nombre_modelo}_{timestamp}_{dims}_dims" # <--- Se descomenta si se correrán funciones matemáticas y se comenta el otro
+        # folder_name = f"Resultados_{nombre_modelo}_{timestamp}" 
+        # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS PROBLEMAS QUE SE VAYAN A CORRER
+        data_CEC = os.path.join(config.SENSIBILIDAD_DIR, 'CEC2017') 
+        # data_ING = os.path.join(config.SENSIBILIDAD_DIR, 'INGENIERIA')
+        # data_TSP = os.path.join(config.SENSIBILIDAD_DIR, 'TSP')
+        # data_BIO = os.path.join(config.RESULTS_APLICATIONS_DIR, 'Resultados_Bioinformatics')
+        
+        # ================= NO HACER CASO A ESTA SECCIÓN =====================================
         # data_CEC = os.path.join(config.SENSIBILIDAD_DIR, 'CEC2017')
         # data_CEC = os.path.join(config.SENSIBILIDAD_DIR, 'CEC2017_Test_V2')
         # data_ING = os.path.join(config.SENSIBILIDAD_DIR, 'INGENIERIA')
         # data_ING = os.path.join(config.SENSIBILIDAD_DIR, 'INGENIERIA_Test_V2')
         # data_TSP = os.path.join(config.SENSIBILIDAD_DIR, 'TSP')
-        data_TSP = os.path.join(config.SENSIBILIDAD_DIR, 'TSP_Test_V2')
+        # data_TSP = os.path.join(config.SENSIBILIDAD_DIR, 'TSP_Test_V2')
         # data_BIO = os.path.join(config.RESULTS_APLICATIONS_DIR, 'Resultados_Bioinformatics')
+        # =====================================================================================
+        
         # Crear la carpeta físicamente
         # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS PROBLEMAS QUE SE VAYA A CORRER
-        # os.makedirs(data_CEC, exist_ok=True)
+        os.makedirs(data_CEC, exist_ok=True)
         # os.makedirs(data_ING, exist_ok=True)
-        os.makedirs(data_TSP, exist_ok=True)
+        # os.makedirs(data_TSP, exist_ok=True)
         # os.makedirs(data_BIO, exist_ok=True)
         # SE DESCOMENTA LA RUTA DE LA CARPETA QUE SE NECESITE (CEC, ING o TSP)
         # ---- SE COMENTA Y DESCOMENTA SEGÚN LOS PROBLEMAS QUE SE VAYA A CORRER
-        # data_path = os.path.join(data_CEC, folder_name) 
+        data_path = os.path.join(data_CEC, folder_name) 
         # data_path = os.path.join(data_ING, folder_name) 
-        data_path = os.path.join(data_TSP, folder_name) 
+        # data_path = os.path.join(data_TSP, folder_name) 
         # data_path = os.path.join(data_BIO, folder_name)
         
         # Crear la carpeta físicamente
@@ -187,6 +216,8 @@ if __name__=="__main__":
         nombre_archivo_exploracion  = os.path.join(data_path, "Exploracion.csv")
         nombre_archivo_explotacion  = os.path.join(data_path, "Explotacion.csv")
         nombre_archivo_uso_modelos  = os.path.join(data_path, "Uso_Modelos.csv")
+        nombre_archivo_distancia_best = os.path.join(data_path, "Distancia_Best.csv")
+        nombre_archivo_distancia_fitness = os.path.join(data_path, "Distancia_Fitness.csv")
         
         # Diccionario para guardar TODOS los resultados crudos
         # Estructura: {'F1': [run1, run2...], 'F2': [run1, run2...]}
@@ -199,6 +230,8 @@ if __name__=="__main__":
         raw_exploration = {}
         raw_exploitation = {}
         raw_usage_models = {}
+        raw_dist_best = {}
+        raw_dist_fit = {}
         
         print(f"\n{'='*60}")
         print(f">>> EVALUANDO MODELO: {nombre_modelo}")
@@ -221,6 +254,8 @@ if __name__=="__main__":
             usage_DE_per_epochs = np.zeros((runs, epochs))
             usage_PSO_per_epochs = np.zeros((runs, epochs))
             usage_GA_per_epochs = np.zeros((runs, epochs))
+            dist_best_per_epochs = np.zeros((runs, epochs))
+            dist_fitness_per_epochs = np.zeros((runs, epochs))
             if its_bioinformatics:
                 run_accuracies = np.zeros(runs)
                 run_num_genes = np.zeros(runs)
@@ -251,6 +286,8 @@ if __name__=="__main__":
                         usage_DE_per_epochs[idx,:] = data['uso_DE']
                         usage_PSO_per_epochs[idx,:] = data['uso_PSO']
                         usage_GA_per_epochs[idx,:] = data['uso_GA']
+                        dist_best_per_epochs[idx,:] = data['distancia_best']
+                        dist_fitness_per_epochs[idx,:] = data['distancia_fitness']
                         if its_bioinformatics:
                             run_accuracies = data['accuracy']
                             run_num_genes = data['num_genes']
@@ -277,6 +314,8 @@ if __name__=="__main__":
             raw_usage_models[f"{func_name}_DE"] = np.mean(usage_DE_per_epochs, axis=0)
             raw_usage_models[f"{func_name}_PSO"] = np.mean(usage_PSO_per_epochs, axis=0)
             raw_usage_models[f"{func_name}_GA"] = np.mean(usage_GA_per_epochs, axis=0)
+            raw_dist_best[func_name] = np.mean(dist_best_per_epochs, axis=0)
+            raw_dist_fit[func_name] = np.mean(dist_fitness_per_epochs, axis=0)
                 
             # 2. GUARDADO DE SEGURIDAD (Progressive Save)
             # Esto sobrescribe el archivo cada vez que termina una función.
@@ -297,6 +336,10 @@ if __name__=="__main__":
                 guardar_csv(raw_exploitation, nombre_archivo_explotacion, 'Epoca')
                 # Para el uso de los modelos
                 guardar_csv(raw_usage_models, nombre_archivo_uso_modelos, 'Epoca')
+                # Para la distancia con el best
+                guardar_csv(raw_dist_best, nombre_archivo_distancia_best, 'Epoca')
+                # Para la distancia con fitness
+                guardar_csv(raw_dist_fit, nombre_archivo_distancia_fitness, 'Epoca')
                 
                 if its_bioinformatics:
                     raw_accuracies = {func_name: run_accuracies}
